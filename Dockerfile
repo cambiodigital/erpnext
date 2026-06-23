@@ -1,4 +1,4 @@
-FROM frappe/erpnext-worker:v16
+FROM frappe/erpnext:v16
 
 USER root
 
