@@ -20,7 +20,7 @@ DB_PASSWORD=${DB_PASSWORD:-"erpnext"}
 BOOTSTRAP_SENTINEL="sites/$SITE_NAME/.bootstrapped"
 
 drop_site_database() {
-	python - <<PY
+	/home/frappe/frappe-bench/env/bin/python - <<'PY'
 import os
 import MySQLdb
 
