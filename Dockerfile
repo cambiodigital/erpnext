@@ -1,4 +1,4 @@
-FROM frappe/erpnext:v16
+FROM frappe/erpnext:develop
 
 USER root
 
@@ -18,10 +18,12 @@ WORKDIR /home/frappe/frappe-bench
 # `yarn install` is required because the copied app includes package.json
 # dependencies (for example `onscan.js`) that are not present in the base image.
 # `--no-build-isolation` stays removed so pip can install flit_core per PEP 517.
+# Build-time: install Python deps, build frontend assets, and build
+# Frappe/ERPNext JS/CSS bundles.  Do NOT run bench clear-cache here —
+# no site exists yet (sites are created at container start by entrypoint.sh).
 RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench && \
     pip install -e apps/erpnext && \
-    bench build --app erpnext && \
-    bench clear-cache
+    bench build --app erpnext
 
 COPY entrypoint.sh /home/frappe/frappe-bench/entrypoint.sh
 RUN chmod +x /home/frappe/frappe-bench/entrypoint.sh
