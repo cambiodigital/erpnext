@@ -1,0 +1,588 @@
+Initializing deployment
+Cloning Repo github.com/cambiodigital/erpnext.git to /etc/dokploy/compose/erpnext-erp-oqdfvw/code: ✅
+Cloning into '/etc/dokploy/compose/erpnext-erp-oqdfvw/code'...
+remote: Enumerating objects: 5589, done.
+remote: Counting objects:   0% (1/5589)        
+remote: Counting objects:   1% (56/5589)        
+remote: Counting objects:   2% (112/5589)        
+remote: Counting objects:   3% (168/5589)        
+remote: Counting objects:   4% (224/5589)        
+remote: Counting objects:   5% (280/5589)        
+remote: Counting objects:   6% (336/5589)        
+remote: Counting objects:   7% (392/5589)        
+remote: Counting objects:   8% (448/5589)        
+remote: Counting objects:   9% (504/5589)        
+remote: Counting objects:  10% (559/5589)        
+remote: Counting objects:  11% (615/5589)        
+remote: Counting objects:  12% (671/5589)        
+remote: Counting objects:  13% (727/5589)        
+remote: Counting objects:  14% (783/5589)        
+remote: Counting objects:  15% (839/5589)        
+remote: Counting objects:  16% (895/5589)        
+remote: Counting objects:  17% (951/5589)        
+remote: Counting objects:  18% (1007/5589)        
+remote: Counting objects:  19% (1062/5589)        
+remote: Counting objects:  20% (1118/5589)        
+remote: Counting objects:  21% (1174/5589)        
+remote: Counting objects:  22% (1230/5589)        
+remote: Counting objects:  23% (1286/5589)        
+remote: Counting objects:  24% (1342/5589)        
+remote: Counting objects:  25% (1398/5589)        
+remote: Counting objects:  26% (1454/5589)        
+remote: Counting objects:  27% (1510/5589)        
+remote: Counting objects:  28% (1565/5589)        
+remote: Counting objects:  29% (1621/5589)        
+remote: Counting objects:  30% (1677/5589)        
+remote: Counting objects:  31% (1733/5589)        
+remote: Counting objects:  32% (1789/5589)        
+remote: Counting objects:  33% (1845/5589)        
+remote: Counting objects:  34% (1901/5589)        
+remote: Counting objects:  35% (1957/5589)        
+remote: Counting objects:  36% (2013/5589)        
+remote: Counting objects:  37% (2068/5589)        
+remote: Counting objects:  38% (2124/5589)        
+remote: Counting objects:  39% (2180/5589)        
+remote: Counting objects:  40% (2236/5589)        
+remote: Counting objects:  41% (2292/5589)        
+remote: Counting objects:  42% (2348/5589)        
+remote: Counting objects:  43% (2404/5589)        
+remote: Counting objects:  44% (2460/5589)        
+remote: Counting objects:  45% (2516/5589)        
+remote: Counting objects:  46% (2571/5589)        
+remote: Counting objects:  47% (2627/5589)        
+remote: Counting objects:  48% (2683/5589)        
+remote: Counting objects:  49% (2739/5589)        
+remote: Counting objects:  50% (2795/5589)        
+remote: Counting objects:  51% (2851/5589)        
+remote: Counting objects:  52% (2907/5589)        
+remote: Counting objects:  53% (2963/5589)        
+remote: Counting objects:  54% (3019/5589)        
+remote: Counting objects:  55% (3074/5589)        
+remote: Counting objects:  56% (3130/5589)        
+remote: Counting objects:  57% (3186/5589)        
+remote: Counting objects:  58% (3242/5589)        
+remote: Counting objects:  59% (3298/5589)        
+remote: Counting objects:  60% (3354/5589)        
+remote: Counting objects:  61% (3410/5589)        
+remote: Counting objects:  62% (3466/5589)        
+remote: Counting objects:  63% (3522/5589)        
+remote: Counting objects:  64% (3577/5589)        
+remote: Counting objects:  65% (3633/5589)        
+remote: Counting objects:  66% (3689/5589)        
+remote: Counting objects:  67% (3745/5589)        
+remote: Counting objects:  68% (3801/5589)        
+remote: Counting objects:  69% (3857/5589)        
+remote: Counting objects:  70% (3913/5589)        
+remote: Counting objects:  71% (3969/5589)        
+remote: Counting objects:  72% (4025/5589)        
+remote: Counting objects:  73% (4080/5589)        
+remote: Counting objects:  74% (4136/5589)        
+remote: Counting objects:  75% (4192/5589)        
+remote: Counting objects:  76% (4248/5589)        
+remote: Counting objects:  77% (4304/5589)        
+remote: Counting objects:  78% (4360/5589)        
+remote: Counting objects:  79% (4416/5589)        
+remote: Counting objects:  80% (4472/5589)        
+remote: Counting objects:  81% (4528/5589)        
+remote: Counting objects:  82% (4583/5589)        
+remote: Counting objects:  83% (4639/5589)        
+remote: Counting objects:  84% (4695/5589)        
+remote: Counting objects:  85% (4751/5589)        
+remote: Counting objects:  86% (4807/5589)        
+remote: Counting objects:  87% (4863/5589)        
+remote: Counting objects:  88% (4919/5589)        
+remote: Counting objects:  89% (4975/5589)        
+remote: Counting objects:  90% (5031/5589)        
+remote: Counting objects:  91% (5086/5589)        
+remote: Counting objects:  92% (5142/5589)        
+remote: Counting objects:  93% (5198/5589)        
+remote: Counting objects:  94% (5254/5589)        
+remote: Counting objects:  95% (5310/5589)        
+remote: Counting objects:  96% (5366/5589)        
+remote: Counting objects:  97% (5422/5589)        
+remote: Counting objects:  98% (5478/5589)        
+remote: Counting objects:  99% (5534/5589)        
+remote: Counting objects: 100% (5589/5589)        
+remote: Counting objects: 100% (5589/5589), done.
+remote: Compressing objects:   0% (1/4496)        
+remote: Compressing objects:   1% (45/4496)        
+remote: Compressing objects:   2% (90/4496)        
+remote: Compressing objects:   3% (135/4496)        
+remote: Compressing objects:   4% (180/4496)        
+remote: Compressing objects:   5% (225/4496)        
+remote: Compressing objects:   6% (270/4496)        
+remote: Compressing objects:   7% (315/4496)        
+remote: Compressing objects:   8% (360/4496)        
+remote: Compressing objects:   9% (405/4496)        
+remote: Compressing objects:  10% (450/4496)        
+remote: Compressing objects:  11% (495/4496)        
+remote: Compressing objects:  12% (540/4496)        
+remote: Compressing objects:  13% (585/4496)        
+remote: Compressing objects:  14% (630/4496)        
+remote: Compressing objects:  15% (675/4496)        
+remote: Compressing objects:  16% (720/4496)        
+remote: Compressing objects:  17% (765/4496)        
+remote: Compressing objects:  18% (810/4496)        
+remote: Compressing objects:  19% (855/4496)        
+remote: Compressing objects:  20% (900/4496)        
+remote: Compressing objects:  21% (945/4496)        
+remote: Compressing objects:  22% (990/4496)        
+remote: Compressing objects:  23% (1035/4496)        
+remote: Compressing objects:  24% (1080/4496)        
+remote: Compressing objects:  25% (1124/4496)        
+remote: Compressing objects:  26% (1169/4496)        
+remote: Compressing objects:  27% (1214/4496)        
+remote: Compressing objects:  28% (1259/4496)        
+remote: Compressing objects:  29% (1304/4496)        
+remote: Compressing objects:  30% (1349/4496)        
+remote: Compressing objects:  31% (1394/4496)        
+remote: Compressing objects:  32% (1439/4496)        
+remote: Compressing objects:  33% (1484/4496)        
+remote: Compressing objects:  34% (1529/4496)        
+remote: Compressing objects:  35% (1574/4496)        
+remote: Compressing objects:  36% (1619/4496)        
+remote: Compressing objects:  37% (1664/4496)        
+remote: Compressing objects:  38% (1709/4496)        
+remote: Compressing objects:  39% (1754/4496)        
+remote: Compressing objects:  40% (1799/4496)        
+remote: Compressing objects:  41% (1844/4496)        
+remote: Compressing objects:  42% (1889/4496)        
+remote: Compressing objects:  43% (1934/4496)        
+remote: Compressing objects:  44% (1979/4496)        
+remote: Compressing objects:  45% (2024/4496)        
+remote: Compressing objects:  46% (2069/4496)        
+remote: Compressing objects:  47% (2114/4496)        
+remote: Compressing objects:  48% (2159/4496)        
+remote: Compressing objects:  49% (2204/4496)        
+remote: Compressing objects:  50% (2248/4496)        
+remote: Compressing objects:  51% (2293/4496)        
+remote: Compressing objects:  52% (2338/4496)        
+remote: Compressing objects:  53% (2383/4496)        
+remote: Compressing objects:  54% (2428/4496)        
+remote: Compressing objects:  55% (2473/4496)        
+remote: Compressing objects:  56% (2518/4496)        
+remote: Compressing objects:  57% (2563/4496)        
+remote: Compressing objects:  58% (2608/4496)        
+remote: Compressing objects:  59% (2653/4496)        
+remote: Compressing objects:  60% (2698/4496)        
+remote: Compressing objects:  61% (2743/4496)        
+remote: Compressing objects:  62% (2788/4496)        
+remote: Compressing objects:  63% (2833/4496)        
+remote: Compressing objects:  64% (2878/4496)        
+remote: Compressing objects:  65% (2923/4496)        
+remote: Compressing objects:  66% (2968/4496)        
+remote: Compressing objects:  67% (3013/4496)        
+remote: Compressing objects:  68% (3058/4496)        
+remote: Compressing objects:  69% (3103/4496)        
+remote: Compressing objects:  70% (3148/4496)        
+remote: Compressing objects:  71% (3193/4496)        
+remote: Compressing objects:  72% (3238/4496)        
+remote: Compressing objects:  73% (3283/4496)        
+remote: Compressing objects:  74% (3328/4496)        
+remote: Compressing objects:  75% (3372/4496)        
+remote: Compressing objects:  76% (3417/4496)        
+remote: Compressing objects:  77% (3462/4496)        
+remote: Compressing objects:  78% (3507/4496)        
+remote: Compressing objects:  79% (3552/4496)        
+remote: Compressing objects:  80% (3597/4496)        
+remote: Compressing objects:  81% (3642/4496)        
+remote: Compressing objects:  82% (3687/4496)        
+remote: Compressing objects:  83% (3732/4496)        
+remote: Compressing objects:  84% (3777/4496)        
+remote: Compressing objects:  85% (3822/4496)        
+remote: Compressing objects:  86% (3867/4496)        
+remote: Compressing objects:  87% (3912/4496)        
+remote: Compressing objects:  88% (3957/4496)        
+remote: Compressing objects:  89% (4002/4496)        
+remote: Compressing objects:  90% (4047/4496)        
+remote: Compressing objects:  91% (4092/4496)        
+remote: Compressing objects:  92% (4137/4496)        
+remote: Compressing objects:  93% (4182/4496)        
+remote: Compressing objects:  94% (4227/4496)        
+remote: Compressing objects:  95% (4272/4496)        
+remote: Compressing objects:  96% (4317/4496)        
+remote: Compressing objects:  97% (4362/4496)        
+remote: Compressing objects:  98% (4407/4496)        
+remote: Compressing objects:  99% (4452/4496)        
+remote: Compressing objects: 100% (4496/4496)        
+remote: Compressing objects: 100% (4496/4496), done.
+Receiving objects:   0% (1/5589)
+Receiving objects:   1% (56/5589)
+Receiving objects:   2% (112/5589)
+Receiving objects:   3% (168/5589)
+Receiving objects:   4% (224/5589)
+Receiving objects:   5% (280/5589)
+Receiving objects:   6% (336/5589)
+Receiving objects:   7% (392/5589)
+Receiving objects:   8% (448/5589)
+Receiving objects:   9% (504/5589)
+Receiving objects:  10% (559/5589)
+Receiving objects:  11% (615/5589)
+Receiving objects:  12% (671/5589)
+Receiving objects:  13% (727/5589)
+Receiving objects:  14% (783/5589)
+Receiving objects:  15% (839/5589)
+Receiving objects:  16% (895/5589)
+Receiving objects:  17% (951/5589)
+Receiving objects:  18% (1007/5589)
+Receiving objects:  19% (1062/5589)
+Receiving objects:  20% (1118/5589)
+Receiving objects:  21% (1174/5589)
+Receiving objects:  22% (1230/5589)
+Receiving objects:  23% (1286/5589)
+Receiving objects:  24% (1342/5589)
+Receiving objects:  25% (1398/5589)
+Receiving objects:  26% (1454/5589)
+Receiving objects:  27% (1510/5589)
+Receiving objects:  28% (1565/5589)
+Receiving objects:  29% (1621/5589)
+Receiving objects:  30% (1677/5589)
+Receiving objects:  31% (1733/5589)
+Receiving objects:  32% (1789/5589)
+Receiving objects:  33% (1845/5589)
+Receiving objects:  34% (1901/5589)
+Receiving objects:  35% (1957/5589)
+Receiving objects:  36% (2013/5589)
+Receiving objects:  37% (2068/5589)
+Receiving objects:  38% (2124/5589)
+Receiving objects:  39% (2180/5589)
+Receiving objects:  40% (2236/5589)
+Receiving objects:  41% (2292/5589)
+Receiving objects:  42% (2348/5589)
+Receiving objects:  43% (2404/5589)
+Receiving objects:  44% (2460/5589)
+Receiving objects:  45% (2516/5589)
+Receiving objects:  46% (2571/5589)
+Receiving objects:  47% (2627/5589)
+Receiving objects:  48% (2683/5589)
+Receiving objects:  49% (2739/5589)
+Receiving objects:  50% (2795/5589)
+Receiving objects:  51% (2851/5589)
+Receiving objects:  52% (2907/5589)
+Receiving objects:  53% (2963/5589)
+Receiving objects:  54% (3019/5589)
+Receiving objects:  55% (3074/5589)
+Receiving objects:  56% (3130/5589)
+Receiving objects:  57% (3186/5589)
+Receiving objects:  58% (3242/5589)
+Receiving objects:  59% (3298/5589)
+Receiving objects:  60% (3354/5589)
+Receiving objects:  61% (3410/5589)
+Receiving objects:  62% (3466/5589)
+Receiving objects:  63% (3522/5589)
+Receiving objects:  64% (3577/5589)
+Receiving objects:  65% (3633/5589)
+Receiving objects:  66% (3689/5589)
+Receiving objects:  67% (3745/5589)
+Receiving objects:  68% (3801/5589)
+Receiving objects:  69% (3857/5589)
+Receiving objects:  70% (3913/5589)
+Receiving objects:  71% (3969/5589)
+Receiving objects:  72% (4025/5589)
+Receiving objects:  73% (4080/5589)
+Receiving objects:  74% (4136/5589)
+Receiving objects:  75% (4192/5589)
+Receiving objects:  76% (4248/5589)
+Receiving objects:  77% (4304/5589)
+Receiving objects:  78% (4360/5589)
+Receiving objects:  79% (4416/5589)
+Receiving objects:  80% (4472/5589)
+Receiving objects:  81% (4528/5589)
+Receiving objects:  82% (4583/5589)
+Receiving objects:  83% (4639/5589)
+Receiving objects:  84% (4695/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  85% (4751/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  86% (4807/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  87% (4863/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  88% (4919/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  89% (4975/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  90% (5031/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  91% (5086/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  92% (5142/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  93% (5198/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  94% (5254/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  95% (5310/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  96% (5366/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  97% (5422/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects:  98% (5478/5589), 11.84 MiB | 23.66 MiB/s
+remote: Total 5589 (delta 1249), reused 3732 (delta 918), pack-reused 0 (from 0)
+Receiving objects:  99% (5534/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects: 100% (5589/5589), 11.84 MiB | 23.66 MiB/s
+Receiving objects: 100% (5589/5589), 12.70 MiB | 24.22 MiB/s, done.
+Resolving deltas:   0% (0/1249)
+Resolving deltas:   1% (14/1249)
+Resolving deltas:   2% (25/1249)
+Resolving deltas:   3% (38/1249)
+Resolving deltas:   4% (50/1249)
+Resolving deltas:   5% (63/1249)
+Resolving deltas:   6% (75/1249)
+Resolving deltas:   7% (88/1249)
+Resolving deltas:   8% (100/1249)
+Resolving deltas:   9% (113/1249)
+Resolving deltas:  10% (125/1249)
+Resolving deltas:  11% (138/1249)
+Resolving deltas:  12% (150/1249)
+Resolving deltas:  13% (163/1249)
+Resolving deltas:  14% (175/1249)
+Resolving deltas:  15% (188/1249)
+Resolving deltas:  16% (200/1249)
+Resolving deltas:  17% (213/1249)
+Resolving deltas:  18% (225/1249)
+Resolving deltas:  19% (238/1249)
+Resolving deltas:  20% (250/1249)
+Resolving deltas:  21% (263/1249)
+Resolving deltas:  22% (275/1249)
+Resolving deltas:  23% (288/1249)
+Resolving deltas:  24% (300/1249)
+Resolving deltas:  25% (313/1249)
+Resolving deltas:  26% (325/1249)
+Resolving deltas:  27% (338/1249)
+Resolving deltas:  28% (350/1249)
+Resolving deltas:  29% (363/1249)
+Resolving deltas:  30% (376/1249)
+Resolving deltas:  31% (389/1249)
+Resolving deltas:  32% (400/1249)
+Resolving deltas:  33% (414/1249)
+Resolving deltas:  34% (426/1249)
+Resolving deltas:  35% (438/1249)
+Resolving deltas:  36% (450/1249)
+Resolving deltas:  37% (463/1249)
+Resolving deltas:  38% (475/1249)
+Resolving deltas:  39% (488/1249)
+Resolving deltas:  40% (500/1249)
+Resolving deltas:  41% (513/1249)
+Resolving deltas:  42% (525/1249)
+Resolving deltas:  43% (539/1249)
+Resolving deltas:  44% (550/1249)
+Resolving deltas:  45% (563/1249)
+Resolving deltas:  46% (575/1249)
+Resolving deltas:  47% (588/1249)
+Resolving deltas:  48% (600/1249)
+Resolving deltas:  49% (613/1249)
+Resolving deltas:  50% (626/1249)
+Resolving deltas:  51% (637/1249)
+Resolving deltas:  52% (650/1249)
+Resolving deltas:  53% (662/1249)
+Resolving deltas:  54% (675/1249)
+Resolving deltas:  55% (687/1249)
+Resolving deltas:  56% (700/1249)
+Resolving deltas:  57% (712/1249)
+Resolving deltas:  58% (725/1249)
+Resolving deltas:  59% (737/1249)
+Resolving deltas:  60% (750/1249)
+Resolving deltas:  61% (762/1249)
+Resolving deltas:  62% (775/1249)
+Resolving deltas:  63% (787/1249)
+Resolving deltas:  64% (800/1249)
+Resolving deltas:  65% (812/1249)
+Resolving deltas:  66% (826/1249)
+Resolving deltas:  67% (837/1249)
+Resolving deltas:  68% (850/1249)
+Resolving deltas:  69% (862/1249)
+Resolving deltas:  70% (876/1249)
+Resolving deltas:  71% (887/1249)
+Resolving deltas:  72% (900/1249)
+Resolving deltas:  73% (912/1249)
+Resolving deltas:  74% (926/1249)
+Resolving deltas:  75% (938/1249)
+Resolving deltas:  76% (950/1249)
+Resolving deltas:  77% (962/1249)
+Resolving deltas:  78% (975/1249)
+Resolving deltas:  79% (987/1249)
+Resolving deltas:  80% (1000/1249)
+Resolving deltas:  81% (1012/1249)
+Resolving deltas:  82% (1025/1249)
+Resolving deltas:  83% (1037/1249)
+Resolving deltas:  84% (1050/1249)
+Resolving deltas:  85% (1062/1249)
+Resolving deltas:  86% (1075/1249)
+Resolving deltas:  87% (1087/1249)
+Resolving deltas:  88% (1100/1249)
+Resolving deltas:  89% (1112/1249)
+Resolving deltas:  90% (1125/1249)
+Resolving deltas:  91% (1137/1249)
+Resolving deltas:  92% (1150/1249)
+Resolving deltas:  93% (1162/1249)
+Resolving deltas:  94% (1175/1249)
+Resolving deltas:  95% (1187/1249)
+Resolving deltas:  96% (1200/1249)
+Resolving deltas:  97% (1212/1249)
+Resolving deltas:  98% (1225/1249)
+Resolving deltas:  99% (1237/1249)
+Resolving deltas: 100% (1249/1249)
+Resolving deltas: 100% (1249/1249), done.
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║ App Name: erpnext-erp-oqdfvw                                                 ║
+║ Build Compose 🐳                                                             ║
+║ Detected: 0 mounts 📂                                                        ║
+║ Command: docker compose -p erpnext-erp-oqdfvw -f ./docker-compose.yml up -d  ║
+║ --build --remove-orphans                                                     ║
+║ Source Type: docker github ✅                                                ║
+║ Compose Type: docker-compose ✅                                              ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+time="2026-06-23T10:50:56Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+time="2026-06-23T10:50:56Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+time="2026-06-23T10:50:56Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+time="2026-06-23T10:50:56Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+Image erpnext-erp-oqdfvw-erpnext Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 566B done
+#1 DONE 0.0s
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 796B done
+#2 DONE 0.0s
+#3 [internal] load metadata for docker.io/frappe/erpnext:v16
+#3 DONE 0.2s
+#4 [internal] load .dockerignore
+#4 transferring context: 552B done
+#4 DONE 0.0s
+#5 [1/8] FROM docker.io/frappe/erpnext:v16@sha256:fb17c58c2b604139af4f7908fa790132914b79930c20f82516ca4f2064affb21
+#5 resolve docker.io/frappe/erpnext:v16@sha256:fb17c58c2b604139af4f7908fa790132914b79930c20f82516ca4f2064affb21 done
+#5 CACHED
+#6 [internal] load build context
+#6 transferring context: 124.45MB 0.8s done
+#6 DONE 0.8s
+#7 [2/8] RUN apt-get update && apt-get install -y --no-install-recommends     git     && rm -rf /var/lib/apt/lists/*
+#7 0.206 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#7 0.220 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#7 0.220 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#7 0.307 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+#7 0.395 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+#7 0.506 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [312 kB]
+#7 1.075 Fetched 9363 kB in 1s (10.7 MB/s)
+#7 1.075 Reading package lists...
+#7 1.411 Reading package lists...
+#7 1.741 Building dependency tree...
+#7 1.830 Reading state information...
+#7 1.925 git is already the newest version (1:2.39.5-0+deb12u3).
+#7 1.925 0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
+#7 DONE 2.4s
+#8 [3/8] RUN rm -rf /home/frappe/frappe-bench/apps/erpnext
+#8 DONE 1.8s
+#9 [4/8] COPY --chown=frappe:frappe . /home/frappe/frappe-bench/apps/erpnext
+#9 DONE 0.7s
+#10 [5/8] WORKDIR /home/frappe/frappe-bench
+#10 DONE 0.1s
+#11 [6/8] RUN pip install -e apps/erpnext --no-build-isolation &&     bench build --app erpnext &&     bench clear-cache
+#11 0.442 Defaulting to user installation because normal site-packages is not writeable
+#11 0.486 Obtaining file:///home/frappe/frappe-bench/apps/erpnext
+#11 0.487   Checking if build backend supports build_editable: started
+#11 0.528   Checking if build backend supports build_editable: finished with status 'done'
+#11 0.605
+#11 0.605 [notice] A new release of pip is available: 25.3 -> 26.1.2
+#11 0.605 [notice] To update, run: pip install --upgrade pip
+#11 0.609 ERROR: Exception:
+#11 0.609 Traceback (most recent call last):
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/cli/base_command.py", line 107, in _run_wrapper
+#11 0.609     status = _inner_run()
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/cli/base_command.py", line 98, in _inner_run
+#11 0.609     return self.run(options, args)
+#11 0.609            ~~~~~~~~^^^^^^^^^^^^^^^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/cli/req_command.py", line 85, in wrapper
+#11 0.609     return func(self, options, args)
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/commands/install.py", line 388, in run
+#11 0.609     requirement_set = resolver.resolve(
+#11 0.609         reqs, check_supported_wheels=not options.target_dir
+#11 0.609     )
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/resolver.py", line 79, in resolve
+#11 0.609     collected = self.factory.collect_root_requirements(root_reqs)
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 538, in collect_root_requirements
+#11 0.609     reqs = list(
+#11 0.609         self._make_requirements_from_install_req(
+#11 0.609     ...<2 lines>...
+#11 0.609         )
+#11 0.609     )
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 494, in _make_requirements_from_install_req
+#11 0.609     cand = self._make_base_candidate_from_link(
+#11 0.609         ireq.link,
+#11 0.609     ...<2 lines>...
+#11 0.609         version=None,
+#11 0.609     )
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 205, in _make_base_candidate_from_link
+#11 0.609     self._editable_candidate_cache[link] = EditableCandidate(
+#11 0.609                                            ~~~~~~~~~~~~~~~~~^
+#11 0.609         link,
+#11 0.609         ^^^^^
+#11 0.609     ...<3 lines>...
+#11 0.609         version=version,
+#11 0.609         ^^^^^^^^^^^^^^^^
+#11 0.609     )
+#11 0.609     ^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 343, in __init__
+#11 0.609     super().__init__(
+#11 0.609     ~~~~~~~~~~~~~~~~^
+#11 0.609         link=link,
+#11 0.609         ^^^^^^^^^^
+#11 0.609     ...<4 lines>...
+#11 0.609         version=version,
+#11 0.609         ^^^^^^^^^^^^^^^^
+#11 0.609     )
+#11 0.609     ^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 161, in __init__
+#11 0.609     self.dist = self._prepare()
+#11 0.609                 ~~~~~~~~~~~~~^^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 238, in _prepare
+#11 0.609     dist = self._prepare_distribution()
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 353, in _prepare_distribution
+#11 0.609     return self._factory.preparer.prepare_editable_requirement(self._ireq)
+#11 0.609            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/operations/prepare.py", line 714, in prepare_editable_requirement
+#11 0.609     dist = _get_prepared_distribution(
+#11 0.609         req,
+#11 0.609     ...<3 lines>...
+#11 0.609         self.check_build_deps,
+#11 0.609     )
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/operations/prepare.py", line 77, in _get_prepared_distribution
+#11 0.609     abstract_dist.prepare_distribution_metadata(
+#11 0.609     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+#11 0.609         build_env_installer, build_isolation, check_build_deps
+#11 0.609         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#11 0.609     )
+#11 0.609     ^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/distributions/sdist.py", line 59, in prepare_distribution_metadata
+#11 0.609     self.req.editable_sanity_check()
+#11 0.609     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/req/req_install.py", line 501, in editable_sanity_check
+#11 0.609     if self.editable and not self.supports_pyproject_editable:
+#11 0.609                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#11 0.609   File "/usr/local/lib/python3.14/functools.py", line 1126, in __get__
+#11 0.609     val = self.func(instance)
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_internal/req/req_install.py", line 237, in supports_pyproject_editable
+#11 0.609     return "build_editable" in self.pep517_backend._supported_features()
+#11 0.609                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_impl.py", line 180, in _supported_features
+#11 0.609     return self._call_hook("_supported_features", {})
+#11 0.609            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#11 0.609   File "/usr/local/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_impl.py", line 402, in _call_hook
+#11 0.609     raise BackendUnavailable(
+#11 0.609     ...<4 lines>...
+#11 0.609     )
+#11 0.609 pip._vendor.pyproject_hooks._impl.BackendUnavailable: Cannot import 'flit_core.buildapi'
+#11 ERROR: process "/bin/sh -c pip install -e apps/erpnext --no-build-isolation &&     bench build --app erpnext &&     bench clear-cache" did not complete successfully: exit code: 2
+------
+> [6/8] RUN pip install -e apps/erpnext --no-build-isolation &&     bench build --app erpnext &&     bench clear-cache:
+0.609     return "build_editable" in self.pep517_backend._supported_features()
+0.609                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+0.609   File "/usr/local/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_impl.py", line 180, in _supported_features
+0.609     return self._call_hook("_supported_features", {})
+0.609            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0.609   File "/usr/local/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_impl.py", line 402, in _call_hook
+0.609     raise BackendUnavailable(
+0.609     ...<4 lines>...
+0.609     )
+0.609 pip._vendor.pyproject_hooks._impl.BackendUnavailable: Cannot import 'flit_core.buildapi'
+------
+WARNING: The "qiyK8" variable is not set. Defaulting to a blank string.
+Dockerfile:18
+--------------------
+|     # Instalar dependencias de erpnext sin tocar frappe (evita error de git repo)
+| >>> RUN pip install -e apps/erpnext --no-build-isolation && \
+| >>>     bench build --app erpnext && \
+| >>>     bench clear-cache
+|
+--------------------
+failed to solve: process "/bin/sh -c pip install -e apps/erpnext --no-build-isolation &&     bench build --app erpnext &&     bench clear-cache" did not complete successfully: exit code: 2
+Error: ❌ Docker command failed
+Error occurred ❌, check the logs for details.

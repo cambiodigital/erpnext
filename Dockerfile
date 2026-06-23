@@ -14,8 +14,10 @@ COPY --chown=frappe:frappe . /home/frappe/frappe-bench/apps/erpnext
 
 WORKDIR /home/frappe/frappe-bench
 
-# Instalar dependencias de erpnext sin tocar frappe (evita error de git repo)
-RUN pip install -e apps/erpnext --no-build-isolation && \
+# Install erpnext dependencies without touching frappe
+# --no-build-isolation removed: base image lacks flit_core, which pip must
+# install in an isolated build environment per PEP 517.
+RUN pip install -e apps/erpnext && \
     bench build --app erpnext && \
     bench clear-cache
 
