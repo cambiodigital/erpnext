@@ -14,10 +14,12 @@ COPY --chown=frappe:frappe . /home/frappe/frappe-bench/apps/erpnext
 
 WORKDIR /home/frappe/frappe-bench
 
-# Install erpnext dependencies without touching frappe
-# --no-build-isolation removed: base image lacks flit_core, which pip must
-# install in an isolated build environment per PEP 517.
-RUN pip install -e apps/erpnext && \
+# Install ERPNext Python and frontend dependencies before asset build.
+# `yarn install` is required because the copied app includes package.json
+# dependencies (for example `onscan.js`) that are not present in the base image.
+# `--no-build-isolation` stays removed so pip can install flit_core per PEP 517.
+RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench && \
+    pip install -e apps/erpnext && \
     bench build --app erpnext && \
     bench clear-cache
 
