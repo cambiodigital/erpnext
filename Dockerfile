@@ -25,8 +25,7 @@ RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-
     pip install -e apps/erpnext && \
     bench build --app erpnext
 
-COPY entrypoint.sh /home/frappe/frappe-bench/entrypoint.sh
-RUN chmod +x /home/frappe/frappe-bench/entrypoint.sh
+COPY --chown=frappe:frappe --chmod=755 entrypoint.sh /home/frappe/frappe-bench/entrypoint.sh
 
 EXPOSE 8000 9000
 

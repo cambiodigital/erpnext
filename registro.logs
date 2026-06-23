@@ -306,9 +306,9 @@ Receiving objects:  96% (5370/5593)
 Receiving objects:  97% (5426/5593)
 Receiving objects:  98% (5482/5593)
 Receiving objects:  99% (5538/5593)
-remote: Total 5593 (delta 1253), reused 3734 (delta 922), pack-reused 0 (from 0)
+remote: Total 5593 (delta 1253), reused 3733 (delta 922), pack-reused 0 (from 0)
 Receiving objects: 100% (5593/5593)
-Receiving objects: 100% (5593/5593), 12.72 MiB | 31.22 MiB/s, done.
+Receiving objects: 100% (5593/5593), 12.72 MiB | 31.68 MiB/s, done.
 Resolving deltas:   0% (0/1253)
 Resolving deltas:   1% (13/1253)
 Resolving deltas:   2% (26/1253)
@@ -318,7 +318,7 @@ Resolving deltas:   5% (63/1253)
 Resolving deltas:   6% (76/1253)
 Resolving deltas:   7% (88/1253)
 Resolving deltas:   8% (101/1253)
-Resolving deltas:   9% (113/1253)
+Resolving deltas:   9% (114/1253)
 Resolving deltas:  10% (126/1253)
 Resolving deltas:  11% (138/1253)
 Resolving deltas:  12% (151/1253)
@@ -328,7 +328,7 @@ Resolving deltas:  15% (188/1253)
 Resolving deltas:  16% (201/1253)
 Resolving deltas:  17% (214/1253)
 Resolving deltas:  18% (226/1253)
-Resolving deltas:  19% (240/1253)
+Resolving deltas:  19% (239/1253)
 Resolving deltas:  20% (251/1253)
 Resolving deltas:  21% (264/1253)
 Resolving deltas:  22% (276/1253)
@@ -338,14 +338,14 @@ Resolving deltas:  25% (314/1253)
 Resolving deltas:  26% (326/1253)
 Resolving deltas:  27% (339/1253)
 Resolving deltas:  28% (351/1253)
-Resolving deltas:  29% (365/1253)
-Resolving deltas:  30% (377/1253)
+Resolving deltas:  29% (364/1253)
+Resolving deltas:  30% (376/1253)
 Resolving deltas:  31% (389/1253)
-Resolving deltas:  32% (402/1253)
-Resolving deltas:  33% (414/1253)
-Resolving deltas:  34% (428/1253)
+Resolving deltas:  32% (401/1253)
+Resolving deltas:  33% (415/1253)
+Resolving deltas:  34% (427/1253)
 Resolving deltas:  35% (439/1253)
-Resolving deltas:  36% (453/1253)
+Resolving deltas:  36% (452/1253)
 Resolving deltas:  37% (464/1253)
 Resolving deltas:  38% (477/1253)
 Resolving deltas:  39% (489/1253)
@@ -358,7 +358,7 @@ Resolving deltas:  45% (564/1253)
 Resolving deltas:  46% (577/1253)
 Resolving deltas:  47% (589/1253)
 Resolving deltas:  48% (602/1253)
-Resolving deltas:  49% (615/1253)
+Resolving deltas:  49% (614/1253)
 Resolving deltas:  50% (627/1253)
 Resolving deltas:  51% (640/1253)
 Resolving deltas:  52% (652/1253)
@@ -380,17 +380,17 @@ Resolving deltas:  67% (840/1253)
 Resolving deltas:  68% (853/1253)
 Resolving deltas:  69% (865/1253)
 Resolving deltas:  70% (878/1253)
-Resolving deltas:  71% (892/1253)
+Resolving deltas:  71% (890/1253)
 Resolving deltas:  72% (903/1253)
 Resolving deltas:  73% (915/1253)
 Resolving deltas:  74% (928/1253)
 Resolving deltas:  75% (940/1253)
 Resolving deltas:  76% (953/1253)
-Resolving deltas:  77% (965/1253)
-Resolving deltas:  78% (978/1253)
+Resolving deltas:  77% (966/1253)
+Resolving deltas:  78% (979/1253)
 Resolving deltas:  79% (990/1253)
 Resolving deltas:  80% (1003/1253)
-Resolving deltas:  81% (1015/1253)
+Resolving deltas:  81% (1016/1253)
 Resolving deltas:  82% (1028/1253)
 Resolving deltas:  83% (1040/1253)
 Resolving deltas:  84% (1053/1253)
@@ -422,346 +422,411 @@ Resolving deltas: 100% (1253/1253), done.
 ║ Compose Type: docker-compose ✅                                              ║
 ║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
-time="2026-06-23T11:07:01Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
-time="2026-06-23T11:07:01Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
-time="2026-06-23T11:07:01Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
-time="2026-06-23T11:07:01Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+time="2026-06-23T11:22:49Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+time="2026-06-23T11:22:49Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+time="2026-06-23T11:22:49Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
+time="2026-06-23T11:22:49Z" level=warning msg="The \"qiyK8\" variable is not set. Defaulting to a blank string."
 Image erpnext-erp-oqdfvw-erpnext Building
 #1 [internal] load local bake definitions
 #1 reading from stdin 566B done
 #1 DONE 0.0s
 #2 [internal] load build definition from Dockerfile
-#2 transferring dockerfile: 1.09kB done
+#2 transferring dockerfile: 1.29kB done
 #2 DONE 0.0s
-#3 [internal] load metadata for docker.io/frappe/erpnext:v16
-#3 DONE 0.3s
+#3 [internal] load metadata for docker.io/frappe/erpnext:develop
+#3 DONE 0.6s
 #4 [internal] load .dockerignore
 #4 transferring context: 552B done
 #4 DONE 0.0s
-#5 [1/8] FROM docker.io/frappe/erpnext:v16@sha256:fb17c58c2b604139af4f7908fa790132914b79930c20f82516ca4f2064affb21
-#5 resolve docker.io/frappe/erpnext:v16@sha256:fb17c58c2b604139af4f7908fa790132914b79930c20f82516ca4f2064affb21 done
-#5 DONE 0.0s
+#5 [1/8] FROM docker.io/frappe/erpnext:develop@sha256:44cbd91393d9baa92e6d2da7b76a1b5e37ef488a651d1b4076f3f413ad2d6624
+#5 resolve docker.io/frappe/erpnext:develop@sha256:44cbd91393d9baa92e6d2da7b76a1b5e37ef488a651d1b4076f3f413ad2d6624 done
+#5 sha256:4564e4ed5d5cf65f6afba77c72d409da271f270fdd4fda0db21cdcb43719ad1f 0B / 455B 0.2s
+#5 sha256:4564e4ed5d5cf65f6afba77c72d409da271f270fdd4fda0db21cdcb43719ad1f 455B / 455B 0.2s done
+#5 sha256:ee53d28ae40e097a4fcd5cbb50dde5d0841b9ba41f6fbe91157f5c49edc581a1 335B / 335B 0.2s done
+#5 sha256:49179d6731d62e2bc1ca1645daec7fc07d8eae29b15671eaf90df57e13232dbb 0B / 11.23MB 0.2s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 0B / 291.47MB 0.2s
+#5 sha256:ad0467d48bc4740d60ce84fc62b392ca5416419cdc5696aa8f8163be163a91b1 387B / 387B 0.1s done
+#5 sha256:7fe355a238e9c34137573465a41436b345753b1a5c4c2b2f5999c55f5bb2aaa4 0B / 1.89kB 0.2s
+#5 sha256:6b8966b4bea370e8ca5af3495801e49850ebac3830d3fc3c1df6429c83b99438 675B / 675B 0.1s done
+#5 ...
 #6 [internal] load build context
-#6 transferring context: 124.51MB 0.6s done
+#6 transferring context: 124.52MB 0.6s done
 #6 DONE 0.6s
+#5 [1/8] FROM docker.io/frappe/erpnext:develop@sha256:44cbd91393d9baa92e6d2da7b76a1b5e37ef488a651d1b4076f3f413ad2d6624
+#5 sha256:7fe355a238e9c34137573465a41436b345753b1a5c4c2b2f5999c55f5bb2aaa4 1.89kB / 1.89kB 0.2s done
+#5 sha256:4505d83d2a3505eb1ed3d201f199a89f27b230980dcb9dfd32196f24cda36669 1.31kB / 1.31kB 0.2s done
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 18.87MB / 473.65MB 0.2s
+#5 sha256:49179d6731d62e2bc1ca1645daec7fc07d8eae29b15671eaf90df57e13232dbb 2.10MB / 11.23MB 0.6s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 58.72MB / 473.65MB 0.3s
+#5 sha256:49179d6731d62e2bc1ca1645daec7fc07d8eae29b15671eaf90df57e13232dbb 11.23MB / 11.23MB 0.8s done
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 32.51MB / 291.47MB 0.8s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 99.61MB / 473.65MB 0.5s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 139.46MB / 473.65MB 0.6s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 52.43MB / 291.47MB 1.1s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 179.31MB / 473.65MB 0.8s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 220.20MB / 473.65MB 0.9s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 260.05MB / 473.65MB 1.1s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 83.89MB / 291.47MB 1.5s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 299.89MB / 473.65MB 1.2s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 99.61MB / 291.47MB 1.7s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 340.79MB / 473.65MB 1.4s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 117.44MB / 291.47MB 1.8s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 380.63MB / 473.65MB 1.5s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 133.17MB / 291.47MB 2.0s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 421.53MB / 473.65MB 1.7s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 461.37MB / 473.65MB 1.8s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 150.99MB / 291.47MB 2.3s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 166.72MB / 291.47MB 2.6s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 189.79MB / 291.47MB 3.0s
+#5 sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 473.65MB / 473.65MB 2.4s done
+#5 extracting sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 218.10MB / 291.47MB 3.6s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 233.83MB / 291.47MB 3.9s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 253.76MB / 291.47MB 4.2s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 282.07MB / 291.47MB 4.7s
+#5 sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 291.47MB / 291.47MB 5.4s done
+#5 extracting sha256:b8fdb8ae1ac739a8e9e709c5c9e56f69b855987eaeaa8c515be421de450ce7ed 5.3s done
+#5 DONE 8.2s
+#5 [1/8] FROM docker.io/frappe/erpnext:develop@sha256:44cbd91393d9baa92e6d2da7b76a1b5e37ef488a651d1b4076f3f413ad2d6624
+#5 extracting sha256:4505d83d2a3505eb1ed3d201f199a89f27b230980dcb9dfd32196f24cda36669 done
+#5 extracting sha256:6b8966b4bea370e8ca5af3495801e49850ebac3830d3fc3c1df6429c83b99438 done
+#5 extracting sha256:ad0467d48bc4740d60ce84fc62b392ca5416419cdc5696aa8f8163be163a91b1 done
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 extracting sha256:7fe355a238e9c34137573465a41436b345753b1a5c4c2b2f5999c55f5bb2aaa4 done
+#5 extracting sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe
+#5 extracting sha256:05eb1e82ab56e4629e49dedca382141fe2309cf8e5fc43113766a25d628c04fe 10.4s done
+#5 DONE 18.7s
+#5 [1/8] FROM docker.io/frappe/erpnext:develop@sha256:44cbd91393d9baa92e6d2da7b76a1b5e37ef488a651d1b4076f3f413ad2d6624
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 extracting sha256:49179d6731d62e2bc1ca1645daec7fc07d8eae29b15671eaf90df57e13232dbb 0.1s done
+#5 DONE 18.8s
+#5 [1/8] FROM docker.io/frappe/erpnext:develop@sha256:44cbd91393d9baa92e6d2da7b76a1b5e37ef488a651d1b4076f3f413ad2d6624
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 extracting sha256:ee53d28ae40e097a4fcd5cbb50dde5d0841b9ba41f6fbe91157f5c49edc581a1 done
+#5 extracting sha256:4564e4ed5d5cf65f6afba77c72d409da271f270fdd4fda0db21cdcb43719ad1f done
+#5 DONE 18.8s
 #7 [2/8] RUN apt-get update && apt-get install -y --no-install-recommends     git     && rm -rf /var/lib/apt/lists/*
-#7 CACHED
+#7 0.183 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#7 0.216 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#7 0.217 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#7 0.306 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+#7 0.354 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+#7 0.413 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [312 kB]
+#7 0.974 Fetched 9363 kB in 1s (11.3 MB/s)
+#7 0.974 Reading package lists...
+#7 1.271 Reading package lists...
+#7 1.561 Building dependency tree...
+#7 1.642 Reading state information...
+#7 1.730 git is already the newest version (1:2.39.5-0+deb12u3).
+#7 1.730 0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.
+#7 DONE 1.8s
 #8 [3/8] RUN rm -rf /home/frappe/frappe-bench/apps/erpnext
-#8 CACHED
+#8 DONE 1.8s
 #9 [4/8] COPY --chown=frappe:frappe . /home/frappe/frappe-bench/apps/erpnext
-#9 DONE 1.3s
+#9 DONE 0.7s
 #10 [5/8] WORKDIR /home/frappe/frappe-bench
-#10 DONE 0.0s
-#11 [6/8] RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench &&     pip install -e apps/erpnext &&     bench build --app erpnext &&     bench clear-cache
-#11 0.292 yarn install v1.22.22
-#11 0.329 [1/4] Resolving packages...
-#11 0.333 [2/4] Fetching packages...
-#11 0.405 [3/4] Linking dependencies...
-#11 0.412 [4/4] Building fresh packages...
-#11 0.416 $ cd banking && yarn install
-#11 0.574 yarn install v1.22.22
-#11 0.608 [1/4] Resolving packages...
-#11 0.740 [2/4] Fetching packages...
-#11 6.311 [3/4] Linking dependencies...
-#11 6.323 warning Workspaces can only be enabled in private projects.
-#11 8.476 [4/4] Building fresh packages...
-#11 8.485 Done in 7.91s.
-#11 8.534 Done in 8.24s.
-#11 8.749 Defaulting to user installation because normal site-packages is not writeable
-#11 8.792 Obtaining file:///home/frappe/frappe-bench/apps/erpnext
-#11 8.794   Installing build dependencies: started
-#11 9.212   Installing build dependencies: finished with status 'done'
-#11 9.212   Checking if build backend supports build_editable: started
-#11 9.316   Checking if build backend supports build_editable: finished with status 'done'
-#11 9.317   Getting requirements to build editable: started
-#11 9.408   Getting requirements to build editable: finished with status 'done'
-#11 9.409   Preparing editable metadata (pyproject.toml): started
-#11 9.503   Preparing editable metadata (pyproject.toml): finished with status 'done'
-#11 9.562 Collecting Unidecode~=1.4.0 (from erpnext==17.0.0.dev0)
-#11 9.608   Downloading Unidecode-1.4.0-py3-none-any.whl.metadata (13 kB)
-#11 9.618 Collecting barcodenumber~=0.5.0 (from erpnext==17.0.0.dev0)
-#11 9.621   Downloading barcodenumber-0.5.0-py3-none-any.whl.metadata (1.5 kB)
-#11 9.927 Collecting rapidfuzz~=3.14.3 (from erpnext==17.0.0.dev0)
-#11 9.931   Downloading rapidfuzz-3.14.5-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (12 kB)
-#11 9.953 Collecting holidays~=0.87 (from erpnext==17.0.0.dev0)
-#11 9.956   Downloading holidays-0.99-py3-none-any.whl.metadata (53 kB)
-#11 9.981 Collecting googlemaps~=4.10.0 (from erpnext==17.0.0.dev0)
-#11 9.986   Downloading googlemaps-4.10.0.tar.gz (33 kB)
-#11 9.995   Installing build dependencies: started
-#11 10.82   Installing build dependencies: finished with status 'done'
-#11 10.82   Getting requirements to build wheel: started
-#11 11.11   Getting requirements to build wheel: finished with status 'done'
-#11 11.11   Installing backend dependencies: started
-#11 11.82   Installing backend dependencies: finished with status 'done'
-#11 11.82   Preparing metadata (pyproject.toml): started
-#11 12.01   Preparing metadata (pyproject.toml): finished with status 'done'
-#11 12.03 Collecting plaid-python~=7.2.1 (from erpnext==17.0.0.dev0)
-#11 12.03   Downloading plaid-python-7.2.1.tar.gz (18 kB)
-#11 12.04   Installing build dependencies: started
-#11 12.51   Installing build dependencies: finished with status 'done'
-#11 12.51   Getting requirements to build wheel: started
-#11 12.81   Getting requirements to build wheel: finished with status 'done'
-#11 12.81   Preparing metadata (pyproject.toml): started
-#11 12.98   Preparing metadata (pyproject.toml): finished with status 'done'
-#11 12.99 Collecting python-youtube~=0.9.8 (from erpnext==17.0.0.dev0)
-#11 12.99   Downloading python_youtube-0.9.9-py3-none-any.whl.metadata (7.8 kB)
-#11 13.00 Collecting pypng~=0.20220715.0 (from erpnext==17.0.0.dev0)
-#11 13.00   Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)
-#11 13.04 Collecting mt-940>=4.26.0 (from erpnext==17.0.0.dev0)
-#11 13.05   Downloading mt_940-5.0.0-py3-none-any.whl.metadata (9.0 kB)
-#11 13.06 Collecting pdfplumber>=0.11.0 (from erpnext==17.0.0.dev0)
-#11 13.06   Downloading pdfplumber-0.11.10-py3-none-any.whl.metadata (43 kB)
-#11 13.07 Collecting python-stdnum (from barcodenumber~=0.5.0->erpnext==17.0.0.dev0)
-#11 13.08   Downloading python_stdnum-2.2-py3-none-any.whl.metadata (19 kB)
-#11 13.08 Requirement already satisfied: requests<3.0,>=2.20.0 in /usr/local/lib/python3.14/site-packages (from googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2.33.1)
-#11 13.08 Requirement already satisfied: python-dateutil<3,>=2.9.0.post0 in /usr/local/lib/python3.14/site-packages (from holidays~=0.87->erpnext==17.0.0.dev0) (2.9.0.post0)
-#11 13.08 Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.14/site-packages (from python-dateutil<3,>=2.9.0.post0->holidays~=0.87->erpnext==17.0.0.dev0) (1.17.0)
-#11 13.09 Collecting dataclasses-json<1.0.0,>=0.6.0 (from python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.10   Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
-#11 13.11 Collecting isodate<1.0.0,>=0.6.1 (from python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.11   Downloading isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
-#11 13.12 Collecting requests-oauthlib<3.0.0,>=1.3.0 (from python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.12   Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
-#11 13.15 Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.15   Downloading marshmallow-3.26.2-py3-none-any.whl.metadata (7.3 kB)
-#11 13.16 Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.16   Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
-#11 13.18 Collecting packaging>=17.0 (from marshmallow<4.0.0,>=3.18.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.18   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
-#11 13.18 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (3.4.7)
-#11 13.18 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (3.18)
-#11 13.18 Requirement already satisfied: urllib3<3,>=1.26 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2.7.0)
-#11 13.18 Requirement already satisfied: certifi>=2023.5.7 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2026.6.17)
-#11 13.19 Collecting oauthlib>=3.0.0 (from requests-oauthlib<3.0.0,>=1.3.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.19   Downloading oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
-#11 13.20 Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.20   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
-#11 13.21 Collecting typing-extensions>=3.7.4 (from typing-inspect<1,>=0.4.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
-#11 13.22   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
-#11 13.23 Collecting pdfminer.six==20260107 (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
-#11 13.23   Downloading pdfminer_six-20260107-py3-none-any.whl.metadata (4.3 kB)
-#11 13.32 Collecting Pillow>=12.2.0 (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
-#11 13.32   Downloading pillow-12.2.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
-#11 13.37 Collecting pypdfium2>=5.9.0 (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
-#11 13.38   Downloading pypdfium2-5.10.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (70 kB)
-#11 13.51 Collecting cryptography>=36.0.0 (from pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
-#11 13.51   Downloading cryptography-49.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
-#11 13.57 Collecting cffi>=2.0.0 (from cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
-#11 13.57   Downloading cffi-2.0.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
-#11 13.58 Collecting pycparser (from cffi>=2.0.0->cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
-#11 13.58   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
-#11 13.59 Downloading barcodenumber-0.5.0-py3-none-any.whl (16 kB)
-#11 13.59 Downloading holidays-0.99-py3-none-any.whl (1.5 MB)
-#11 13.60    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 249.7 MB/s  0:00:00
-#11 13.61 Downloading pypng-0.20220715.0-py3-none-any.whl (58 kB)
-#11 13.61 Downloading python_youtube-0.9.9-py3-none-any.whl (83 kB)
-#11 13.62 Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
-#11 13.62 Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
-#11 13.63 Downloading marshmallow-3.26.2-py3-none-any.whl (50 kB)
-#11 13.63 Downloading rapidfuzz-3.14.5-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
-#11 13.65    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 187.8 MB/s  0:00:00
-#11 13.65 Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
-#11 13.66 Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
-#11 13.66 Downloading Unidecode-1.4.0-py3-none-any.whl (235 kB)
-#11 13.67 Downloading mt_940-5.0.0-py3-none-any.whl (29 kB)
-#11 13.67 Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
-#11 13.67 Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
-#11 13.68 Downloading packaging-26.2-py3-none-any.whl (100 kB)
-#11 13.68 Downloading pdfplumber-0.11.10-py3-none-any.whl (60 kB)
-#11 13.69 Downloading pdfminer_six-20260107-py3-none-any.whl (6.6 MB)
-#11 13.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 331.8 MB/s  0:00:00
-#11 13.71 Downloading cryptography-49.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
-#11 13.73    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 255.8 MB/s  0:00:00
-#11 13.73 Downloading cffi-2.0.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
-#11 13.74 Downloading pillow-12.2.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
-#11 13.76    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 293.5 MB/s  0:00:00
-#11 13.77 Downloading pypdfium2-5.10.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.7 MB)
-#11 13.78    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 326.6 MB/s  0:00:00
-#11 13.78 Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
-#11 13.79 Downloading pycparser-3.0-py3-none-any.whl (48 kB)
-#11 13.79 Downloading python_stdnum-2.2-py3-none-any.whl (1.2 MB)
-#11 13.80    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 234.9 MB/s  0:00:00
-#11 13.83 Building wheels for collected packages: erpnext, googlemaps, plaid-python
-#11 13.83   Building editable for erpnext (pyproject.toml): started
-#11 13.93   Building editable for erpnext (pyproject.toml): finished with status 'done'
-#11 13.93   Created wheel for erpnext: filename=erpnext-17.0.0.dev0-py3-none-any.whl size=4325 sha256=d022c636f2e7c9d4de44255bd079dd90635d1dded4120e2211bc05980a81264a
-#11 13.93   Stored in directory: /tmp/pip-ephem-wheel-cache-agp5roks/wheels/51/c4/ec/63c96de8822ac54a849211b8932a9f9df68607d91a6267864b
-#11 13.93   Building wheel for googlemaps (pyproject.toml): started
-#11 14.14   Building wheel for googlemaps (pyproject.toml): finished with status 'done'
-#11 14.14   Created wheel for googlemaps: filename=googlemaps-4.10.0-py3-none-any.whl size=40820 sha256=8bd1c9e11792621236b8f3dbc3b22adfe3b7a25081bb074033a8321078a625d5
-#11 14.14   Stored in directory: /home/frappe/.cache/pip/wheels/9c/2b/39/1ed6b1fe20a5a10b030d2f27a3959b70d89552eee40634a673
-#11 14.14   Building wheel for plaid-python (pyproject.toml): started
-#11 14.34   Building wheel for plaid-python (pyproject.toml): finished with status 'done'
-#11 14.34   Created wheel for plaid-python: filename=plaid_python-7.2.1-py3-none-any.whl size=32108 sha256=f6505f044c5a239146e46fabfa665c6f6078a19f6f95033e64da9172c8fa4b69
-#11 14.34   Stored in directory: /home/frappe/.cache/pip/wheels/ac/01/fd/cceadafab9e01113db5a82c2dd4e00486bd07f82fd9499513a
-#11 14.34 Successfully built erpnext googlemaps plaid-python
-#11 14.39 Installing collected packages: pypng, Unidecode, typing-extensions, rapidfuzz, python-stdnum, pypdfium2, pycparser, Pillow, packaging, oauthlib, mypy-extensions, mt-940, isodate, typing-inspect, requests-oauthlib, plaid-python, marshmallow, holidays, googlemaps, cffi, barcodenumber, dataclasses-json, cryptography, python-youtube, pdfminer.six, pdfplumber, erpnext
-#11 14.51   WARNING: The script unidecode is installed in '/home/frappe/.local/bin' which is not on PATH.
-#11 14.51   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-#11 14.91   WARNING: The script pypdfium2 is installed in '/home/frappe/.local/bin' which is not on PATH.
-#11 14.91   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-#11 15.89   WARNING: The script holidays-ics is installed in '/home/frappe/.local/bin' which is not on PATH.
-#11 15.89   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-#11 16.34   WARNING: The script pdfplumber is installed in '/home/frappe/.local/bin' which is not on PATH.
-#11 16.34   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-#11 16.35
-#11 16.35 Successfully installed Pillow-12.2.0 Unidecode-1.4.0 barcodenumber-0.5.0 cffi-2.0.0 cryptography-49.0.0 dataclasses-json-0.6.7 erpnext-17.0.0.dev0 googlemaps-4.10.0 holidays-0.99 isodate-0.7.2 marshmallow-3.26.2 mt-940-5.0.0 mypy-extensions-1.1.0 oauthlib-3.3.1 packaging-26.2 pdfminer.six-20260107 pdfplumber-0.11.10 plaid-python-7.2.1 pycparser-3.0 pypdfium2-5.10.1 pypng-0.20220715.0 python-stdnum-2.2 python-youtube-0.9.9 rapidfuzz-3.14.5 requests-oauthlib-2.0.0 typing-extensions-4.15.0 typing-inspect-0.9.0
-#11 16.43
-#11 16.43 [notice] A new release of pip is available: 25.3 -> 26.1.2
-#11 16.43 [notice] To update, run: pip install --upgrade pip
-#11 17.30 Linking /home/frappe/frappe-bench/apps/frappe/frappe/public to ./assets/frappe  
+#10 DONE 0.1s
+#11 [6/8] RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench &&     pip install -e apps/erpnext &&     bench build --app erpnext
+#11 0.410 yarn install v1.22.22
+#11 0.450 [1/4] Resolving packages...
+#11 0.454 [2/4] Fetching packages...
+#11 0.527 [3/4] Linking dependencies...
+#11 0.534 [4/4] Building fresh packages...
+#11 0.540 $ cd banking && yarn install
+#11 0.707 yarn install v1.22.22
+#11 0.743 [1/4] Resolving packages...
+#11 0.884 [2/4] Fetching packages...
+#11 6.690 [3/4] Linking dependencies...
+#11 6.701 warning Workspaces can only be enabled in private projects.
+#11 8.978 [4/4] Building fresh packages...
+#11 8.985 Done in 8.28s.
+#11 9.030 Done in 8.62s.
+#11 9.288 Defaulting to user installation because normal site-packages is not writeable
+#11 9.333 Obtaining file:///home/frappe/frappe-bench/apps/erpnext
+#11 9.335   Installing build dependencies: started
+#11 9.742   Installing build dependencies: finished with status 'done'
+#11 9.743   Checking if build backend supports build_editable: started
+#11 9.841   Checking if build backend supports build_editable: finished with status 'done'
+#11 9.842   Getting requirements to build editable: started
+#11 9.938   Getting requirements to build editable: finished with status 'done'
+#11 9.939   Preparing editable metadata (pyproject.toml): started
+#11 10.04   Preparing editable metadata (pyproject.toml): finished with status 'done'
+#11 10.09 Collecting Unidecode~=1.4.0 (from erpnext==17.0.0.dev0)
+#11 10.14   Downloading Unidecode-1.4.0-py3-none-any.whl.metadata (13 kB)
+#11 10.17 Collecting barcodenumber~=0.5.0 (from erpnext==17.0.0.dev0)
+#11 10.18   Downloading barcodenumber-0.5.0-py3-none-any.whl.metadata (1.5 kB)
+#11 10.49 Collecting rapidfuzz~=3.14.3 (from erpnext==17.0.0.dev0)
+#11 10.49   Downloading rapidfuzz-3.14.5-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (12 kB)
+#11 10.54 Collecting holidays~=0.87 (from erpnext==17.0.0.dev0)
+#11 10.54   Downloading holidays-0.99-py3-none-any.whl.metadata (53 kB)
+#11 10.59 Collecting googlemaps~=4.10.0 (from erpnext==17.0.0.dev0)
+#11 10.59   Downloading googlemaps-4.10.0.tar.gz (33 kB)
+#11 10.60   Installing build dependencies: started
+#11 11.17   Installing build dependencies: finished with status 'done'
+#11 11.17   Getting requirements to build wheel: started
+#11 11.42   Getting requirements to build wheel: finished with status 'done'
+#11 11.42   Installing backend dependencies: started
+#11 12.04   Installing backend dependencies: finished with status 'done'
+#11 12.05   Preparing metadata (pyproject.toml): started
+#11 12.24   Preparing metadata (pyproject.toml): finished with status 'done'
+#11 12.28 Collecting plaid-python~=7.2.1 (from erpnext==17.0.0.dev0)
+#11 12.28   Downloading plaid-python-7.2.1.tar.gz (18 kB)
+#11 12.29   Installing build dependencies: started
+#11 12.75   Installing build dependencies: finished with status 'done'
+#11 12.75   Getting requirements to build wheel: started
+#11 13.07   Getting requirements to build wheel: finished with status 'done'
+#11 13.07   Preparing metadata (pyproject.toml): started
+#11 13.25   Preparing metadata (pyproject.toml): finished with status 'done'
+#11 13.32 Collecting python-youtube~=0.9.8 (from erpnext==17.0.0.dev0)
+#11 13.32   Downloading python_youtube-0.9.9-py3-none-any.whl.metadata (7.8 kB)
+#11 13.41 Collecting pypng~=0.20220715.0 (from erpnext==17.0.0.dev0)
+#11 13.41   Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)
+#11 13.46 Collecting mt-940>=4.26.0 (from erpnext==17.0.0.dev0)
+#11 13.46   Downloading mt_940-5.0.0-py3-none-any.whl.metadata (9.0 kB)
+#11 13.47 Collecting pdfplumber>=0.11.0 (from erpnext==17.0.0.dev0)
+#11 13.48   Downloading pdfplumber-0.11.10-py3-none-any.whl.metadata (43 kB)
+#11 13.52 Collecting python-stdnum (from barcodenumber~=0.5.0->erpnext==17.0.0.dev0)
+#11 13.52   Downloading python_stdnum-2.2-py3-none-any.whl.metadata (19 kB)
+#11 13.53 Requirement already satisfied: requests<3.0,>=2.20.0 in /usr/local/lib/python3.14/site-packages (from googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2.33.1)
+#11 13.53 Requirement already satisfied: python-dateutil<3,>=2.9.0.post0 in /usr/local/lib/python3.14/site-packages (from holidays~=0.87->erpnext==17.0.0.dev0) (2.9.0.post0)
+#11 13.53 Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.14/site-packages (from python-dateutil<3,>=2.9.0.post0->holidays~=0.87->erpnext==17.0.0.dev0) (1.17.0)
+#11 13.57 Collecting dataclasses-json<1.0.0,>=0.6.0 (from python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.57   Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+#11 13.58 Collecting isodate<1.0.0,>=0.6.1 (from python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.58   Downloading isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
+#11 13.59 Collecting requests-oauthlib<3.0.0,>=1.3.0 (from python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.59   Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+#11 13.62 Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.62   Downloading marshmallow-3.26.2-py3-none-any.whl.metadata (7.3 kB)
+#11 13.66 Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.66   Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+#11 13.67 Collecting packaging>=17.0 (from marshmallow<4.0.0,>=3.18.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.67   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+#11 13.68 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (3.4.7)
+#11 13.68 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (3.18)
+#11 13.68 Requirement already satisfied: urllib3<3,>=1.26 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2.7.0)
+#11 13.68 Requirement already satisfied: certifi>=2023.5.7 in /usr/local/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2026.6.17)
+#11 13.69 Collecting oauthlib>=3.0.0 (from requests-oauthlib<3.0.0,>=1.3.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.69   Downloading oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
+#11 13.70 Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.70   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+#11 13.72 Collecting typing-extensions>=3.7.4 (from typing-inspect<1,>=0.4.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0)
+#11 13.72   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+#11 13.73 Collecting pdfminer.six==20260107 (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
+#11 13.73   Downloading pdfminer_six-20260107-py3-none-any.whl.metadata (4.3 kB)
+#11 13.83 Collecting Pillow>=12.2.0 (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
+#11 13.83   Downloading pillow-12.2.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+#11 13.88 Collecting pypdfium2>=5.9.0 (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
+#11 13.89   Downloading pypdfium2-5.10.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (70 kB)
+#11 14.02 Collecting cryptography>=36.0.0 (from pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
+#11 14.02   Downloading cryptography-49.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+#11 14.08 Collecting cffi>=2.0.0 (from cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
+#11 14.08   Downloading cffi-2.0.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+#11 14.09 Collecting pycparser (from cffi>=2.0.0->cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0)
+#11 14.09   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+#11 14.10 Downloading barcodenumber-0.5.0-py3-none-any.whl (16 kB)
+#11 14.11 Downloading holidays-0.99-py3-none-any.whl (1.5 MB)
+#11 14.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 24.4 MB/s  0:00:00
+#11 14.20 Downloading pypng-0.20220715.0-py3-none-any.whl (58 kB)
+#11 14.20 Downloading python_youtube-0.9.9-py3-none-any.whl (83 kB)
+#11 14.21 Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+#11 14.21 Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+#11 14.21 Downloading marshmallow-3.26.2-py3-none-any.whl (50 kB)
+#11 14.22 Downloading rapidfuzz-3.14.5-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
+#11 14.24    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 192.3 MB/s  0:00:00
+#11 14.24 Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+#11 14.24 Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+#11 14.25 Downloading Unidecode-1.4.0-py3-none-any.whl (235 kB)
+#11 14.25 Downloading mt_940-5.0.0-py3-none-any.whl (29 kB)
+#11 14.26 Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+#11 14.26 Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
+#11 14.27 Downloading packaging-26.2-py3-none-any.whl (100 kB)
+#11 14.27 Downloading pdfplumber-0.11.10-py3-none-any.whl (60 kB)
+#11 14.28 Downloading pdfminer_six-20260107-py3-none-any.whl (6.6 MB)
+#11 14.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 187.3 MB/s  0:00:00
+#11 14.32 Downloading cryptography-49.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+#11 14.34    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 253.7 MB/s  0:00:00
+#11 14.34 Downloading cffi-2.0.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
+#11 14.35 Downloading pillow-12.2.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+#11 14.39    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 182.3 MB/s  0:00:00
+#11 14.39 Downloading pypdfium2-5.10.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.7 MB)
+#11 14.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 130.1 MB/s  0:00:00
+#11 14.43 Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+#11 14.43 Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+#11 14.44 Downloading python_stdnum-2.2-py3-none-any.whl (1.2 MB)
+#11 14.47    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 42.0 MB/s  0:00:00
+#11 14.51 Building wheels for collected packages: erpnext, googlemaps, plaid-python
+#11 14.51   Building editable for erpnext (pyproject.toml): started
+#11 14.61   Building editable for erpnext (pyproject.toml): finished with status 'done'
+#11 14.61   Created wheel for erpnext: filename=erpnext-17.0.0.dev0-py3-none-any.whl size=4325 sha256=d022c636f2e7c9d4de44255bd079dd90635d1dded4120e2211bc05980a81264a
+#11 14.61   Stored in directory: /tmp/pip-ephem-wheel-cache-ihi8k976/wheels/51/c4/ec/63c96de8822ac54a849211b8932a9f9df68607d91a6267864b
+#11 14.62   Building wheel for googlemaps (pyproject.toml): started
+#11 14.81   Building wheel for googlemaps (pyproject.toml): finished with status 'done'
+#11 14.82   Created wheel for googlemaps: filename=googlemaps-4.10.0-py3-none-any.whl size=40820 sha256=5cf0488057ab89091035e0f60227f60bc3e5201cba8c498edd3ec0d2ddf0347c
+#11 14.82   Stored in directory: /home/frappe/.cache/pip/wheels/9c/2b/39/1ed6b1fe20a5a10b030d2f27a3959b70d89552eee40634a673
+#11 14.82   Building wheel for plaid-python (pyproject.toml): started
+#11 15.03   Building wheel for plaid-python (pyproject.toml): finished with status 'done'
+#11 15.03   Created wheel for plaid-python: filename=plaid_python-7.2.1-py3-none-any.whl size=32108 sha256=d45f344f0c29df542ef280178424bca1f58df12850099d3bf028388a8657fd03
+#11 15.03   Stored in directory: /home/frappe/.cache/pip/wheels/ac/01/fd/cceadafab9e01113db5a82c2dd4e00486bd07f82fd9499513a
+#11 15.03 Successfully built erpnext googlemaps plaid-python
+#11 15.07 Installing collected packages: pypng, Unidecode, typing-extensions, rapidfuzz, python-stdnum, pypdfium2, pycparser, Pillow, packaging, oauthlib, mypy-extensions, mt-940, isodate, typing-inspect, requests-oauthlib, plaid-python, marshmallow, holidays, googlemaps, cffi, barcodenumber, dataclasses-json, cryptography, python-youtube, pdfminer.six, pdfplumber, erpnext
+#11 15.19   WARNING: The script unidecode is installed in '/home/frappe/.local/bin' which is not on PATH.
+#11 15.19   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+#11 15.57   WARNING: The script pypdfium2 is installed in '/home/frappe/.local/bin' which is not on PATH.
+#11 15.57   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+#11 16.53   WARNING: The script holidays-ics is installed in '/home/frappe/.local/bin' which is not on PATH.
+#11 16.53   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+#11 16.98   WARNING: The script pdfplumber is installed in '/home/frappe/.local/bin' which is not on PATH.
+#11 16.98   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+#11 16.99
+#11 16.99 Successfully installed Pillow-12.2.0 Unidecode-1.4.0 barcodenumber-0.5.0 cffi-2.0.0 cryptography-49.0.0 dataclasses-json-0.6.7 erpnext-17.0.0.dev0 googlemaps-4.10.0 holidays-0.99 isodate-0.7.2 marshmallow-3.26.2 mt-940-5.0.0 mypy-extensions-1.1.0 oauthlib-3.3.1 packaging-26.2 pdfminer.six-20260107 pdfplumber-0.11.10 plaid-python-7.2.1 pycparser-3.0 pypdfium2-5.10.1 pypng-0.20220715.0 python-stdnum-2.2 python-youtube-0.9.9 rapidfuzz-3.14.5 requests-oauthlib-2.0.0 typing-extensions-4.15.0 typing-inspect-0.9.0
+#11 17.08
+#11 17.08 [notice] A new release of pip is available: 25.3 -> 26.1.2
+#11 17.08 [notice] To update, run: pip install --upgrade pip
+#11 18.02 Linking /home/frappe/frappe-bench/apps/frappe/frappe/public to ./assets/frappe  
 Linking /home/frappe/frappe-bench/apps/frappe/node_modules to ./assets/frappe/node_modules                                                                                
 Linking /home/frappe/frappe-bench/apps/erpnext/erpnext/public to ./assets/erpnext                                                                                
 Linking /home/frappe/frappe-bench/apps/erpnext/node_modules to ./assets/erpnext/node_modules                                                                                
 ✔ Application Assets Linked
-#11 17.30
-#11 17.31
-#11 17.45 yarn run v1.22.22
-#11 17.48 $ node esbuild --production --apps erpnext --run-build-command
-#11 18.17 Browserslist: caniuse-lite is outdated. Please run:
-#11 18.17   npx update-browserslist-db@latest
-#11 18.17   Why you should do it regularly: https://github.com/browserslist/update-db#readme
-#11 18.45 File                                                        Size
-#11 18.45
-#11 18.45 erpnext/dist/js/
-#11 18.45 ├─ bank-reconciliation-tool.bundle.3OD5XE4B.js              17.65 Kb
-#11 18.45 ├─ erpnext.bundle.JUXTO4V6.js                               261.09 Kb
-#11 18.45 ├─ item-dashboard.bundle.7LUKZCYJ.js                        10.52 Kb
-#11 18.45 ├─ point-of-sale.bundle.QNTVVHWJ.js                         106.38 Kb
-#11 18.45 └─ bom_configurator.bundle.KVVOL5AV.js                      10.68 Kb
-#11 18.45
-#11 18.45 erpnext/dist/css/
-#11 18.45 ├─ erpnext-web.bundle.VSIT73M2.css                          2.86 Kb
-#11 18.45 ├─ erpnext.bundle.WFDQQANS.css                              52.03 Kb
-#11 18.45 └─ erpnext_email.bundle.HZKDEKI5.css                        0.56 Kb
-#11 18.45
-#11 18.45 erpnext/dist/css-rtl/
-#11 18.45 ├─ erpnext-web.bundle.SDTEXGF3.css                          2.87 Kb
-#11 18.45 ├─ erpnext.bundle.INGKFFWR.css                              52.03 Kb
-#11 18.45 └─ erpnext_email.bundle.UM6OV6BV.css                        0.56 Kb
-#11 18.45
-#11 18.45  DONE  Total Build Time: 526.117ms
-#11 18.45
-#11 18.56  WARN  Cannot connect to redis_cache to update assets_json
-#11 18.57  WARN  Cannot connect to redis_cache to update assets_json
-#11 18.57  WARN  Cannot connect to redis_cache to update assets_json
-#11 18.57
-#11 18.57 Running build command for erpnext
-#11 18.70 $ cd banking && yarn build
-#11 18.84 $ vite build --base=/assets/erpnext/banking/ && yarn copy-html-entry
-#11 19.10 vite v8.0.16 building client environment for production...
-#11 19.11 [2K
+#11 18.02
+#11 18.03
+#11 18.19 yarn run v1.22.22
+#11 18.21 $ node esbuild --production --apps erpnext --run-build-command
+#11 18.87 Browserslist: caniuse-lite is outdated. Please run:
+#11 18.87   npx update-browserslist-db@latest
+#11 18.87   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+#11 19.13 File                                                        Size
+#11 19.13
+#11 19.13 erpnext/dist/js/
+#11 19.13 ├─ bank-reconciliation-tool.bundle.2ZPCNFSA.js              17.65 Kb
+#11 19.13 ├─ erpnext.bundle.GUOGZ53C.js                               260.94 Kb
+#11 19.13 ├─ item-dashboard.bundle.U2KM2WY3.js                        10.52 Kb
+#11 19.13 ├─ point-of-sale.bundle.TB5FC4PQ.js                         106.31 Kb
+#11 19.13 └─ bom_configurator.bundle.LTY5WACP.js                      10.68 Kb
+#11 19.13
+#11 19.13 erpnext/dist/css/
+#11 19.13 ├─ erpnext-web.bundle.CWN5VOPN.css                          2.85 Kb
+#11 19.13 ├─ erpnext.bundle.X2TTK7YB.css                              52.01 Kb
+#11 19.13 └─ erpnext_email.bundle.TUHRKCTC.css                        0.56 Kb
+#11 19.13
+#11 19.13 erpnext/dist/css-rtl/
+#11 19.13 ├─ erpnext-web.bundle.UQ4MFBEH.css                          2.85 Kb
+#11 19.13 ├─ erpnext.bundle.6LOCXZZU.css                              52.02 Kb
+#11 19.13 └─ erpnext_email.bundle.2JXPUKD3.css                        0.56 Kb
+#11 19.13
+#11 19.13  DONE  Total Build Time: 488.188ms
+#11 19.13
+#11 19.24  WARN  Cannot connect to redis_cache to update assets_json
+#11 19.25  WARN  Cannot connect to redis_cache to update assets_json
+#11 19.25  WARN  Cannot connect to redis_cache to update assets_json
+#11 19.25
+#11 19.25 Running build command for erpnext
+#11 19.38 $ cd banking && yarn build
+#11 19.52 $ vite build --base=/assets/erpnext/banking/ && yarn copy-html-entry
+#11 19.75 vite v8.0.16 building client environment for production...
+#11 19.76 [2K
 transforming...
-#11 19.37 /assets/frappe/css/fonts/inter/InterVariable-Italic.woff2 referenced in /assets/frappe/css/fonts/inter/InterVariable-Italic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
-#11 19.37
-#11 19.37 /assets/frappe/css/fonts/inter/InterVariable.woff2 referenced in /assets/frappe/css/fonts/inter/InterVariable.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
-#11 19.46 ✓ 3480 modules transformed.
-#11 19.61 rendering chunks...
-#11 19.72 computing gzip size...
-#11 19.72 ../erpnext/public/banking/index.html                                                3.36 kB │ gzip:   1.09 kB
-#11 19.72 ../erpnext/public/banking/assets/index-DHdJT5VH.css                               246.29 kB │ gzip:  24.23 kB
-#11 19.72 ../erpnext/public/banking/assets/MissingFiltersBanner-lpjdEgkJ.js                   0.30 kB │ gzip:   0.23 kB
-#11 19.72 ../erpnext/public/banking/assets/rolldown-runtime-CacB07dV.js                       0.73 kB │ gzip:   0.43 kB
-#11 19.72 ../erpnext/public/banking/assets/FileUploadBanner-DYQyjc8g.js                       1.11 kB │ gzip:   0.60 kB
-#11 19.72 ../erpnext/public/banking/assets/import_utils-BRi3ZutF.js                           1.42 kB │ gzip:   0.58 kB
-#11 19.72 ../erpnext/public/banking/assets/checkbox-uO0R403W.js                               1.58 kB │ gzip:   0.65 kB
-#11 19.72 ../erpnext/public/banking/assets/CSVImport-BAP7Icu1.js                              1.87 kB │ gzip:   0.93 kB
-#11 19.72 ../erpnext/public/banking/assets/ViewBankStatementImportLog-CD8PnoqB.js             1.99 kB │ gzip:   0.93 kB
-#11 19.72 ../erpnext/public/banking/assets/SelectedTransactionDetails-C1RdKjlw.js             2.35 kB │ gzip:   0.89 kB
-#11 19.72 ../erpnext/public/banking/assets/BankTransactionUnreconcileModalBody-DX82hEeS.js    2.97 kB │ gzip:   1.22 kB
-#11 19.72 ../erpnext/public/banking/assets/dialog-CucNlxWB.js                                 3.19 kB │ gzip:   1.19 kB
-#11 19.72 ../erpnext/public/banking/assets/IncorrectlyClearedEntries-C2ZXyo8i.js              4.46 kB │ gzip:   1.90 kB
-#11 19.72 ../erpnext/public/banking/assets/BankReconciliationStatement-Cp2WoJnJ.js            6.06 kB │ gzip:   2.15 kB
-#11 19.72 ../erpnext/public/banking/assets/list-view-BbSpi9ox.js                              7.19 kB │ gzip:   2.95 kB
-#11 19.72 ../erpnext/public/banking/assets/button-DvpwTnge.js                                 7.40 kB │ gzip:   1.49 kB
-#11 19.72 ../erpnext/public/banking/assets/BankClearanceSummary-AvoPwUQu.js                   7.54 kB │ gzip:   2.75 kB
-#11 19.72 ../erpnext/public/banking/assets/BankStatementImporter-B6a-IQkW.js                  8.20 kB │ gzip:   2.84 kB
-#11 19.72 ../erpnext/public/banking/assets/BankTransactionList-B4GYyJRA.js                    8.91 kB │ gzip:   2.89 kB
-#11 19.72 ../erpnext/public/banking/assets/PDFImport-Djf2VI1f.js                              9.75 kB │ gzip:   3.47 kB
-#11 19.72 ../erpnext/public/banking/assets/vendor-jotai-4TSuf7UH.js                          10.08 kB │ gzip:   4.23 kB
-#11 19.72 ../erpnext/public/banking/assets/ActionLogDialogBody-Condwi18.js                   12.39 kB │ gzip:   3.41 kB
-#11 19.72 ../erpnext/public/banking/assets/TransferModalContent-DOox9MnP.js                  12.57 kB │ gzip:   3.90 kB
-#11 19.72 ../erpnext/public/banking/assets/BankEntryModalContent-DPUMMI8r.js                 14.74 kB │ gzip:   4.65 kB
-#11 19.72 ../erpnext/public/banking/assets/StatementDetails-D6-45FgC.js                      14.89 kB │ gzip:   4.15 kB
-#11 19.72 ../erpnext/public/banking/assets/vendor-lucide-B-frwjrw.js                         15.40 kB │ gzip:   5.37 kB
-#11 19.72 ../erpnext/public/banking/assets/vendor-fuse-f1wNO_vj.js                           24.39 kB │ gzip:   8.70 kB
-#11 19.72 ../erpnext/public/banking/assets/RecordPaymentModalContent-BnSwSg3B.js             25.61 kB │ gzip:   6.92 kB
-#11 19.72 ../erpnext/public/banking/assets/typography-BuVijSvj.js                            62.32 kB │ gzip:  19.64 kB
-#11 19.72 ../erpnext/public/banking/assets/vendor-tanstack-Dqu2uiyk.js                       66.60 kB │ gzip:  17.41 kB
-#11 19.72 ../erpnext/public/banking/assets/file-dropzone-C-nmzRIl.js                         71.98 kB │ gzip:  20.60 kB
-#11 19.72 ../erpnext/public/banking/assets/SettingsPanelsContent-CJbJrj0v.js                 84.19 kB │ gzip:  24.37 kB
-#11 19.72 ../erpnext/public/banking/assets/vendor-frappe-DNkB20qR.js                        133.97 kB │ gzip:  42.88 kB
-#11 19.72 ../erpnext/public/banking/assets/vendor-radix-Vt1qfjJS.js                         146.04 kB │ gzip:  44.78 kB
-#11 19.72 ../erpnext/public/banking/assets/vendor-react-bMZmfznu.js                         178.57 kB │ gzip:  56.37 kB
-#11 19.72 ../erpnext/public/banking/assets/error-banner-Dd_SdXKr.js                         356.82 kB │ gzip: 107.28 kB
-#11 19.72 ../erpnext/public/banking/assets/index--4-623AN.js                                361.19 kB │ gzip: 104.68 kB
-#11 19.72
-#11 19.72 ✓ built in 617ms
-#11 19.90 $ cp ../erpnext/public/banking/index.html ../erpnext/www/banking.html
-#11 19.97 Done in 2.52s.
-#11 20.02 Compiling translations for erpnext
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ru/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/nl/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/eo/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/id/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/bs/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/es/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fr/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh_TW/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pl/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hu/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ta/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ko/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr_CS/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hi/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt_BR/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fi/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/nb/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/my/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/cs/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/tr/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/vi/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ar/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fa/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sl/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/it/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/de/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/erpnext.mo
-#11 21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/erpnext.mo
-#11 22.55 Usage: bench  clear-cache [OPTIONS]
-#11 22.55 Try 'bench  clear-cache --help' for help.
-#11 22.55
-#11 22.55 Error: Please specify --site sitename
-#11 ERROR: process "/bin/sh -c cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench &&     pip install -e apps/erpnext &&     bench build --app erpnext &&     bench clear-cache" did not complete successfully: exit code: 2
+#11 20.02 /assets/frappe/css/fonts/inter/InterVariable.woff2 referenced in /assets/frappe/css/fonts/inter/InterVariable.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+#11 20.02
+#11 20.02 /assets/frappe/css/fonts/inter/InterVariable-Italic.woff2 referenced in /assets/frappe/css/fonts/inter/InterVariable-Italic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+#11 20.09 ✓ 3480 modules transformed.
+#11 20.22 rendering chunks...
+#11 20.33 computing gzip size...
+#11 20.34 ../erpnext/public/banking/index.html                                                3.36 kB │ gzip:   1.09 kB
+#11 20.34 ../erpnext/public/banking/assets/index-DHdJT5VH.css                               246.29 kB │ gzip:  24.23 kB
+#11 20.34 ../erpnext/public/banking/assets/MissingFiltersBanner-lpjdEgkJ.js                   0.30 kB │ gzip:   0.23 kB
+#11 20.34 ../erpnext/public/banking/assets/rolldown-runtime-CacB07dV.js                       0.73 kB │ gzip:   0.43 kB
+#11 20.34 ../erpnext/public/banking/assets/FileUploadBanner-DYQyjc8g.js                       1.11 kB │ gzip:   0.60 kB
+#11 20.34 ../erpnext/public/banking/assets/import_utils-BRi3ZutF.js                           1.42 kB │ gzip:   0.58 kB
+#11 20.34 ../erpnext/public/banking/assets/checkbox-uO0R403W.js                               1.58 kB │ gzip:   0.65 kB
+#11 20.34 ../erpnext/public/banking/assets/CSVImport-BAP7Icu1.js                              1.87 kB │ gzip:   0.93 kB
+#11 20.34 ../erpnext/public/banking/assets/ViewBankStatementImportLog-CD8PnoqB.js             1.99 kB │ gzip:   0.93 kB
+#11 20.34 ../erpnext/public/banking/assets/SelectedTransactionDetails-C1RdKjlw.js             2.35 kB │ gzip:   0.89 kB
+#11 20.34 ../erpnext/public/banking/assets/BankTransactionUnreconcileModalBody-DX82hEeS.js    2.97 kB │ gzip:   1.22 kB
+#11 20.34 ../erpnext/public/banking/assets/dialog-CucNlxWB.js                                 3.19 kB │ gzip:   1.19 kB
+#11 20.34 ../erpnext/public/banking/assets/IncorrectlyClearedEntries-C2ZXyo8i.js              4.46 kB │ gzip:   1.90 kB
+#11 20.34 ../erpnext/public/banking/assets/BankReconciliationStatement-Cp2WoJnJ.js            6.06 kB │ gzip:   2.15 kB
+#11 20.34 ../erpnext/public/banking/assets/list-view-BbSpi9ox.js                              7.19 kB │ gzip:   2.95 kB
+#11 20.34 ../erpnext/public/banking/assets/button-DvpwTnge.js                                 7.40 kB │ gzip:   1.49 kB
+#11 20.34 ../erpnext/public/banking/assets/BankClearanceSummary-AvoPwUQu.js                   7.54 kB │ gzip:   2.75 kB
+#11 20.34 ../erpnext/public/banking/assets/BankStatementImporter-B6a-IQkW.js                  8.20 kB │ gzip:   2.84 kB
+#11 20.34 ../erpnext/public/banking/assets/BankTransactionList-B4GYyJRA.js                    8.91 kB │ gzip:   2.89 kB
+#11 20.34 ../erpnext/public/banking/assets/PDFImport-Djf2VI1f.js                              9.75 kB │ gzip:   3.47 kB
+#11 20.34 ../erpnext/public/banking/assets/vendor-jotai-4TSuf7UH.js                          10.08 kB │ gzip:   4.23 kB
+#11 20.34 ../erpnext/public/banking/assets/ActionLogDialogBody-Condwi18.js                   12.39 kB │ gzip:   3.41 kB
+#11 20.34 ../erpnext/public/banking/assets/TransferModalContent-DOox9MnP.js                  12.57 kB │ gzip:   3.90 kB
+#11 20.34 ../erpnext/public/banking/assets/BankEntryModalContent-DPUMMI8r.js                 14.74 kB │ gzip:   4.65 kB
+#11 20.34 ../erpnext/public/banking/assets/StatementDetails-D6-45FgC.js                      14.89 kB │ gzip:   4.15 kB
+#11 20.34 ../erpnext/public/banking/assets/vendor-lucide-B-frwjrw.js                         15.40 kB │ gzip:   5.37 kB
+#11 20.34 ../erpnext/public/banking/assets/vendor-fuse-f1wNO_vj.js                           24.39 kB │ gzip:   8.70 kB
+#11 20.34 ../erpnext/public/banking/assets/RecordPaymentModalContent-BnSwSg3B.js             25.61 kB │ gzip:   6.92 kB
+#11 20.34 ../erpnext/public/banking/assets/typography-BuVijSvj.js                            62.32 kB │ gzip:  19.64 kB
+#11 20.34 ../erpnext/public/banking/assets/vendor-tanstack-Dqu2uiyk.js                       66.60 kB │ gzip:  17.41 kB
+#11 20.34 ../erpnext/public/banking/assets/file-dropzone-C-nmzRIl.js                         71.98 kB │ gzip:  20.60 kB
+#11 20.34 ../erpnext/public/banking/assets/SettingsPanelsContent-CJbJrj0v.js                 84.19 kB │ gzip:  24.37 kB
+#11 20.34 ../erpnext/public/banking/assets/vendor-frappe-DNkB20qR.js                        133.97 kB │ gzip:  42.88 kB
+#11 20.34 ../erpnext/public/banking/assets/vendor-radix-Vt1qfjJS.js                         146.04 kB │ gzip:  44.78 kB
+#11 20.34 ../erpnext/public/banking/assets/vendor-react-bMZmfznu.js                         178.57 kB │ gzip:  56.37 kB
+#11 20.34 ../erpnext/public/banking/assets/error-banner-Dd_SdXKr.js                         356.82 kB │ gzip: 107.28 kB
+#11 20.34 ../erpnext/public/banking/assets/index--4-623AN.js                                361.19 kB │ gzip: 104.68 kB
+#11 20.34
+#11 20.34 ✓ built in 590ms
+#11 20.52 $ cp ../erpnext/public/banking/index.html ../erpnext/www/banking.html
+#11 20.59 Done in 2.40s.
+#11 20.64 Compiling translations for erpnext
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ru/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/nl/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/eo/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/id/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/bs/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sl/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/it/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/de/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt_BR/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fi/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/nb/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/my/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/cs/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/tr/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/vi/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ar/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fa/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/es/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fr/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh_TW/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pl/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hu/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ta/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ko/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr_CS/LC_MESSAGES/erpnext.mo
+#11 22.58 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hi/LC_MESSAGES/erpnext.mo
+#11 DONE 23.0s
+#12 [7/8] COPY entrypoint.sh /home/frappe/frappe-bench/entrypoint.sh
+#12 DONE 0.4s
+#13 [8/8] RUN chmod +x /home/frappe/frappe-bench/entrypoint.sh
+#13 0.132 chmod: changing permissions of '/home/frappe/frappe-bench/entrypoint.sh': Operation not permitted
+#13 ERROR: process "/bin/sh -c chmod +x /home/frappe/frappe-bench/entrypoint.sh" did not complete successfully: exit code: 1
 ------
-> [6/8] RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench &&     pip install -e apps/erpnext &&     bench build --app erpnext &&     bench clear-cache:
-21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/erpnext.mo
-21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/erpnext.mo
-21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/erpnext.mo
-21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/erpnext.mo
-21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/erpnext.mo
-21.97 MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/erpnext.mo
-22.55 Usage: bench  clear-cache [OPTIONS]
-22.55 Try 'bench  clear-cache --help' for help.
-22.55
-22.55 Error: Please specify --site sitename
+> [8/8] RUN chmod +x /home/frappe/frappe-bench/entrypoint.sh:
+0.132 chmod: changing permissions of '/home/frappe/frappe-bench/entrypoint.sh': Operation not permitted
 ------
 WARNING: The "qiyK8" variable is not set. Defaulting to a blank string.
-Dockerfile:21
+Dockerfile:29
 --------------------
-|     # `--no-build-isolation` stays removed so pip can install flit_core per PEP 517.
-| >>> RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench && \
-| >>>     pip install -e apps/erpnext && \
-| >>>     bench build --app erpnext && \
-| >>>     bench clear-cache
 |
+|     COPY entrypoint.sh /home/frappe/frappe-bench/entrypoint.sh
+| >>> RUN chmod +x /home/frappe/frappe-bench/entrypoint.sh
+|
+|     EXPOSE 8000 9000
 --------------------
-failed to solve: process "/bin/sh -c cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench &&     pip install -e apps/erpnext &&     bench build --app erpnext &&     bench clear-cache" did not complete successfully: exit code: 2
+failed to solve: process "/bin/sh -c chmod +x /home/frappe/frappe-bench/entrypoint.sh" did not complete successfully: exit code: 1
 Error: ❌ Docker command failed
 Error occurred ❌, check the logs for details.
