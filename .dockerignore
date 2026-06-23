@@ -1,0 +1,49 @@
+# Git
+.git
+.gitignore
+.github
+
+# Node
+node_modules/
+banking/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+
+# IDE
+.vscode/
+.idea/
+.helix/
+
+# Docker (solo ignorar backups, no los archivos activos)
+.dockerignore
+docker-compose.override.yml
+
+# CI/CD
+.mergify.yml
+.semgrepignore
+semgrep/
+codecov.yml
+sider.yml
+commitlint.config.js
+crowdin.yml
+.coderabbit.yml
+.editorconfig
+.pre-commit-config.yaml
+
+# Documentation
+change_log/
+*.md
+!README.md
+
+# Tests
+**/test_*.py
+
+# Misc
+.DS_Store
+*.swp
+*.swo
