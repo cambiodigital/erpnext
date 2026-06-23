@@ -83,8 +83,7 @@ if [ ! -f "$BOOTSTRAP_SENTINEL" ]; then
         --db-user "$DB_USER" \
         --db-password "$DB_PASSWORD" \
         --admin-password "$ADMIN_PASSWORD" \
-        --db-host "$DB_HOST" \
-        --no-mariadb-socket
+        --db-host "$DB_HOST"
 
     echo "==> Instalando app ERPNext en el sitio..."
     bench --site "$SITE_NAME" install-app erpnext
@@ -101,7 +100,6 @@ if [ ! -f "$BOOTSTRAP_SENTINEL" ]; then
 else
     echo "==> Sitio '$SITE_NAME' completamente instalado. Ejecutando migrate..."
     bench --site "$SITE_NAME" migrate
-    bench setup requirements
     bench use "$SITE_NAME"
 
     # Idempotent safety nets — if a previous bootstrap completed bench
@@ -112,4 +110,4 @@ else
 fi
 
 echo "==> Iniciando ERPNext en puerto 8000..."
-exec bench serve --host 0.0.0.0 --port 8000
+exec bench serve --port 8000
