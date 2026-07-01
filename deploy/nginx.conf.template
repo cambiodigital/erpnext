@@ -11,14 +11,13 @@
 #      missing from the volume.  This handles first-deploy edge cases, asset
 #      rebuilds in progress, and any path discrepancies gracefully.
 
-upstream frappe_web {
-    server ${WEB_HOST}:8000;
-}
+# Docker embedded DNS — used to re-resolve service hostnames when
+# containers are recreated with new IPs (avoids 502 after redeploy).
+resolver 127.0.0.11 valid=10s ipv6=off;
 
-upstream frappe_socketio {
-    server ${SOCKETIO_HOST}:9000;
-}
-
+# Use nginx variables for proxy_pass targets so the resolver is
+# invoked on every request.  Static upstream blocks cache IPs
+# indefinitely and break when Docker reassigns container addresses.
 server {
     listen 80;
     server_name ${SITE_NAME};
@@ -43,6 +42,13 @@ server {
     # ssl_ciphers         HIGH:!aNULL:!MD5;
 
     # ------------------------------------------------------------------
+    # Dynamic upstream targets — resolved via Docker DNS on each request.
+    # Avoids 502 after container recreation (IP changes).
+    # ------------------------------------------------------------------
+    set $frappe_web "${WEB_HOST}:8000";
+    set $frappe_socketio "${SOCKETIO_HOST}:9000";
+
+    # ------------------------------------------------------------------
     # Static assets — served directly from the shared sites volume.
     # The configurator runs bench build (→ sites/assets/) and chmod a+rX
     # at bootstrap time so the nginx worker (UID 101) can read them.
@@ -60,7 +66,7 @@ server {
     # Proxied to the dedicated socketio service with WebSocket upgrade.
     # ------------------------------------------------------------------
     location /socket.io/ {
-        proxy_pass http://frappe_socketio;
+        proxy_pass http://$frappe_socketio;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
@@ -79,7 +85,7 @@ server {
     }
 
     location @backend {
-        proxy_pass http://frappe_web;
+        proxy_pass http://$frappe_web;
         proxy_http_version 1.1;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;

@@ -1,5 +1,3 @@
-NGINX
-
 2026-07-01T12:06:15.881Z /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
 2026-07-01T12:06:15.881Z /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
 2026-07-01T12:06:15.883Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
@@ -48,104 +46,7 @@ NGINX
 2026-07-01T12:46:38.627Z 10.0.1.24 - - [01/Jul/2026:12:46:38 +0000] "GET / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
 2026-07-01T12:46:38.869Z 2026/07/01 12:46:38 [error] 36#36: *25 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.19.0.6:8000/favicon.ico", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
 2026-07-01T12:46:38.869Z 10.0.1.24 - - [01/Jul/2026:12:46:38 +0000] "GET /favicon.ico HTTP/1.1" 502 559 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
-
-Configurator:
-
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankClearanceSummary-AvoPwUQu.js                   7.54 kB │ gzip:   2.75 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankStatementImporter-B6a-IQkW.js                  8.20 kB │ gzip:   2.84 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankTransactionList-B4GYyJRA.js                    8.91 kB │ gzip:   2.89 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/PDFImport-Djf2VI1f.js                              9.75 kB │ gzip:   3.47 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-jotai-4TSuf7UH.js                          10.08 kB │ gzip:   4.23 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/ActionLogDialogBody-Condwi18.js                   12.39 kB │ gzip:   3.41 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/TransferModalContent-DOox9MnP.js                  12.57 kB │ gzip:   3.90 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankEntryModalContent-DPUMMI8r.js                 14.74 kB │ gzip:   4.65 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/StatementDetails-D6-45FgC.js                      14.89 kB │ gzip:   4.15 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-lucide-B-frwjrw.js                         15.40 kB │ gzip:   5.37 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-fuse-f1wNO_vj.js                           24.39 kB │ gzip:   8.70 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/RecordPaymentModalContent-BnSwSg3B.js             25.61 kB │ gzip:   6.92 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/typography-BuVijSvj.js                            62.32 kB │ gzip:  19.64 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-tanstack-Dqu2uiyk.js                       66.60 kB │ gzip:  17.41 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/file-dropzone-C-nmzRIl.js                         71.98 kB │ gzip:  20.60 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/SettingsPanelsContent-CJbJrj0v.js                 84.19 kB │ gzip:  24.37 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-frappe-DNkB20qR.js                        133.97 kB │ gzip:  42.88 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-radix-Vt1qfjJS.js                         146.04 kB │ gzip:  44.78 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-react-bMZmfznu.js                         178.57 kB │ gzip:  56.37 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/error-banner-Dd_SdXKr.js                         356.82 kB │ gzip: 107.28 kB
-2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/index--4-623AN.js                                361.19 kB │ gzip: 104.68 kB
-2026-07-01T12:46:02.143Z ✓ built in 896ms
-2026-07-01T12:46:02.364Z $ cp ../erpnext/public/banking/index.html ../erpnext/www/banking.html
-2026-07-01T12:46:02.547Z Done in 10.49s.
-2026-07-01T12:46:03.384Z Compiling translations for frappe
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt_BR/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fi/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nb/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/my/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/cs/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/tr/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ko/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr_CS/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hi/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/es/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fr/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh_TW/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/vi/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ar/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fa/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sl/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/it/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/de/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pl/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hu/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ta/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/mn/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/bs/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ru/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nl/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/eo/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/id/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/frappe.mo
-2026-07-01T12:46:05.338Z Compiling translations for erpnext
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/es/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fr/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh_TW/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pl/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hu/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ta/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ko/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr_CS/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hi/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ru/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nl/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/eo/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/id/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/bs/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt_BR/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fi/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nb/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/my/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/cs/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/tr/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/vi/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ar/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fa/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sl/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/it/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/de/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/erpnext.mo
-2026-07-01T12:46:07.603Z ==> [configurator] Setting permissions on shared site assets...
-2026-07-01T12:46:07.611Z ==> [configurator] Done. Site is ready.
-2026-07-01T12:46:07.612Z ==> [configurator] Succeeded on attempt 1.
+2026-07-01T13:03:14.838Z 2026/07/01 13:03:14 [error] 36#36: *28 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET / HTTP/1.1", upstream: "http://172.19.0.6:8000/", host: "erp.saharapro.team"
+2026-07-01T13:03:14.839Z 10.0.1.24 - - [01/Jul/2026:13:03:14 +0000] "GET / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T13:03:15.128Z 2026/07/01 13:03:15 [error] 36#36: *28 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.19.0.6:8000/favicon.ico", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T13:03:15.128Z 10.0.1.24 - - [01/Jul/2026:13:03:15 +0000] "GET /favicon.ico HTTP/1.1" 502 559 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
