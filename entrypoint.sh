@@ -49,9 +49,10 @@ BOOTSTRAP_SENTINEL="sites/${SITE_NAME}/.bootstrapped"
 cd /home/frappe/frappe-bench
 
 # ------------------------------------------------------------------
-# Ensure sites directory exists on the shared volume
+# Ensure required directories exist
 # ------------------------------------------------------------------
 mkdir -p sites
+mkdir -p logs
 
 # ------------------------------------------------------------------
 # Write production common_site_config.json (idempotent)
