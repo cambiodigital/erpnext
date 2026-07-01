@@ -159,14 +159,12 @@ run_configurator() {
 		bench --site "$SITE_NAME" enable-scheduler 2>/dev/null || true
 	fi
 
-	# Build assets into the shared volume so nginx can serve them.
-	# Uses --app erpnext (matching the Dockerfile) to avoid crashing
-	# on frappe which lacks a .git directory in the bench image.
-	# The erpnext build also pulls in any frappe dependency bundles.
-	# Failure here MUST propagate — stale assets cause 404s for
-	# login/website JS bundles.
-	echo "==> [configurator] Building frontend assets (erpnext only)..."
-	bench build --app erpnext || { echo "==> [configurator] ERROR: Asset build failed."; return 1; }
+	# Build ALL apps' assets (frappe + erpnext) into the shared volume
+	# so nginx can serve them.  Building only erpnext skips Frappe's
+	# own web bundles (frappe-web.bundle.js, desk.bundle.js, etc.)
+	# which are required for login screens and the desk UI.
+	echo "==> [configurator] Building frontend assets (all apps)..."
+	bench build || { echo "==> [configurator] ERROR: Asset build failed."; return 1; }
 
 	# Fix permissions so the nginx container (UID 101) can read assets
 	# from the shared sites volume.
