@@ -117,7 +117,10 @@ services:
   # For manual migration runs: docker-compose run --rm configurator
   # ------------------------------------------------------------------
   configurator:
-    image: ${APP_IMAGE:?required}
+    image: ${APP_IMAGE:-erpnext-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: "no"
     environment:
       PROCESS_ROLE: configurator
@@ -151,7 +154,10 @@ services:
   # the site is ready.
   # ------------------------------------------------------------------
   web:
-    image: ${APP_IMAGE:?required}
+    image: ${APP_IMAGE:-erpnext-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       PROCESS_ROLE: web
@@ -180,7 +186,10 @@ services:
   # Healthcheck: TCP port probe on port 9000 (curl can do basic TCP).
   # ------------------------------------------------------------------
   socketio:
-    image: ${APP_IMAGE:?required}
+    image: ${APP_IMAGE:-erpnext-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       PROCESS_ROLE: socketio
@@ -210,7 +219,10 @@ services:
   # healthcheck adds explicit process-name verification.
   # ------------------------------------------------------------------
   worker-default:
-    image: ${APP_IMAGE:?required}
+    image: ${APP_IMAGE:-erpnext-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       PROCESS_ROLE: worker-default
@@ -232,7 +244,10 @@ services:
       start_period: 10s
 
   worker-short:
-    image: ${APP_IMAGE:?required}
+    image: ${APP_IMAGE:-erpnext-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       PROCESS_ROLE: worker-short
@@ -254,7 +269,10 @@ services:
       start_period: 10s
 
   worker-long:
-    image: ${APP_IMAGE:?required}
+    image: ${APP_IMAGE:-erpnext-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       PROCESS_ROLE: worker-long
@@ -279,7 +297,10 @@ services:
   # Scheduler — periodic tasks
   # ------------------------------------------------------------------
   scheduler:
-    image: ${APP_IMAGE:?required}
+    image: ${APP_IMAGE:-erpnext-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       PROCESS_ROLE: scheduler
