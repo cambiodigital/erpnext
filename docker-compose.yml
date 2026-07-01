@@ -342,10 +342,11 @@ services:
     # amd64 digest pin — deterministic rebuilds
     image: nginx:alpine@sha256:35cd77497979abe70dc8d26f5ae60811eea233a2eb5dc03c2ee30972caeb303e
     restart: unless-stopped
-    ports:
-      - "80:80"
-      # Uncomment for direct SSL termination:
-      # - "443:443"
+    # Port 80 is exposed internally for Dokploy's proxy (Traefik) to route
+    # traffic from erp.saharapro.team.  Do NOT bind to host port 80 —
+    # Dokploy owns the host port for its reverse proxy.
+    expose:
+      - "80"
     volumes:
       - ./deploy/nginx.conf.template:/etc/nginx/templates/default.conf.template:ro
       - sites_data:/usr/share/nginx/sites:ro

@@ -1,26 +1,825 @@
-2026-07-01T11:44:50.691Z ==> [web] Configuring common_site_config.json...
-2026-07-01T11:44:58.849Z ==> [web] Starting web server on 0.0.0.0:8000...
-2026-07-01T11:44:59.342Z Usage: bench  serve [OPTIONS]
-2026-07-01T11:44:59.342Z Try 'bench  serve --help' for help.
-2026-07-01T11:44:59.342Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
-2026-07-01T11:44:59.670Z ==> [web] Configuring common_site_config.json...
-2026-07-01T11:45:05.192Z ==> [web] Starting web server on 0.0.0.0:8000...
-2026-07-01T11:45:05.657Z Usage: bench  serve [OPTIONS]
-2026-07-01T11:45:05.657Z Try 'bench  serve --help' for help.
-2026-07-01T11:45:05.657Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
-2026-07-01T11:45:06.074Z ==> [web] Configuring common_site_config.json...
-2026-07-01T11:45:11.526Z ==> [web] Starting web server on 0.0.0.0:8000...
-2026-07-01T11:45:11.935Z Usage: bench  serve [OPTIONS]
-2026-07-01T11:45:11.935Z Try 'bench  serve --help' for help.
-2026-07-01T11:45:11.935Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
-2026-07-01T11:45:12.553Z ==> [web] Configuring common_site_config.json...
-2026-07-01T11:45:17.913Z ==> [web] Starting web server on 0.0.0.0:8000...
-2026-07-01T11:45:18.332Z Usage: bench  serve [OPTIONS]
-2026-07-01T11:45:18.332Z Try 'bench  serve --help' for help.
-2026-07-01T11:45:18.332Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
-2026-07-01T11:45:19.342Z ==> [web] Configuring common_site_config.json...
-2026-07-01T11:45:24.526Z ==> [web] Starting web server on 0.0.0.0:8000...
-2026-07-01T11:45:24.946Z Usage: bench  serve [OPTIONS]
-2026-07-01T11:45:24.946Z Try 'bench  serve --help' for help.
-2026-07-01T11:45:24.946Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
-2026-07-01T11:45:26.743Z ==> [web] Configuring common_site_config.json...
+Initializing deployment
+Cloning Repo github.com/cambiodigital/erpnext.git to /etc/dokploy/compose/erpnext-erp-rhpcwc/code: ✅
+Cloning into '/etc/dokploy/compose/erpnext-erp-rhpcwc/code'...
+remote: Enumerating objects: 5596, done.
+remote: Counting objects:   0% (1/5596)        
+remote: Counting objects:   1% (56/5596)        
+remote: Counting objects:   2% (112/5596)        
+remote: Counting objects:   3% (168/5596)        
+remote: Counting objects:   4% (224/5596)        
+remote: Counting objects:   5% (280/5596)        
+remote: Counting objects:   6% (336/5596)        
+remote: Counting objects:   7% (392/5596)        
+remote: Counting objects:   8% (448/5596)        
+remote: Counting objects:   9% (504/5596)        
+remote: Counting objects:  10% (560/5596)        
+remote: Counting objects:  11% (616/5596)        
+remote: Counting objects:  12% (672/5596)        
+remote: Counting objects:  13% (728/5596)        
+remote: Counting objects:  14% (784/5596)        
+remote: Counting objects:  15% (840/5596)        
+remote: Counting objects:  16% (896/5596)        
+remote: Counting objects:  17% (952/5596)        
+remote: Counting objects:  18% (1008/5596)        
+remote: Counting objects:  19% (1064/5596)        
+remote: Counting objects:  20% (1120/5596)        
+remote: Counting objects:  21% (1176/5596)        
+remote: Counting objects:  22% (1232/5596)        
+remote: Counting objects:  23% (1288/5596)        
+remote: Counting objects:  24% (1344/5596)        
+remote: Counting objects:  25% (1399/5596)        
+remote: Counting objects:  26% (1455/5596)        
+remote: Counting objects:  27% (1511/5596)        
+remote: Counting objects:  28% (1567/5596)        
+remote: Counting objects:  29% (1623/5596)        
+remote: Counting objects:  30% (1679/5596)        
+remote: Counting objects:  31% (1735/5596)        
+remote: Counting objects:  32% (1791/5596)        
+remote: Counting objects:  33% (1847/5596)        
+remote: Counting objects:  34% (1903/5596)        
+remote: Counting objects:  35% (1959/5596)        
+remote: Counting objects:  36% (2015/5596)        
+remote: Counting objects:  37% (2071/5596)        
+remote: Counting objects:  38% (2127/5596)        
+remote: Counting objects:  39% (2183/5596)        
+remote: Counting objects:  40% (2239/5596)        
+remote: Counting objects:  41% (2295/5596)        
+remote: Counting objects:  42% (2351/5596)        
+remote: Counting objects:  43% (2407/5596)        
+remote: Counting objects:  44% (2463/5596)        
+remote: Counting objects:  45% (2519/5596)        
+remote: Counting objects:  46% (2575/5596)        
+remote: Counting objects:  47% (2631/5596)        
+remote: Counting objects:  48% (2687/5596)        
+remote: Counting objects:  49% (2743/5596)        
+remote: Counting objects:  50% (2798/5596)        
+remote: Counting objects:  51% (2854/5596)        
+remote: Counting objects:  52% (2910/5596)        
+remote: Counting objects:  53% (2966/5596)        
+remote: Counting objects:  54% (3022/5596)        
+remote: Counting objects:  55% (3078/5596)        
+remote: Counting objects:  56% (3134/5596)        
+remote: Counting objects:  57% (3190/5596)        
+remote: Counting objects:  58% (3246/5596)        
+remote: Counting objects:  59% (3302/5596)        
+remote: Counting objects:  60% (3358/5596)        
+remote: Counting objects:  61% (3414/5596)        
+remote: Counting objects:  62% (3470/5596)        
+remote: Counting objects:  63% (3526/5596)        
+remote: Counting objects:  64% (3582/5596)        
+remote: Counting objects:  65% (3638/5596)        
+remote: Counting objects:  66% (3694/5596)        
+remote: Counting objects:  67% (3750/5596)        
+remote: Counting objects:  68% (3806/5596)        
+remote: Counting objects:  69% (3862/5596)        
+remote: Counting objects:  70% (3918/5596)        
+remote: Counting objects:  71% (3974/5596)        
+remote: Counting objects:  72% (4030/5596)        
+remote: Counting objects:  73% (4086/5596)        
+remote: Counting objects:  74% (4142/5596)        
+remote: Counting objects:  75% (4197/5596)        
+remote: Counting objects:  76% (4253/5596)        
+remote: Counting objects:  77% (4309/5596)        
+remote: Counting objects:  78% (4365/5596)        
+remote: Counting objects:  79% (4421/5596)        
+remote: Counting objects:  80% (4477/5596)        
+remote: Counting objects:  81% (4533/5596)        
+remote: Counting objects:  82% (4589/5596)        
+remote: Counting objects:  83% (4645/5596)        
+remote: Counting objects:  84% (4701/5596)        
+remote: Counting objects:  85% (4757/5596)        
+remote: Counting objects:  86% (4813/5596)        
+remote: Counting objects:  87% (4869/5596)        
+remote: Counting objects:  88% (4925/5596)        
+remote: Counting objects:  89% (4981/5596)        
+remote: Counting objects:  90% (5037/5596)        
+remote: Counting objects:  91% (5093/5596)        
+remote: Counting objects:  92% (5149/5596)        
+remote: Counting objects:  93% (5205/5596)        
+remote: Counting objects:  94% (5261/5596)        
+remote: Counting objects:  95% (5317/5596)        
+remote: Counting objects:  96% (5373/5596)        
+remote: Counting objects:  97% (5429/5596)        
+remote: Counting objects:  98% (5485/5596)        
+remote: Counting objects:  99% (5541/5596)        
+remote: Counting objects: 100% (5596/5596)        
+remote: Counting objects: 100% (5596/5596), done.
+remote: Compressing objects:   0% (1/4504)        
+remote: Compressing objects:   1% (46/4504)        
+remote: Compressing objects:   2% (91/4504)        
+remote: Compressing objects:   3% (136/4504)        
+remote: Compressing objects:   4% (181/4504)        
+remote: Compressing objects:   5% (226/4504)        
+remote: Compressing objects:   6% (271/4504)        
+remote: Compressing objects:   7% (316/4504)        
+remote: Compressing objects:   8% (361/4504)        
+remote: Compressing objects:   9% (406/4504)        
+remote: Compressing objects:  10% (451/4504)        
+remote: Compressing objects:  11% (496/4504)        
+remote: Compressing objects:  12% (541/4504)        
+remote: Compressing objects:  13% (586/4504)        
+remote: Compressing objects:  14% (631/4504)        
+remote: Compressing objects:  15% (676/4504)        
+remote: Compressing objects:  16% (721/4504)        
+remote: Compressing objects:  17% (766/4504)        
+remote: Compressing objects:  18% (811/4504)        
+remote: Compressing objects:  19% (856/4504)        
+remote: Compressing objects:  20% (901/4504)        
+remote: Compressing objects:  21% (946/4504)        
+remote: Compressing objects:  22% (991/4504)        
+remote: Compressing objects:  23% (1036/4504)        
+remote: Compressing objects:  24% (1081/4504)        
+remote: Compressing objects:  25% (1126/4504)        
+remote: Compressing objects:  26% (1172/4504)        
+remote: Compressing objects:  27% (1217/4504)        
+remote: Compressing objects:  28% (1262/4504)        
+remote: Compressing objects:  29% (1307/4504)        
+remote: Compressing objects:  30% (1352/4504)        
+remote: Compressing objects:  31% (1397/4504)        
+remote: Compressing objects:  32% (1442/4504)        
+remote: Compressing objects:  33% (1487/4504)        
+remote: Compressing objects:  34% (1532/4504)        
+remote: Compressing objects:  35% (1577/4504)        
+remote: Compressing objects:  36% (1622/4504)        
+remote: Compressing objects:  37% (1667/4504)        
+remote: Compressing objects:  38% (1712/4504)        
+remote: Compressing objects:  39% (1757/4504)        
+remote: Compressing objects:  40% (1802/4504)        
+remote: Compressing objects:  41% (1847/4504)        
+remote: Compressing objects:  42% (1892/4504)        
+remote: Compressing objects:  43% (1937/4504)        
+remote: Compressing objects:  44% (1982/4504)        
+remote: Compressing objects:  45% (2027/4504)        
+remote: Compressing objects:  46% (2072/4504)        
+remote: Compressing objects:  47% (2117/4504)        
+remote: Compressing objects:  48% (2162/4504)        
+remote: Compressing objects:  49% (2207/4504)        
+remote: Compressing objects:  50% (2252/4504)        
+remote: Compressing objects:  51% (2298/4504)        
+remote: Compressing objects:  52% (2343/4504)        
+remote: Compressing objects:  53% (2388/4504)        
+remote: Compressing objects:  54% (2433/4504)        
+remote: Compressing objects:  55% (2478/4504)        
+remote: Compressing objects:  56% (2523/4504)        
+remote: Compressing objects:  57% (2568/4504)        
+remote: Compressing objects:  58% (2613/4504)        
+remote: Compressing objects:  59% (2658/4504)        
+remote: Compressing objects:  60% (2703/4504)        
+remote: Compressing objects:  61% (2748/4504)        
+remote: Compressing objects:  62% (2793/4504)        
+remote: Compressing objects:  63% (2838/4504)        
+remote: Compressing objects:  64% (2883/4504)        
+remote: Compressing objects:  65% (2928/4504)        
+remote: Compressing objects:  66% (2973/4504)        
+remote: Compressing objects:  67% (3018/4504)        
+remote: Compressing objects:  68% (3063/4504)        
+remote: Compressing objects:  69% (3108/4504)        
+remote: Compressing objects:  70% (3153/4504)        
+remote: Compressing objects:  71% (3198/4504)        
+remote: Compressing objects:  72% (3243/4504)        
+remote: Compressing objects:  73% (3288/4504)        
+remote: Compressing objects:  74% (3333/4504)        
+remote: Compressing objects:  75% (3378/4504)        
+remote: Compressing objects:  76% (3424/4504)        
+remote: Compressing objects:  77% (3469/4504)        
+remote: Compressing objects:  78% (3514/4504)        
+remote: Compressing objects:  79% (3559/4504)        
+remote: Compressing objects:  80% (3604/4504)        
+remote: Compressing objects:  81% (3649/4504)        
+remote: Compressing objects:  82% (3694/4504)        
+remote: Compressing objects:  83% (3739/4504)        
+remote: Compressing objects:  84% (3784/4504)        
+remote: Compressing objects:  85% (3829/4504)        
+remote: Compressing objects:  86% (3874/4504)        
+remote: Compressing objects:  87% (3919/4504)        
+remote: Compressing objects:  88% (3964/4504)        
+remote: Compressing objects:  89% (4009/4504)        
+remote: Compressing objects:  90% (4054/4504)        
+remote: Compressing objects:  91% (4099/4504)        
+remote: Compressing objects:  92% (4144/4504)        
+remote: Compressing objects:  93% (4189/4504)        
+remote: Compressing objects:  94% (4234/4504)        
+remote: Compressing objects:  95% (4279/4504)        
+remote: Compressing objects:  96% (4324/4504)        
+remote: Compressing objects:  97% (4369/4504)        
+remote: Compressing objects:  98% (4414/4504)        
+remote: Compressing objects:  99% (4459/4504)        
+remote: Compressing objects: 100% (4504/4504)        
+remote: Compressing objects: 100% (4504/4504), done.
+Receiving objects:   0% (1/5596)
+Receiving objects:   1% (56/5596)
+Receiving objects:   2% (112/5596)
+Receiving objects:   3% (168/5596)
+Receiving objects:   4% (224/5596)
+Receiving objects:   5% (280/5596)
+Receiving objects:   6% (336/5596)
+Receiving objects:   7% (392/5596)
+Receiving objects:   8% (448/5596)
+Receiving objects:   9% (504/5596)
+Receiving objects:  10% (560/5596)
+Receiving objects:  11% (616/5596)
+Receiving objects:  12% (672/5596)
+Receiving objects:  13% (728/5596)
+Receiving objects:  14% (784/5596)
+Receiving objects:  15% (840/5596)
+Receiving objects:  16% (896/5596)
+Receiving objects:  17% (952/5596)
+Receiving objects:  18% (1008/5596)
+Receiving objects:  19% (1064/5596)
+Receiving objects:  20% (1120/5596)
+Receiving objects:  21% (1176/5596)
+Receiving objects:  22% (1232/5596)
+Receiving objects:  23% (1288/5596)
+Receiving objects:  24% (1344/5596)
+Receiving objects:  25% (1399/5596)
+Receiving objects:  26% (1455/5596)
+Receiving objects:  27% (1511/5596)
+Receiving objects:  28% (1567/5596)
+Receiving objects:  29% (1623/5596)
+Receiving objects:  30% (1679/5596)
+Receiving objects:  31% (1735/5596)
+Receiving objects:  32% (1791/5596)
+Receiving objects:  33% (1847/5596)
+Receiving objects:  34% (1903/5596)
+Receiving objects:  35% (1959/5596)
+Receiving objects:  36% (2015/5596)
+Receiving objects:  37% (2071/5596)
+Receiving objects:  38% (2127/5596)
+Receiving objects:  39% (2183/5596)
+Receiving objects:  40% (2239/5596)
+Receiving objects:  41% (2295/5596)
+Receiving objects:  42% (2351/5596)
+Receiving objects:  43% (2407/5596)
+Receiving objects:  44% (2463/5596)
+Receiving objects:  45% (2519/5596)
+Receiving objects:  46% (2575/5596)
+Receiving objects:  47% (2631/5596)
+Receiving objects:  48% (2687/5596)
+Receiving objects:  49% (2743/5596)
+Receiving objects:  50% (2798/5596)
+Receiving objects:  51% (2854/5596)
+Receiving objects:  52% (2910/5596)
+Receiving objects:  53% (2966/5596)
+Receiving objects:  54% (3022/5596)
+Receiving objects:  55% (3078/5596)
+Receiving objects:  56% (3134/5596)
+Receiving objects:  57% (3190/5596)
+Receiving objects:  58% (3246/5596)
+Receiving objects:  59% (3302/5596)
+Receiving objects:  60% (3358/5596)
+Receiving objects:  61% (3414/5596)
+Receiving objects:  62% (3470/5596)
+Receiving objects:  63% (3526/5596)
+Receiving objects:  64% (3582/5596)
+Receiving objects:  65% (3638/5596)
+Receiving objects:  66% (3694/5596)
+Receiving objects:  67% (3750/5596)
+Receiving objects:  68% (3806/5596)
+Receiving objects:  69% (3862/5596)
+Receiving objects:  70% (3918/5596)
+Receiving objects:  71% (3974/5596)
+Receiving objects:  72% (4030/5596)
+Receiving objects:  73% (4086/5596)
+Receiving objects:  74% (4142/5596)
+Receiving objects:  75% (4197/5596)
+Receiving objects:  76% (4253/5596)
+Receiving objects:  77% (4309/5596)
+Receiving objects:  78% (4365/5596)
+Receiving objects:  79% (4421/5596)
+Receiving objects:  80% (4477/5596)
+Receiving objects:  81% (4533/5596)
+Receiving objects:  82% (4589/5596)
+Receiving objects:  83% (4645/5596)
+Receiving objects:  84% (4701/5596)
+Receiving objects:  85% (4757/5596)
+Receiving objects:  86% (4813/5596)
+Receiving objects:  87% (4869/5596)
+Receiving objects:  88% (4925/5596)
+Receiving objects:  89% (4981/5596)
+Receiving objects:  90% (5037/5596)
+Receiving objects:  91% (5093/5596)
+Receiving objects:  92% (5149/5596)
+Receiving objects:  93% (5205/5596)
+Receiving objects:  94% (5261/5596)
+Receiving objects:  95% (5317/5596)
+Receiving objects:  96% (5373/5596)
+Receiving objects:  97% (5429/5596)
+Receiving objects:  98% (5485/5596)
+Receiving objects:  99% (5541/5596)
+remote: Total 5596 (delta 1217), reused 3632 (delta 916), pack-reused 0 (from 0)
+Receiving objects: 100% (5596/5596)
+Receiving objects: 100% (5596/5596), 12.72 MiB | 26.64 MiB/s, done.
+Resolving deltas:   0% (0/1217)
+Resolving deltas:   1% (13/1217)
+Resolving deltas:   2% (25/1217)
+Resolving deltas:   3% (37/1217)
+Resolving deltas:   4% (49/1217)
+Resolving deltas:   5% (61/1217)
+Resolving deltas:   6% (74/1217)
+Resolving deltas:   7% (86/1217)
+Resolving deltas:   8% (98/1217)
+Resolving deltas:   9% (110/1217)
+Resolving deltas:  10% (122/1217)
+Resolving deltas:  11% (134/1217)
+Resolving deltas:  12% (148/1217)
+Resolving deltas:  13% (159/1217)
+Resolving deltas:  14% (171/1217)
+Resolving deltas:  15% (183/1217)
+Resolving deltas:  16% (195/1217)
+Resolving deltas:  17% (207/1217)
+Resolving deltas:  18% (220/1217)
+Resolving deltas:  19% (232/1217)
+Resolving deltas:  20% (245/1217)
+Resolving deltas:  21% (256/1217)
+Resolving deltas:  22% (268/1217)
+Resolving deltas:  23% (280/1217)
+Resolving deltas:  24% (294/1217)
+Resolving deltas:  25% (305/1217)
+Resolving deltas:  26% (317/1217)
+Resolving deltas:  27% (329/1217)
+Resolving deltas:  28% (341/1217)
+Resolving deltas:  29% (353/1217)
+Resolving deltas:  30% (366/1217)
+Resolving deltas:  31% (378/1217)
+Resolving deltas:  32% (391/1217)
+Resolving deltas:  33% (403/1217)
+Resolving deltas:  34% (414/1217)
+Resolving deltas:  35% (426/1217)
+Resolving deltas:  36% (439/1217)
+Resolving deltas:  37% (451/1217)
+Resolving deltas:  38% (463/1217)
+Resolving deltas:  39% (475/1217)
+Resolving deltas:  40% (487/1217)
+Resolving deltas:  41% (499/1217)
+Resolving deltas:  42% (512/1217)
+Resolving deltas:  43% (524/1217)
+Resolving deltas:  44% (536/1217)
+Resolving deltas:  45% (548/1217)
+Resolving deltas:  46% (560/1217)
+Resolving deltas:  47% (572/1217)
+Resolving deltas:  48% (586/1217)
+Resolving deltas:  49% (597/1217)
+Resolving deltas:  50% (609/1217)
+Resolving deltas:  51% (621/1217)
+Resolving deltas:  52% (634/1217)
+Resolving deltas:  53% (646/1217)
+Resolving deltas:  54% (658/1217)
+Resolving deltas:  55% (670/1217)
+Resolving deltas:  56% (682/1217)
+Resolving deltas:  57% (694/1217)
+Resolving deltas:  58% (706/1217)
+Resolving deltas:  59% (719/1217)
+Resolving deltas:  60% (731/1217)
+Resolving deltas:  61% (743/1217)
+Resolving deltas:  62% (755/1217)
+Resolving deltas:  63% (767/1217)
+Resolving deltas:  64% (779/1217)
+Resolving deltas:  65% (792/1217)
+Resolving deltas:  66% (805/1217)
+Resolving deltas:  67% (816/1217)
+Resolving deltas:  68% (828/1217)
+Resolving deltas:  69% (842/1217)
+Resolving deltas:  70% (852/1217)
+Resolving deltas:  71% (865/1217)
+Resolving deltas:  72% (877/1217)
+Resolving deltas:  73% (889/1217)
+Resolving deltas:  74% (901/1217)
+Resolving deltas:  75% (913/1217)
+Resolving deltas:  76% (926/1217)
+Resolving deltas:  77% (938/1217)
+Resolving deltas:  78% (950/1217)
+Resolving deltas:  79% (962/1217)
+Resolving deltas:  80% (974/1217)
+Resolving deltas:  81% (986/1217)
+Resolving deltas:  82% (998/1217)
+Resolving deltas:  83% (1011/1217)
+Resolving deltas:  84% (1023/1217)
+Resolving deltas:  85% (1035/1217)
+Resolving deltas:  86% (1047/1217)
+Resolving deltas:  87% (1059/1217)
+Resolving deltas:  88% (1071/1217)
+Resolving deltas:  89% (1084/1217)
+Resolving deltas:  90% (1096/1217)
+Resolving deltas:  91% (1108/1217)
+Resolving deltas:  92% (1120/1217)
+Resolving deltas:  93% (1132/1217)
+Resolving deltas:  94% (1144/1217)
+Resolving deltas:  95% (1157/1217)
+Resolving deltas:  96% (1169/1217)
+Resolving deltas:  97% (1181/1217)
+Resolving deltas:  98% (1193/1217)
+Resolving deltas:  99% (1205/1217)
+Resolving deltas: 100% (1217/1217)
+Resolving deltas: 100% (1217/1217), done.
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║ App Name: erpnext-erp-rhpcwc                                                 ║
+║ Build Compose 🐳                                                             ║
+║ Detected: 0 mounts 📂                                                        ║
+║ Command: docker compose -p erpnext-erp-rhpcwc -f ./docker-compose.yml up -d  ║
+║ --build --remove-orphans                                                     ║
+║ Source Type: docker github ✅                                                ║
+║ Compose Type: docker-compose ✅                                              ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+Image erpnext-app:latest Building
+Image erpnext-app:latest Building
+Image erpnext-app:latest Building
+Image erpnext-app:latest Building
+Image erpnext-app:latest Building
+Image erpnext-app:latest Building
+Image erpnext-app:latest Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 3.44kB done
+#1 DONE 0.0s
+#2 [socketio internal] load build definition from Dockerfile
+#2 DONE 0.0s
+#2 [socketio internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.62kB done
+#2 DONE 0.0s
+#3 [scheduler internal] load metadata for docker.io/frappe/erpnext:develop@sha256:8953f05ebe8f77bbc8e8d26b3302d78d4755e510113990f3a94deaedf650e2a1
+#3 DONE 0.0s
+#4 [worker-default internal] load .dockerignore
+#4 transferring context: 619B done
+#4 DONE 0.0s
+#5 [scheduler 1/7] FROM docker.io/frappe/erpnext:develop@sha256:8953f05ebe8f77bbc8e8d26b3302d78d4755e510113990f3a94deaedf650e2a1
+#5 resolve docker.io/frappe/erpnext:develop@sha256:8953f05ebe8f77bbc8e8d26b3302d78d4755e510113990f3a94deaedf650e2a1 0.0s done
+#5 DONE 0.0s
+#6 [worker-short internal] load build context
+#6 transferring context: 124.49MB 0.6s done
+#6 transferring context: 124.49MB 0.6s done
+#6 DONE 0.6s
+#7 [worker-short 2/7] RUN apt-get update && apt-get install -y --no-install-recommends     git curl     && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+#8 [scheduler 3/7] RUN rm -rf /home/frappe/frappe-bench/apps/erpnext
+#8 CACHED
+#9 [worker-long 4/7] COPY --chown=frappe:frappe . /home/frappe/frappe-bench/apps/erpnext
+#9 DONE 1.1s
+#10 [worker-default 5/7] WORKDIR /home/frappe/frappe-bench
+#10 DONE 0.1s
+#11 [worker-default 6/7] RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-bench &&     /home/frappe/frappe-bench/env/bin/pip install -e apps/erpnext &&     /home/frappe/frappe-bench/env/bin/pip install gunicorn &&     bench build --app erpnext
+#11 0.342 yarn install v1.22.22
+#11 0.388 [1/4] Resolving packages...
+#11 0.390 [2/4] Fetching packages...
+#11 0.461 [3/4] Linking dependencies...
+#11 0.467 [4/4] Building fresh packages...
+#11 0.472 $ cd banking && yarn install
+#11 0.634 yarn install v1.22.22
+#11 0.672 [1/4] Resolving packages...
+#11 0.820 [2/4] Fetching packages...
+#11 6.531 [3/4] Linking dependencies...
+#11 6.542 warning Workspaces can only be enabled in private projects.
+#11 8.517 [4/4] Building fresh packages...
+#11 8.527 Done in 7.89s.
+#11 8.575 Done in 8.23s.
+#11 9.382 Obtaining file:///home/frappe/frappe-bench/apps/erpnext
+#11 9.383   Installing build dependencies: started
+#11 9.858   Installing build dependencies: finished with status 'done'
+#11 9.858   Checking if build backend supports build_editable: started
+#11 9.969   Checking if build backend supports build_editable: finished with status 'done'
+#11 9.970   Getting requirements to build editable: started
+#11 10.06   Getting requirements to build editable: finished with status 'done'
+#11 10.06   Preparing editable metadata (pyproject.toml): started
+#11 10.15   Preparing editable metadata (pyproject.toml): finished with status 'done'
+#11 10.16 Requirement already satisfied: Unidecode~=1.4.0 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (1.4.0)
+#11 10.16 Requirement already satisfied: barcodenumber~=0.5.0 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (0.5.0)
+#11 10.16 Requirement already satisfied: rapidfuzz~=3.14.3 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (3.14.5)
+#11 10.16 Requirement already satisfied: holidays~=0.87 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (0.99)
+#11 10.16 Requirement already satisfied: googlemaps~=4.10.0 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (4.10.0)
+#11 10.16 Requirement already satisfied: plaid-python~=7.2.1 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (7.2.1)
+#11 10.16 Requirement already satisfied: python-youtube~=0.9.8 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (0.9.9)
+#11 10.16 Requirement already satisfied: pypng~=0.20220715.0 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (0.20220715.0)
+#11 10.16 Requirement already satisfied: mt-940>=4.26.0 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (5.0.0)
+#11 10.16 Requirement already satisfied: pdfplumber>=0.11.0 in ./env/lib/python3.14/site-packages (from erpnext==17.0.0.dev0) (0.11.10)
+#11 10.16 Requirement already satisfied: python-stdnum in ./env/lib/python3.14/site-packages (from barcodenumber~=0.5.0->erpnext==17.0.0.dev0) (2.2)
+#11 10.16 Requirement already satisfied: requests<3.0,>=2.20.0 in ./env/lib/python3.14/site-packages (from googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2.34.2)
+#11 10.16 Requirement already satisfied: python-dateutil<3,>=2.9.0.post0 in ./env/lib/python3.14/site-packages (from holidays~=0.87->erpnext==17.0.0.dev0) (2.9.0.post0)
+#11 10.17 Requirement already satisfied: six>=1.5 in ./env/lib/python3.14/site-packages (from python-dateutil<3,>=2.9.0.post0->holidays~=0.87->erpnext==17.0.0.dev0) (1.17.0)
+#11 10.17 Requirement already satisfied: dataclasses-json<1.0.0,>=0.6.0 in ./env/lib/python3.14/site-packages (from python-youtube~=0.9.8->erpnext==17.0.0.dev0) (0.6.7)
+#11 10.17 Requirement already satisfied: isodate<1.0.0,>=0.6.1 in ./env/lib/python3.14/site-packages (from python-youtube~=0.9.8->erpnext==17.0.0.dev0) (0.7.2)
+#11 10.17 Requirement already satisfied: requests-oauthlib<3.0.0,>=1.3.0 in ./env/lib/python3.14/site-packages (from python-youtube~=0.9.8->erpnext==17.0.0.dev0) (2.0.0)
+#11 10.17 Requirement already satisfied: marshmallow<4.0.0,>=3.18.0 in ./env/lib/python3.14/site-packages (from dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0) (3.26.2)
+#11 10.17 Requirement already satisfied: typing-inspect<1,>=0.4.0 in ./env/lib/python3.14/site-packages (from dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0) (0.9.0)
+#11 10.17 Requirement already satisfied: packaging>=17.0 in ./env/lib/python3.14/site-packages (from marshmallow<4.0.0,>=3.18.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0) (26.2)
+#11 10.17 Requirement already satisfied: charset_normalizer<4,>=2 in ./env/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (3.4.7)
+#11 10.17 Requirement already satisfied: idna<4,>=2.5 in ./env/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (3.18)
+#11 10.17 Requirement already satisfied: urllib3<3,>=1.26 in ./env/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2.7.0)
+#11 10.17 Requirement already satisfied: certifi>=2023.5.7 in ./env/lib/python3.14/site-packages (from requests<3.0,>=2.20.0->googlemaps~=4.10.0->erpnext==17.0.0.dev0) (2026.6.17)
+#11 10.17 Requirement already satisfied: oauthlib>=3.0.0 in ./env/lib/python3.14/site-packages (from requests-oauthlib<3.0.0,>=1.3.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0) (3.3.1)
+#11 10.17 Requirement already satisfied: mypy-extensions>=0.3.0 in ./env/lib/python3.14/site-packages (from typing-inspect<1,>=0.4.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0) (1.1.0)
+#11 10.17 Requirement already satisfied: typing-extensions>=3.7.4 in ./env/lib/python3.14/site-packages (from typing-inspect<1,>=0.4.0->dataclasses-json<1.0.0,>=0.6.0->python-youtube~=0.9.8->erpnext==17.0.0.dev0) (4.15.0)
+#11 10.18 Requirement already satisfied: pdfminer.six==20260107 in ./env/lib/python3.14/site-packages (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0) (20260107)
+#11 10.18 Requirement already satisfied: Pillow>=12.2.0 in ./env/lib/python3.14/site-packages (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0) (12.2.0)
+#11 10.18 Requirement already satisfied: pypdfium2>=5.9.0 in ./env/lib/python3.14/site-packages (from pdfplumber>=0.11.0->erpnext==17.0.0.dev0) (5.10.1)
+#11 10.18 Requirement already satisfied: cryptography>=36.0.0 in ./env/lib/python3.14/site-packages (from pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0) (48.0.1)
+#11 10.18 Requirement already satisfied: cffi>=2.0.0 in ./env/lib/python3.14/site-packages (from cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0) (2.0.0)
+#11 10.18 Requirement already satisfied: pycparser in ./env/lib/python3.14/site-packages (from cffi>=2.0.0->cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11.0->erpnext==17.0.0.dev0) (3.0)
+#11 10.19 Building wheels for collected packages: erpnext
+#11 10.19   Building editable for erpnext (pyproject.toml): started
+#11 10.28   Building editable for erpnext (pyproject.toml): finished with status 'done'
+#11 10.28   Created wheel for erpnext: filename=erpnext-17.0.0.dev0-py3-none-any.whl size=4325 sha256=d022c636f2e7c9d4de44255bd079dd90635d1dded4120e2211bc05980a81264a
+#11 10.28   Stored in directory: /tmp/pip-ephem-wheel-cache-5_6pmnr5/wheels/51/c4/ec/63c96de8822ac54a849211b8932a9f9df68607d91a6267864b
+#11 10.28 Successfully built erpnext
+#11 10.34 Installing collected packages: erpnext
+#11 10.34   Attempting uninstall: erpnext
+#11 10.34     Found existing installation: erpnext 17.0.0.dev0
+#11 10.34     Uninstalling erpnext-17.0.0.dev0:
+#11 10.70       Successfully uninstalled erpnext-17.0.0.dev0
+#11 10.71 Successfully installed erpnext-17.0.0.dev0
+#11 10.99 Requirement already satisfied: gunicorn in ./env/lib/python3.14/site-packages (23.0.0)
+#11 10.99 Requirement already satisfied: packaging in ./env/lib/python3.14/site-packages (from gunicorn) (26.2)
+#11 11.57 Linking /home/frappe/frappe-bench/apps/frappe/frappe/public to ./assets/frappe  
+Linking /home/frappe/frappe-bench/apps/frappe/node_modules to ./assets/frappe/node_modules                                                                                
+Linking /home/frappe/frappe-bench/apps/erpnext/erpnext/public to ./assets/erpnext                                                                                
+Linking /home/frappe/frappe-bench/apps/erpnext/node_modules to ./assets/erpnext/node_modules                                                                                
+✔ Application Assets Linked
+#11 11.57
+#11 11.57
+#11 11.70 yarn run v1.22.22
+#11 11.72 $ node esbuild --production --apps erpnext --run-build-command
+#11 12.34 Browserslist: caniuse-lite is outdated. Please run:
+#11 12.34   npx update-browserslist-db@latest
+#11 12.34   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+#11 12.61 File                                                        Size
+#11 12.61
+#11 12.61 erpnext/dist/js/
+#11 12.61 ├─ bank-reconciliation-tool.bundle.2ZPCNFSA.js              17.65 Kb
+#11 12.61 ├─ erpnext.bundle.GUOGZ53C.js                               260.94 Kb
+#11 12.61 ├─ item-dashboard.bundle.U2KM2WY3.js                        10.52 Kb
+#11 12.61 ├─ point-of-sale.bundle.TB5FC4PQ.js                         106.31 Kb
+#11 12.61 └─ bom_configurator.bundle.LTY5WACP.js                      10.68 Kb
+#11 12.61
+#11 12.61 erpnext/dist/css/
+#11 12.61 ├─ erpnext-web.bundle.KMHEQDRU.css                          2.85 Kb
+#11 12.61 ├─ erpnext.bundle.AG7ZBQU7.css                              52.01 Kb
+#11 12.61 └─ erpnext_email.bundle.NAKVJEBZ.css                        0.56 Kb
+#11 12.61
+#11 12.61 erpnext/dist/css-rtl/
+#11 12.61 ├─ erpnext-web.bundle.ZOMK7VAX.css                          2.85 Kb
+#11 12.61 ├─ erpnext.bundle.CE2JPBI6.css                              52.02 Kb
+#11 12.61 └─ erpnext_email.bundle.WIMO3S3B.css                        0.56 Kb
+#11 12.61
+#11 12.61  DONE  Total Build Time: 496.502ms
+#11 12.61
+#11 12.72  WARN  Cannot connect to redis_cache to update assets_json
+#11 12.75  WARN  Cannot connect to redis_cache to update assets_json
+#11 12.76  WARN  Cannot connect to redis_cache to update assets_json
+#11 12.76
+#11 12.76 Running build command for erpnext
+#11 12.89 $ cd banking && yarn build
+#11 13.02 $ vite build --base=/assets/erpnext/banking/ && yarn copy-html-entry
+#11 13.26 vite v8.0.16 building client environment for production...
+#11 13.27 [2K
+transforming...
+#11 13.57 /assets/frappe/css/fonts/inter/InterVariable.woff2 referenced in /assets/frappe/css/fonts/inter/InterVariable.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+#11 13.57
+#11 13.57 /assets/frappe/css/fonts/inter/InterVariable-Italic.woff2 referenced in /assets/frappe/css/fonts/inter/InterVariable-Italic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+#11 13.58 ✓ 3480 modules transformed.
+#11 13.70 rendering chunks...
+#11 13.80 computing gzip size...
+#11 13.80 ../erpnext/public/banking/index.html                                                3.36 kB │ gzip:   1.09 kB
+#11 13.80 ../erpnext/public/banking/assets/index-DHdJT5VH.css                               246.29 kB │ gzip:  24.23 kB
+#11 13.80 ../erpnext/public/banking/assets/MissingFiltersBanner-lpjdEgkJ.js                   0.30 kB │ gzip:   0.23 kB
+#11 13.80 ../erpnext/public/banking/assets/rolldown-runtime-CacB07dV.js                       0.73 kB │ gzip:   0.43 kB
+#11 13.80 ../erpnext/public/banking/assets/FileUploadBanner-DYQyjc8g.js                       1.11 kB │ gzip:   0.60 kB
+#11 13.80 ../erpnext/public/banking/assets/import_utils-BRi3ZutF.js                           1.42 kB │ gzip:   0.58 kB
+#11 13.80 ../erpnext/public/banking/assets/checkbox-uO0R403W.js                               1.58 kB │ gzip:   0.65 kB
+#11 13.80 ../erpnext/public/banking/assets/CSVImport-BAP7Icu1.js                              1.87 kB │ gzip:   0.93 kB
+#11 13.80 ../erpnext/public/banking/assets/ViewBankStatementImportLog-CD8PnoqB.js             1.99 kB │ gzip:   0.93 kB
+#11 13.80 ../erpnext/public/banking/assets/SelectedTransactionDetails-C1RdKjlw.js             2.35 kB │ gzip:   0.89 kB
+#11 13.80 ../erpnext/public/banking/assets/BankTransactionUnreconcileModalBody-DX82hEeS.js    2.97 kB │ gzip:   1.22 kB
+#11 13.80 ../erpnext/public/banking/assets/dialog-CucNlxWB.js                                 3.19 kB │ gzip:   1.19 kB
+#11 13.80 ../erpnext/public/banking/assets/IncorrectlyClearedEntries-C2ZXyo8i.js              4.46 kB │ gzip:   1.90 kB
+#11 13.80 ../erpnext/public/banking/assets/BankReconciliationStatement-Cp2WoJnJ.js            6.06 kB │ gzip:   2.15 kB
+#11 13.80 ../erpnext/public/banking/assets/list-view-BbSpi9ox.js                              7.19 kB │ gzip:   2.95 kB
+#11 13.80 ../erpnext/public/banking/assets/button-DvpwTnge.js                                 7.40 kB │ gzip:   1.49 kB
+#11 13.80 ../erpnext/public/banking/assets/BankClearanceSummary-AvoPwUQu.js                   7.54 kB │ gzip:   2.75 kB
+#11 13.80 ../erpnext/public/banking/assets/BankStatementImporter-B6a-IQkW.js                  8.20 kB │ gzip:   2.84 kB
+#11 13.80 ../erpnext/public/banking/assets/BankTransactionList-B4GYyJRA.js                    8.91 kB │ gzip:   2.89 kB
+#11 13.80 ../erpnext/public/banking/assets/PDFImport-Djf2VI1f.js                              9.75 kB │ gzip:   3.47 kB
+#11 13.80 ../erpnext/public/banking/assets/vendor-jotai-4TSuf7UH.js                          10.08 kB │ gzip:   4.23 kB
+#11 13.80 ../erpnext/public/banking/assets/ActionLogDialogBody-Condwi18.js                   12.39 kB │ gzip:   3.41 kB
+#11 13.80 ../erpnext/public/banking/assets/TransferModalContent-DOox9MnP.js                  12.57 kB │ gzip:   3.90 kB
+#11 13.80 ../erpnext/public/banking/assets/BankEntryModalContent-DPUMMI8r.js                 14.74 kB │ gzip:   4.65 kB
+#11 13.80 ../erpnext/public/banking/assets/StatementDetails-D6-45FgC.js                      14.89 kB │ gzip:   4.15 kB
+#11 13.80 ../erpnext/public/banking/assets/vendor-lucide-B-frwjrw.js                         15.40 kB │ gzip:   5.37 kB
+#11 13.80 ../erpnext/public/banking/assets/vendor-fuse-f1wNO_vj.js                           24.39 kB │ gzip:   8.70 kB
+#11 13.80 ../erpnext/public/banking/assets/RecordPaymentModalContent-BnSwSg3B.js             25.61 kB │ gzip:   6.92 kB
+#11 13.80 ../erpnext/public/banking/assets/typography-BuVijSvj.js                            62.32 kB │ gzip:  19.64 kB
+#11 13.80 ../erpnext/public/banking/assets/vendor-tanstack-Dqu2uiyk.js                       66.60 kB │ gzip:  17.41 kB
+#11 13.80 ../erpnext/public/banking/assets/file-dropzone-C-nmzRIl.js                         71.98 kB │ gzip:  20.60 kB
+#11 13.80 ../erpnext/public/banking/assets/SettingsPanelsContent-CJbJrj0v.js                 84.19 kB │ gzip:  24.37 kB
+#11 13.80 ../erpnext/public/banking/assets/vendor-frappe-DNkB20qR.js                        133.97 kB │ gzip:  42.88 kB
+#11 13.80 ../erpnext/public/banking/assets/vendor-radix-Vt1qfjJS.js                         146.04 kB │ gzip:  44.78 kB
+#11 13.80 ../erpnext/public/banking/assets/vendor-react-bMZmfznu.js                         178.57 kB │ gzip:  56.37 kB
+#11 13.80 ../erpnext/public/banking/assets/error-banner-Dd_SdXKr.js                         356.82 kB │ gzip: 107.28 kB
+#11 13.80 ../erpnext/public/banking/assets/index--4-623AN.js                                361.19 kB │ gzip: 104.68 kB
+#11 13.80
+#11 13.80 ✓ built in 540ms
+#11 13.98 $ cp ../erpnext/public/banking/index.html ../erpnext/www/banking.html
+#11 14.05 Done in 2.35s.
+#11 14.09 Compiling translations for erpnext
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/es/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fr/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh_TW/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pl/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hu/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ta/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ko/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr_CS/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hi/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ru/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/nl/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/eo/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/id/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/bs/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sl/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/it/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/de/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/my/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/cs/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/tr/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/vi/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/ar/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fa/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt_BR/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/fi/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/nb/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/erpnext.mo
+#11 16.15 MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/erpnext.mo
+#11 DONE 16.4s
+#12 [web 7/7] COPY --chown=frappe:frappe --chmod=755 entrypoint.sh /home/frappe/frappe-bench/entrypoint.sh
+#12 DONE 0.3s
+#13 [scheduler] exporting to image
+#13 exporting layers
+#13 ...
+#14 [worker-long] exporting to image
+#14 ...
+#15 [worker-default] exporting to image
+#15 ...
+#16 [configurator] exporting to image
+#16 ...
+#17 [web] exporting to image
+#17 ...
+#18 [socketio] exporting to image
+#18 ...
+#19 [worker-short] exporting to image
+#19 ...
+#14 [worker-long] exporting to image
+#14 exporting layers 29.2s done
+#14 exporting manifest sha256:8319fa515280800946be18c8171331ce1639efa1ac46fba612631b00b4fca900 0.0s done
+#14 exporting config sha256:e5dc2d614112a1d211075709e25f8457bc6787943aef904c366472d38df1fe4e 0.0s done
+#14 exporting attestation manifest sha256:fa127613636b186a00218e3465023a1515267dbb0f8e43dba8ba02700b6896a6 0.0s done
+#14 exporting manifest list sha256:b95965a393ddb5e0b05bb15adeb6ce90149bc8062ea59af9862f36b3efaee495 0.0s done
+#14 naming to docker.io/library/erpnext-app:latest done
+#14 unpacking to docker.io/library/erpnext-app:latest
+#14 ...
+#18 [socketio] exporting to image
+#18 exporting layers 29.2s done
+#18 exporting manifest sha256:9ef850a5b548340303fe1e9807847002be60d20aee11e8090d527fd4be550f5f 0.0s done
+#18 exporting config sha256:3574e15c34b14b784d24d45e7b875460df32cc8fcb71d8b519d84fc197d08e1d 0.0s done
+#18 exporting attestation manifest sha256:c140bbe7ac3cc878616b22a6c669cd36ca43ecde9c3beca4d09f1012f2a07e05 0.0s done
+#18 exporting manifest list sha256:5f657806bfca0ef48ca322f3112c5190701d7d322e8356612bee8cdd733e3d9b 0.0s done
+#18 naming to docker.io/library/erpnext-app:latest done
+#18 ...
+#17 [web] exporting to image
+#17 exporting layers 29.2s done
+#17 exporting manifest sha256:462d0b71c077cb941e89b13de808e9b0d9d67658934c6475975753123172bab8 0.0s done
+#17 exporting config sha256:9efc9cfe599a9de31d620a33750307e38b61e72623f2cd1b6d82a3d32395941f 0.0s done
+#17 exporting attestation manifest sha256:35894459517fac9cfc95d94cff24e946e7c02159a8cde2f3fad77ef3106f344a 0.0s done
+#17 exporting manifest list sha256:3597d52ceddc8961d1b5bfeb666693c66e6e63f418861e030989f99650562936 0.0s done
+#17 naming to docker.io/library/erpnext-app:latest done
+#17 ...
+#13 [scheduler] exporting to image
+#13 exporting layers 29.2s done
+#13 exporting manifest sha256:94698492dd6f7b7885f7a29ed8a16e3b43615daad2d906b756bf0a0cf582fea0 0.0s done
+#13 exporting config sha256:9465e741b59ba61848ab5587a358033d983b4e2efe7b93e9c93f4f8825294201 0.0s done
+#13 exporting attestation manifest sha256:fbf950535fb0f57be24b7e6ee714fd044cef6a72a661dfb8a42fb6631de08c50 0.0s done
+#13 exporting manifest list sha256:c19e6c43e364fb5b2e8a3d1b436ba0226a7445456afca3461a4a305f4249b801 0.0s done
+#13 naming to docker.io/library/erpnext-app:latest done
+#13 ...
+#15 [worker-default] exporting to image
+#15 exporting layers 29.2s done
+#15 exporting manifest sha256:71fce0a08f454aee8662cc85be9e64671f2e110943b955fa4c77bb5d33683b94 0.0s done
+#15 exporting config sha256:da4b2ad82166dcebaa67669179b9e56eadd60f609c81ad0f7c4ff9aa2d907573 0.0s done
+#15 exporting attestation manifest sha256:0df1f92b7b3784f00ffbec1cf159f08ef4f180c6cb5df48d845c7fbf3b7f816b 0.0s done
+#15 exporting manifest list sha256:eed6636f0bba97b64ef741348bf2b64d4e5c364c1ebfc2e46329733cb2c58f27 0.0s done
+#15 naming to docker.io/library/erpnext-app:latest done
+#15 ...
+#16 [configurator] exporting to image
+#16 exporting layers 29.2s done
+#16 exporting manifest sha256:54ccb72ce643ab08bc723bec4cee65ed75fcea31d66cd35573517fce252deba0 0.0s done
+#16 exporting config sha256:06ca9256b5fd53ed3ae439d915ea39db5891549c20595d689162409e1f6af826 0.0s done
+#16 exporting attestation manifest sha256:fec2b00aec9f8ec10661250de0a4d0aec482a5c8a117d36d9e3d01e956d71b4f 0.0s done
+#16 exporting manifest list sha256:dc1aa897255d7cb5c37b779574f4c083b1a4696d354eb35e6de63d11bf5e9bd7 0.0s done
+#16 naming to docker.io/library/erpnext-app:latest done
+#16 ...
+#19 [worker-short] exporting to image
+#19 exporting layers 29.2s done
+#19 exporting manifest sha256:8e56acb990d7d2a62d60e73d283bad70ac7dc486ac0e8d8d07e7797f06825b15 0.0s done
+#19 exporting config sha256:57f0b467cb91ef663d36332c602ca698eaecb06fbeaff4dc3b753f613d4d5cb8 0.0s done
+#19 exporting attestation manifest sha256:67e8681ed38871591810c9a3ce457968cba6ede88b518a227044945ce83b779b 0.0s done
+#19 exporting manifest list sha256:50567c823daca2c0875f3a14e14398d10507ed91032bc129afb3f96c2e645ae2 0.0s done
+#19 naming to docker.io/library/erpnext-app:latest 0.0s done
+#19 unpacking to docker.io/library/erpnext-app:latest 25.0s done
+#19 DONE 54.4s
+#13 [scheduler] exporting to image
+#13 unpacking to docker.io/library/erpnext-app:latest 25.0s done
+#13 DONE 54.4s
+#15 [worker-default] exporting to image
+#15 unpacking to docker.io/library/erpnext-app:latest 25.0s done
+#15 DONE 54.4s
+#18 [socketio] exporting to image
+#18 unpacking to docker.io/library/erpnext-app:latest 25.2s done
+#18 DONE 54.6s
+#16 [configurator] exporting to image
+#16 unpacking to docker.io/library/erpnext-app:latest 25.3s done
+#16 DONE 54.7s
+#17 [web] exporting to image
+#17 unpacking to docker.io/library/erpnext-app:latest 25.5s done
+#17 DONE 54.8s
+#20 [scheduler] resolving provenance for metadata file
+#20 DONE 0.1s
+#21 [worker-short] resolving provenance for metadata file
+#21 DONE 0.0s
+#22 [worker-default] resolving provenance for metadata file
+#22 DONE 0.1s
+#14 [worker-long] exporting to image
+#14 unpacking to docker.io/library/erpnext-app:latest 25.6s done
+#14 DONE 54.9s
+#23 [socketio] resolving provenance for metadata file
+#23 DONE 0.1s
+#24 [worker-long] resolving provenance for metadata file
+#24 DONE 0.0s
+#25 [configurator] resolving provenance for metadata file
+#25 DONE 0.0s
+#26 [web] resolving provenance for metadata file
+#26 DONE 0.0s
+Image erpnext-app:latest Built
+Image erpnext-app:latest Built
+Image erpnext-app:latest Built
+Image erpnext-app:latest Built
+Image erpnext-app:latest Built
+Image erpnext-app:latest Built
+Image erpnext-app:latest Built
+Container erpnext-erp-rhpcwc-redis-cache-1 Running
+Container erpnext-erp-rhpcwc-redis-queue-1 Running
+Container erpnext-erp-rhpcwc-db-1 Running
+Container erpnext-erp-rhpcwc-configurator-1 Recreate
+Container erpnext-erp-rhpcwc-configurator-1 Recreated
+Container erpnext-erp-rhpcwc-worker-short-1 Recreate
+Container erpnext-erp-rhpcwc-worker-long-1 Recreate
+Container erpnext-erp-rhpcwc-web-1 Recreate
+Container erpnext-erp-rhpcwc-scheduler-1 Recreate
+Container erpnext-erp-rhpcwc-socketio-1 Recreate
+Container erpnext-erp-rhpcwc-worker-default-1 Recreate
+Container erpnext-erp-rhpcwc-worker-default-1 Recreated
+Container erpnext-erp-rhpcwc-worker-short-1 Recreated
+Container erpnext-erp-rhpcwc-worker-long-1 Recreated
+Container erpnext-erp-rhpcwc-web-1 Recreated
+Container erpnext-erp-rhpcwc-socketio-1 Recreated
+Container erpnext-erp-rhpcwc-scheduler-1 Recreated
+Container erpnext-erp-rhpcwc-redis-queue-1 Waiting
+Container erpnext-erp-rhpcwc-db-1 Waiting
+Container erpnext-erp-rhpcwc-redis-cache-1 Waiting
+Container erpnext-erp-rhpcwc-db-1 Healthy
+Container erpnext-erp-rhpcwc-redis-queue-1 Healthy
+Container erpnext-erp-rhpcwc-redis-cache-1 Healthy
+Container erpnext-erp-rhpcwc-configurator-1 Starting
+Container erpnext-erp-rhpcwc-configurator-1 Started
+Container erpnext-erp-rhpcwc-configurator-1 Waiting
+Container erpnext-erp-rhpcwc-configurator-1 Waiting
+Container erpnext-erp-rhpcwc-configurator-1 Waiting
+Container erpnext-erp-rhpcwc-configurator-1 Waiting
+Container erpnext-erp-rhpcwc-configurator-1 Waiting
+Container erpnext-erp-rhpcwc-configurator-1 Waiting
+Container erpnext-erp-rhpcwc-configurator-1 Exited
+Container erpnext-erp-rhpcwc-socketio-1 Starting
+Container erpnext-erp-rhpcwc-configurator-1 Exited
+Container erpnext-erp-rhpcwc-scheduler-1 Starting
+Container erpnext-erp-rhpcwc-configurator-1 Exited
+Container erpnext-erp-rhpcwc-web-1 Starting
+Container erpnext-erp-rhpcwc-configurator-1 Exited
+Container erpnext-erp-rhpcwc-worker-short-1 Starting
+Container erpnext-erp-rhpcwc-configurator-1 Exited
+Container erpnext-erp-rhpcwc-worker-default-1 Starting
+Container erpnext-erp-rhpcwc-configurator-1 Exited
+Container erpnext-erp-rhpcwc-worker-long-1 Starting
+Container erpnext-erp-rhpcwc-scheduler-1 Started
+Container erpnext-erp-rhpcwc-worker-short-1 Started
+Container erpnext-erp-rhpcwc-worker-default-1 Started
+Container erpnext-erp-rhpcwc-worker-long-1 Started
+Container erpnext-erp-rhpcwc-web-1 Started
+Container erpnext-erp-rhpcwc-web-1 Waiting
+Container erpnext-erp-rhpcwc-socketio-1 Started
+Container erpnext-erp-rhpcwc-web-1 Healthy
+Container erpnext-erp-rhpcwc-nginx-1 Starting
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint erpnext-erp-rhpcwc-nginx-1 (42e63c03f7b2a5d01bd9e72f7dfc188d88bb004e694dd585019d678392af12ca): Bind for 0.0.0.0:80 failed: port is already allocated
+Error: ❌ Docker command failed
+Error occurred ❌, check the logs for details.
