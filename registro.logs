@@ -1,99 +1,99 @@
-2026-07-01T11:31:05.856Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:31:05.856Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:31:05.856Z RuntimeError: object is not bound
-2026-07-01T11:31:20.902Z [2026-07-01 11:31:20 +0000] [64] [ERROR] Error handling request /
-2026-07-01T11:31:20.902Z Traceback (most recent call last):
-2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:31:20.902Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:31:20.902Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:31:20.902Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:31:20.902Z frappe.request.after_response.run,
-2026-07-01T11:31:20.902Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:31:20.902Z return getattr(self._get_current_object(), name)
-2026-07-01T11:31:20.902Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:31:20.902Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:31:20.902Z RuntimeError: object is not bound
-2026-07-01T11:31:35.948Z [2026-07-01 11:31:35 +0000] [66] [ERROR] Error handling request /
-2026-07-01T11:31:35.948Z Traceback (most recent call last):
-2026-07-01T11:31:35.948Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:31:35.948Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:31:35.949Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:31:35.949Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:31:35.949Z frappe.request.after_response.run,
-2026-07-01T11:31:35.949Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:31:35.949Z return getattr(self._get_current_object(), name)
-2026-07-01T11:31:35.949Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:31:35.949Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:31:35.949Z RuntimeError: object is not bound
-2026-07-01T11:31:51.000Z [2026-07-01 11:31:50 +0000] [65] [ERROR] Error handling request /
-2026-07-01T11:31:51.000Z Traceback (most recent call last):
-2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:31:51.000Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:31:51.000Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:31:51.000Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:31:51.000Z frappe.request.after_response.run,
-2026-07-01T11:31:51.000Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:31:51.000Z return getattr(self._get_current_object(), name)
-2026-07-01T11:31:51.000Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:31:51.000Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:31:51.000Z RuntimeError: object is not bound
-2026-07-01T11:32:06.048Z [2026-07-01 11:32:06 +0000] [65] [ERROR] Error handling request /
-2026-07-01T11:32:06.048Z Traceback (most recent call last):
-2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:32:06.048Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:32:06.048Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:32:06.048Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:32:06.048Z frappe.request.after_response.run,
-2026-07-01T11:32:06.048Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:32:06.048Z return getattr(self._get_current_object(), name)
-2026-07-01T11:32:06.048Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:32:06.048Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:32:06.048Z RuntimeError: object is not bound
-2026-07-01T11:32:21.093Z [2026-07-01 11:32:21 +0000] [67] [ERROR] Error handling request /
-2026-07-01T11:32:21.093Z Traceback (most recent call last):
-2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:32:21.093Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:32:21.093Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:32:21.093Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:32:21.093Z frappe.request.after_response.run,
-2026-07-01T11:32:21.093Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:32:21.093Z return getattr(self._get_current_object(), name)
-2026-07-01T11:32:21.093Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:32:21.093Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:32:21.093Z RuntimeError: object is not bound
-2026-07-01T11:32:36.140Z [2026-07-01 11:32:36 +0000] [67] [ERROR] Error handling request /
-2026-07-01T11:32:36.140Z Traceback (most recent call last):
-2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:32:36.140Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:32:36.140Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:32:36.140Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:32:36.140Z frappe.request.after_response.run,
-2026-07-01T11:32:36.140Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:32:36.140Z return getattr(self._get_current_object(), name)
-2026-07-01T11:32:36.140Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:32:36.140Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:32:36.140Z RuntimeError: object is not bound
+2026-07-01T11:39:18.487Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:39:18.487Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:39:18.487Z RuntimeError: object is not bound
+2026-07-01T11:39:33.533Z [2026-07-01 11:39:33 +0000] [57] [ERROR] Error handling request /
+2026-07-01T11:39:33.533Z Traceback (most recent call last):
+2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:39:33.533Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:39:33.533Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:39:33.533Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:39:33.533Z frappe.request.after_response.run,
+2026-07-01T11:39:33.533Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:39:33.533Z return getattr(self._get_current_object(), name)
+2026-07-01T11:39:33.533Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:39:33.533Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:39:33.533Z RuntimeError: object is not bound
+2026-07-01T11:39:48.578Z [2026-07-01 11:39:48 +0000] [58] [ERROR] Error handling request /
+2026-07-01T11:39:48.579Z Traceback (most recent call last):
+2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:39:48.579Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:39:48.579Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:39:48.579Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:39:48.579Z frappe.request.after_response.run,
+2026-07-01T11:39:48.579Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:39:48.579Z return getattr(self._get_current_object(), name)
+2026-07-01T11:39:48.579Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:39:48.579Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:39:48.579Z RuntimeError: object is not bound
+2026-07-01T11:40:03.627Z [2026-07-01 11:40:03 +0000] [58] [ERROR] Error handling request /
+2026-07-01T11:40:03.627Z Traceback (most recent call last):
+2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:40:03.627Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:40:03.627Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:40:03.627Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:40:03.627Z frappe.request.after_response.run,
+2026-07-01T11:40:03.627Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:40:03.627Z return getattr(self._get_current_object(), name)
+2026-07-01T11:40:03.627Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:40:03.627Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:40:03.627Z RuntimeError: object is not bound
+2026-07-01T11:40:18.678Z [2026-07-01 11:40:18 +0000] [56] [ERROR] Error handling request /
+2026-07-01T11:40:18.678Z Traceback (most recent call last):
+2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:40:18.678Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:40:18.678Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:40:18.678Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:40:18.678Z frappe.request.after_response.run,
+2026-07-01T11:40:18.678Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:40:18.678Z return getattr(self._get_current_object(), name)
+2026-07-01T11:40:18.678Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:40:18.678Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:40:18.678Z RuntimeError: object is not bound
+2026-07-01T11:40:33.723Z [2026-07-01 11:40:33 +0000] [56] [ERROR] Error handling request /
+2026-07-01T11:40:33.723Z Traceback (most recent call last):
+2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:40:33.723Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:40:33.723Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:40:33.723Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:40:33.723Z frappe.request.after_response.run,
+2026-07-01T11:40:33.723Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:40:33.723Z return getattr(self._get_current_object(), name)
+2026-07-01T11:40:33.723Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:40:33.723Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:40:33.723Z RuntimeError: object is not bound
+2026-07-01T11:40:48.772Z [2026-07-01 11:40:48 +0000] [57] [ERROR] Error handling request /
+2026-07-01T11:40:48.772Z Traceback (most recent call last):
+2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:40:48.772Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:40:48.772Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:40:48.772Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:40:48.772Z frappe.request.after_response.run,
+2026-07-01T11:40:48.772Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:40:48.772Z return getattr(self._get_current_object(), name)
+2026-07-01T11:40:48.772Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:40:48.772Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:40:48.772Z RuntimeError: object is not bound

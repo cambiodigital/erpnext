@@ -278,21 +278,16 @@ case "$PROCESS_ROLE" in
 		;;
 
 	web)
-		echo "==> [web] Starting gunicorn (${GUNICORN_WORKERS} workers) on 0.0.0.0:8000..."
-		# Explicit gunicorn invocation — no implicit behavior from bench serve.
-		# NOTE: Do NOT use --preload.  Frappe uses thread-local proxies
-		# (frappe.local) that do not survive the gunicorn master fork;
-		# preloading causes "RuntimeError: object is not bound" on every
-		# request because the LocalProxy loses its context after fork.
-		exec /home/frappe/frappe-bench/env/bin/gunicorn \
-			--bind 0.0.0.0:8000 \
-			--workers "$GUNICORN_WORKERS" \
-			--timeout 120 \
-			--worker-class sync \
-			--pid /tmp/gunicorn.pid \
-			--error-logfile - \
-			--log-level info \
-			frappe.app:application
+		echo "==> [web] Starting web server on 0.0.0.0:8000..."
+		# Use bench serve (Frappe's production gunicorn wrapper).
+		# Direct gunicorn omits Frappe's request-context initialisation
+		# hooks, causing "RuntimeError: object is not bound" on every
+		# request because frappe.local.request is never set up.
+		# --no-reload disables the dev auto-reloader.
+		# --port binds to the standard web port.
+		exec bench serve \
+			--port 8000 \
+			--no-reload
 		;;
 
 	socketio)
