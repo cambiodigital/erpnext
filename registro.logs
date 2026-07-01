@@ -1,58 +1,99 @@
-2026-07-01T11:15:48.076Z ==> [worker-default] Configuring common_site_config.json...
-2026-07-01T11:15:56.349Z ==> [worker-default] Starting background worker (queue: default)...
-2026-07-01T11:15:56.989Z 2026-07-01 11:15:56,988 Worker e6269861739c4206902e0d784f639bd4: started with PID 1, version 2.6.1
-2026-07-01T11:15:56.989Z 2026-07-01 11:15:56,989 Worker e6269861739c4206902e0d784f639bd4: subscribing to channel rq:pubsub:e6269861739c4206902e0d784f639bd4
-2026-07-01T11:15:56.990Z 2026-07-01 11:15:56,990 *** Listening on home-frappe-frappe-bench:default...
-2026-07-01T11:15:56.991Z 2026-07-01 11:15:56,990 Worker e6269861739c4206902e0d784f639bd4: cleaning registries for queue: home-frappe-frappe-bench:default
-2026-07-01T11:16:01.461Z 2026-07-01 11:16:01,461 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.reminder.reminder.send_reminders', ..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2okkjnd1kk)
-2026-07-01T11:16:02.675Z 2026-07-01 11:16:02,675 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.reminder.reminder.send_reminders', ..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:01.181433s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:02.675Z 2026-07-01 11:16:02,675 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2okkjnd1kk)
-2026-07-01T11:16:02.675Z 2026-07-01 11:16:02,675 Result is kept for 600 seconds
-2026-07-01T11:16:02.686Z 2026-07-01 11:16:02,686 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.deferred_insert.save_to_db', 'scheduled_job_type': '2o..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2okkfjjmfn)
-2026-07-01T11:16:03.069Z 2026-07-01 11:16:03,069 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.deferred_insert.save_to_db', 'scheduled_job_type': '2o..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.376260s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:03.069Z 2026-07-01 11:16:03,069 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2okkfjjmfn)
-2026-07-01T11:16:03.069Z 2026-07-01 11:16:03,069 Result is kept for 600 seconds
-2026-07-01T11:16:03.079Z 2026-07-01 11:16:03,078 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.link_count.update_link_count', 'scheduled_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2oklgd6437)
-2026-07-01T11:16:03.451Z 2026-07-01 11:16:03,450 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.link_count.update_link_count', 'scheduled_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.365816s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:03.451Z 2026-07-01 11:16:03,451 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2oklgd6437)
-2026-07-01T11:16:03.451Z 2026-07-01 11:16:03,451 Result is kept for 600 seconds
-2026-07-01T11:16:03.460Z 2026-07-01 11:16:03,460 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search', 'scheduled_jo..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2ok4r6181i)
-2026-07-01T11:16:03.827Z 2026-07-01 11:16:03,827 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search', 'scheduled_jo..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.358760s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:03.827Z 2026-07-01 11:16:03,827 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2ok4r6181i)
-2026-07-01T11:16:03.827Z 2026-07-01 11:16:03,827 Result is kept for 600 seconds
-2026-07-01T11:16:03.836Z 2026-07-01 11:16:03,836 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.search.sqlite_search.index_docs_in_queue', 'scheduled_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2okdfju312)
-2026-07-01T11:16:04.214Z 2026-07-01 11:16:04,214 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.search.sqlite_search.index_docs_in_queue', 'scheduled_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.371083s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:04.214Z 2026-07-01 11:16:04,214 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2okdfju312)
-2026-07-01T11:16:04.214Z 2026-07-01 11:16:04,214 Result is kept for 600 seconds
-2026-07-01T11:16:04.224Z 2026-07-01 11:16:04,224 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2okonvq1pg)
-2026-07-01T11:16:04.727Z 2026-07-01 11:16:04,724 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.493718s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:04.727Z 2026-07-01 11:16:04,725 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2okonvq1pg)
-2026-07-01T11:16:04.727Z 2026-07-01 11:16:04,725 Result is kept for 600 seconds
-2026-07-01T11:16:04.736Z 2026-07-01 11:16:04,736 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush', 'scheduled_job_type': '2okb9vgfo9'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2okb9vgfo9)
-2026-07-01T11:16:05.153Z 2026-07-01 11:16:05,153 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush', 'scheduled_job_type': '2okb9vgfo9'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.408861s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:05.153Z 2026-07-01 11:16:05,153 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2okb9vgfo9)
-2026-07-01T11:16:05.153Z 2026-07-01 11:16:05,153 Result is kept for 600 seconds
-2026-07-01T11:16:05.164Z 2026-07-01 11:16:05,164 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush', 'scheduled_job_type': '2ok00qkbbv'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2ok00qkbbv)
-2026-07-01T11:16:05.520Z 2026-07-01 11:16:05,520 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush', 'scheduled_job_type': '2ok00qkbbv'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.349278s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:05.520Z 2026-07-01 11:16:05,520 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2ok00qkbbv)
-2026-07-01T11:16:05.521Z 2026-07-01 11:16:05,520 Result is kept for 600 seconds
-2026-07-01T11:16:05.531Z 2026-07-01 11:16:05,531 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'erpnext.manufacturing.doctype.bom_update_log.bom_update_log.r..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||314hgquvl2)
-2026-07-01T11:16:05.903Z 2026-07-01 11:16:05,902 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'erpnext.manufacturing.doctype.bom_update_log.bom_update_log.r..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.365193s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:05.903Z 2026-07-01 11:16:05,903 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||314hgquvl2)
-2026-07-01T11:16:05.903Z 2026-07-01 11:16:05,903 Result is kept for 600 seconds
-2026-07-01T11:16:05.914Z 2026-07-01 11:16:05,914 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.notification.notification.trigger_offset..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2oj2d9ovkj)
-2026-07-01T11:16:06.266Z 2026-07-01 11:16:06,265 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.notification.notification.trigger_offset..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.344148s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:06.266Z 2026-07-01 11:16:06,266 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2oj2d9ovkj)
-2026-07-01T11:16:06.266Z 2026-07-01 11:16:06,266 Result is kept for 600 seconds
-2026-07-01T11:16:06.275Z 2026-07-01 11:16:06,275 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.telemetry.pulse.client.send_queued_events', 'sch..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2okjb0s3cn)
-2026-07-01T11:16:06.620Z 2026-07-01 11:16:06,620 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.telemetry.pulse.client.send_queued_events', 'sch..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.338640s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:06.620Z 2026-07-01 11:16:06,620 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2okjb0s3cn)
-2026-07-01T11:16:06.620Z 2026-07-01 11:16:06,620 Result is kept for 600 seconds
-2026-07-01T11:16:06.630Z 2026-07-01 11:16:06,629 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.retry_sending_emails', 'scheduled_job_type..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2oksta6p0b)
-2026-07-01T11:16:07.050Z 2026-07-01 11:16:07,050 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.retry_sending_emails', 'scheduled_job_type..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.413920s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:07.050Z 2026-07-01 11:16:07,050 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2oksta6p0b)
-2026-07-01T11:16:07.050Z 2026-07-01 11:16:07,050 Result is kept for 600 seconds
-2026-07-01T11:16:07.060Z 2026-07-01 11:16:07,060 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_calendar.google_calendar.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') (erp.saharapro.team||scheduled_job||2okk03i5j2)
-2026-07-01T11:16:07.694Z 2026-07-01 11:16:07,693 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_calendar.google_calendar.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.saharapro.team', user='Administrator') job in 0:00:00.625449s on worker e6269861739c4206902e0d784f639bd4
-2026-07-01T11:16:07.694Z 2026-07-01 11:16:07,693 home-frappe-frappe-bench:default: Job OK (erp.saharapro.team||scheduled_job||2okk03i5j2)
-2026-07-01T11:16:07.694Z 2026-07-01 11:16:07,693 Result is kept for 600 seconds
+2026-07-01T11:31:05.856Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:31:05.856Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:31:05.856Z RuntimeError: object is not bound
+2026-07-01T11:31:20.902Z [2026-07-01 11:31:20 +0000] [64] [ERROR] Error handling request /
+2026-07-01T11:31:20.902Z Traceback (most recent call last):
+2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:31:20.902Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:31:20.902Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:31:20.902Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:31:20.902Z frappe.request.after_response.run,
+2026-07-01T11:31:20.902Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:31:20.902Z return getattr(self._get_current_object(), name)
+2026-07-01T11:31:20.902Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:31:20.902Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:31:20.902Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:31:20.902Z RuntimeError: object is not bound
+2026-07-01T11:31:35.948Z [2026-07-01 11:31:35 +0000] [66] [ERROR] Error handling request /
+2026-07-01T11:31:35.948Z Traceback (most recent call last):
+2026-07-01T11:31:35.948Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:31:35.948Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:31:35.949Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:31:35.949Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:31:35.949Z frappe.request.after_response.run,
+2026-07-01T11:31:35.949Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:31:35.949Z return getattr(self._get_current_object(), name)
+2026-07-01T11:31:35.949Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:31:35.949Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:31:35.949Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:31:35.949Z RuntimeError: object is not bound
+2026-07-01T11:31:51.000Z [2026-07-01 11:31:50 +0000] [65] [ERROR] Error handling request /
+2026-07-01T11:31:51.000Z Traceback (most recent call last):
+2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:31:51.000Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:31:51.000Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:31:51.000Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:31:51.000Z frappe.request.after_response.run,
+2026-07-01T11:31:51.000Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:31:51.000Z return getattr(self._get_current_object(), name)
+2026-07-01T11:31:51.000Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:31:51.000Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:31:51.000Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:31:51.000Z RuntimeError: object is not bound
+2026-07-01T11:32:06.048Z [2026-07-01 11:32:06 +0000] [65] [ERROR] Error handling request /
+2026-07-01T11:32:06.048Z Traceback (most recent call last):
+2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:32:06.048Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:32:06.048Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:32:06.048Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:32:06.048Z frappe.request.after_response.run,
+2026-07-01T11:32:06.048Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:32:06.048Z return getattr(self._get_current_object(), name)
+2026-07-01T11:32:06.048Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:32:06.048Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:32:06.048Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:32:06.048Z RuntimeError: object is not bound
+2026-07-01T11:32:21.093Z [2026-07-01 11:32:21 +0000] [67] [ERROR] Error handling request /
+2026-07-01T11:32:21.093Z Traceback (most recent call last):
+2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:32:21.093Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:32:21.093Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:32:21.093Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:32:21.093Z frappe.request.after_response.run,
+2026-07-01T11:32:21.093Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:32:21.093Z return getattr(self._get_current_object(), name)
+2026-07-01T11:32:21.093Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:32:21.093Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:32:21.093Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:32:21.093Z RuntimeError: object is not bound
+2026-07-01T11:32:36.140Z [2026-07-01 11:32:36 +0000] [67] [ERROR] Error handling request /
+2026-07-01T11:32:36.140Z Traceback (most recent call last):
+2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-07-01T11:32:36.140Z self.handle_request(listener, req, client, addr)
+2026-07-01T11:32:36.140Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-07-01T11:32:36.140Z respiter = self.wsgi(environ, resp.start_response)
+2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
+2026-07-01T11:32:36.140Z frappe.request.after_response.run,
+2026-07-01T11:32:36.140Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+2026-07-01T11:32:36.140Z return getattr(self._get_current_object(), name)
+2026-07-01T11:32:36.140Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-01T11:32:36.140Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+2026-07-01T11:32:36.140Z raise RuntimeError("object is not bound") from None
+2026-07-01T11:32:36.140Z RuntimeError: object is not bound
