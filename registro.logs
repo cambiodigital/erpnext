@@ -1,100 +1,151 @@
-logs web
-2026-07-01T12:16:02.761Z 127.0.0.1 - - [01/Jul/2026 12:16:02] "GET / HTTP/1.1" 200 -
-2026-07-01T12:16:17.879Z 127.0.0.1 - - [01/Jul/2026 12:16:17] "GET / HTTP/1.1" 200 -
-2026-07-01T12:16:32.950Z 127.0.0.1 - - [01/Jul/2026 12:16:32] "GET / HTTP/1.1" 200 -
-2026-07-01T12:16:48.014Z 127.0.0.1 - - [01/Jul/2026 12:16:48] "GET / HTTP/1.1" 200 -
-2026-07-01T12:17:03.086Z 127.0.0.1 - - [01/Jul/2026 12:17:03] "GET / HTTP/1.1" 200 -
-2026-07-01T12:17:18.222Z 127.0.0.1 - - [01/Jul/2026 12:17:18] "GET / HTTP/1.1" 200 -
-2026-07-01T12:17:33.287Z 127.0.0.1 - - [01/Jul/2026 12:17:33] "GET / HTTP/1.1" 200 -
-2026-07-01T12:17:48.352Z 127.0.0.1 - - [01/Jul/2026 12:17:48] "GET / HTTP/1.1" 200 -
-2026-07-01T12:18:03.417Z 127.0.0.1 - - [01/Jul/2026 12:18:03] "GET / HTTP/1.1" 200 -
-2026-07-01T12:18:18.487Z 127.0.0.1 - - [01/Jul/2026 12:18:18] "GET / HTTP/1.1" 200 -
-2026-07-01T12:18:33.551Z 127.0.0.1 - - [01/Jul/2026 12:18:33] "GET / HTTP/1.1" 200 -
-2026-07-01T12:18:48.629Z 127.0.0.1 - - [01/Jul/2026 12:18:48] "GET / HTTP/1.1" 200 -
-2026-07-01T12:19:03.691Z 127.0.0.1 - - [01/Jul/2026 12:19:03] "GET / HTTP/1.1" 200 -
-2026-07-01T12:19:18.749Z 127.0.0.1 - - [01/Jul/2026 12:19:18] "GET / HTTP/1.1" 200 -
-2026-07-01T12:19:33.823Z 127.0.0.1 - - [01/Jul/2026 12:19:33] "GET / HTTP/1.1" 200 -
-2026-07-01T12:19:48.885Z 127.0.0.1 - - [01/Jul/2026 12:19:48] "GET / HTTP/1.1" 200 -
-2026-07-01T12:20:03.954Z 127.0.0.1 - - [01/Jul/2026 12:20:03] "GET / HTTP/1.1" 200 -
-2026-07-01T12:20:19.020Z 127.0.0.1 - - [01/Jul/2026 12:20:19] "GET / HTTP/1.1" 200 -
-2026-07-01T12:20:34.083Z 127.0.0.1 - - [01/Jul/2026 12:20:34] "GET / HTTP/1.1" 200 -
-2026-07-01T12:20:49.148Z 127.0.0.1 - - [01/Jul/2026 12:20:49] "GET / HTTP/1.1" 200 -
-2026-07-01T12:21:04.215Z 127.0.0.1 - - [01/Jul/2026 12:21:04] "GET / HTTP/1.1" 200 -
-2026-07-01T12:21:19.287Z 127.0.0.1 - - [01/Jul/2026 12:21:19] "GET / HTTP/1.1" 200 -
-2026-07-01T12:21:34.350Z 127.0.0.1 - - [01/Jul/2026 12:21:34] "GET / HTTP/1.1" 200 -
-2026-07-01T12:21:49.422Z 127.0.0.1 - - [01/Jul/2026 12:21:49] "GET / HTTP/1.1" 200 -
-2026-07-01T12:22:04.487Z 127.0.0.1 - - [01/Jul/2026 12:22:04] "GET / HTTP/1.1" 200 -
-2026-07-01T12:22:19.561Z 127.0.0.1 - - [01/Jul/2026 12:22:19] "GET / HTTP/1.1" 200 -
-2026-07-01T12:22:34.645Z 127.0.0.1 - - [01/Jul/2026 12:22:34] "GET / HTTP/1.1" 200 -
-2026-07-01T12:22:49.711Z 127.0.0.1 - - [01/Jul/2026 12:22:49] "GET / HTTP/1.1" 200 -
-2026-07-01T12:23:04.780Z 127.0.0.1 - - [01/Jul/2026 12:23:04] "GET / HTTP/1.1" 200 -
-2026-07-01T12:23:19.845Z 127.0.0.1 - - [01/Jul/2026 12:23:19] "GET / HTTP/1.1" 200 -
-2026-07-01T12:23:34.906Z 127.0.0.1 - - [01/Jul/2026 12:23:34] "GET / HTTP/1.1" 200 -
-2026-07-01T12:23:49.973Z 127.0.0.1 - - [01/Jul/2026 12:23:49] "GET / HTTP/1.1" 200 -
-2026-07-01T12:24:05.038Z 127.0.0.1 - - [01/Jul/2026 12:24:05] "GET / HTTP/1.1" 200 -
-2026-07-01T12:24:20.107Z 127.0.0.1 - - [01/Jul/2026 12:24:20] "GET / HTTP/1.1" 200 -
-2026-07-01T12:24:35.165Z 127.0.0.1 - - [01/Jul/2026 12:24:35] "GET / HTTP/1.1" 200 -
-2026-07-01T12:24:50.228Z 127.0.0.1 - - [01/Jul/2026 12:24:50] "GET / HTTP/1.1" 200 -
-2026-07-01T12:25:05.291Z 127.0.0.1 - - [01/Jul/2026 12:25:05] "GET / HTTP/1.1" 200 -
-2026-07-01T12:25:20.358Z 127.0.0.1 - - [01/Jul/2026 12:25:20] "GET / HTTP/1.1" 200 -
-2026-07-01T12:25:35.419Z 127.0.0.1 - - [01/Jul/2026 12:25:35] "GET / HTTP/1.1" 200 -
-2026-07-01T12:25:50.485Z 127.0.0.1 - - [01/Jul/2026 12:25:50] "GET / HTTP/1.1" 200 -
-2026-07-01T12:26:05.551Z 127.0.0.1 - - [01/Jul/2026 12:26:05] "GET / HTTP/1.1" 200 -
-2026-07-01T12:26:20.662Z 127.0.0.1 - - [01/Jul/2026 12:26:20] "GET / HTTP/1.1" 200 -
-2026-07-01T12:26:35.727Z 127.0.0.1 - - [01/Jul/2026 12:26:35] "GET / HTTP/1.1" 200 -
-2026-07-01T12:26:50.788Z 127.0.0.1 - - [01/Jul/2026 12:26:50] "GET / HTTP/1.1" 200 -
-2026-07-01T12:27:05.848Z 127.0.0.1 - - [01/Jul/2026 12:27:05] "GET / HTTP/1.1" 200 -
-2026-07-01T12:27:20.910Z 127.0.0.1 - - [01/Jul/2026 12:27:20] "GET / HTTP/1.1" 200 -
-2026-07-01T12:27:35.983Z 127.0.0.1 - - [01/Jul/2026 12:27:35] "GET / HTTP/1.1" 200 -
-2026-07-01T12:27:51.051Z 127.0.0.1 - - [01/Jul/2026 12:27:51] "GET / HTTP/1.1" 200 -
-2026-07-01T12:28:06.110Z 127.0.0.1 - - [01/Jul/2026 12:28:06] "GET / HTTP/1.1" 200 -
-2026-07-01T12:28:21.179Z 127.0.0.1 - - [01/Jul/2026 12:28:21] "GET / HTTP/1.1" 200 -
-2026-07-01T12:28:36.256Z 127.0.0.1 - - [01/Jul/2026 12:28:36] "GET / HTTP/1.1" 200 -
-2026-07-01T12:28:51.320Z 127.0.0.1 - - [01/Jul/2026 12:28:51] "GET / HTTP/1.1" 200 -
-2026-07-01T12:29:06.382Z 127.0.0.1 - - [01/Jul/2026 12:29:06] "GET / HTTP/1.1" 200 -
-2026-07-01T12:29:21.448Z 127.0.0.1 - - [01/Jul/2026 12:29:21] "GET / HTTP/1.1" 200 -
-2026-07-01T12:29:36.517Z 127.0.0.1 - - [01/Jul/2026 12:29:36] "GET / HTTP/1.1" 200 -
-2026-07-01T12:29:51.584Z 127.0.0.1 - - [01/Jul/2026 12:29:51] "GET / HTTP/1.1" 200 -
-2026-07-01T12:30:06.654Z 127.0.0.1 - - [01/Jul/2026 12:30:06] "GET / HTTP/1.1" 200 -
-2026-07-01T12:30:21.717Z 127.0.0.1 - - [01/Jul/2026 12:30:21] "GET / HTTP/1.1" 200 -
-2026-07-01T12:30:36.790Z 127.0.0.1 - - [01/Jul/2026 12:30:36] "GET / HTTP/1.1" 200 -
-2026-07-01T12:30:51.869Z 127.0.0.1 - - [01/Jul/2026 12:30:51] "GET / HTTP/1.1" 200 -
-2026-07-01T12:31:06.931Z 127.0.0.1 - - [01/Jul/2026 12:31:06] "GET / HTTP/1.1" 200 -
-2026-07-01T12:31:21.991Z 127.0.0.1 - - [01/Jul/2026 12:31:21] "GET / HTTP/1.1" 200 -
-2026-07-01T12:31:37.050Z 127.0.0.1 - - [01/Jul/2026 12:31:37] "GET / HTTP/1.1" 200 -
-2026-07-01T12:31:52.108Z 127.0.0.1 - - [01/Jul/2026 12:31:52] "GET / HTTP/1.1" 200 -
-2026-07-01T12:32:07.167Z 127.0.0.1 - - [01/Jul/2026 12:32:07] "GET / HTTP/1.1" 200 -
-2026-07-01T12:32:22.233Z 127.0.0.1 - - [01/Jul/2026 12:32:22] "GET / HTTP/1.1" 200 -
-2026-07-01T12:32:37.305Z 127.0.0.1 - - [01/Jul/2026 12:32:37] "GET / HTTP/1.1" 200 -
-2026-07-01T12:32:52.374Z 127.0.0.1 - - [01/Jul/2026 12:32:52] "GET / HTTP/1.1" 200 -
-2026-07-01T12:33:07.435Z 127.0.0.1 - - [01/Jul/2026 12:33:07] "GET / HTTP/1.1" 200 -
-2026-07-01T12:33:22.500Z 127.0.0.1 - - [01/Jul/2026 12:33:22] "GET / HTTP/1.1" 200 -
-2026-07-01T12:33:37.565Z 127.0.0.1 - - [01/Jul/2026 12:33:37] "GET / HTTP/1.1" 200 -
-2026-07-01T12:33:52.635Z 127.0.0.1 - - [01/Jul/2026 12:33:52] "GET / HTTP/1.1" 200 -
-2026-07-01T12:34:07.697Z 127.0.0.1 - - [01/Jul/2026 12:34:07] "GET / HTTP/1.1" 200 -
-2026-07-01T12:34:22.767Z 127.0.0.1 - - [01/Jul/2026 12:34:22] "GET / HTTP/1.1" 200 -
-2026-07-01T12:34:37.834Z 127.0.0.1 - - [01/Jul/2026 12:34:37] "GET / HTTP/1.1" 200 -
-2026-07-01T12:34:52.899Z 127.0.0.1 - - [01/Jul/2026 12:34:52] "GET / HTTP/1.1" 200 -
-2026-07-01T12:35:07.966Z 127.0.0.1 - - [01/Jul/2026 12:35:07] "GET / HTTP/1.1" 200 -
-2026-07-01T12:35:23.035Z 127.0.0.1 - - [01/Jul/2026 12:35:23] "GET / HTTP/1.1" 200 -
-2026-07-01T12:35:38.109Z 127.0.0.1 - - [01/Jul/2026 12:35:38] "GET / HTTP/1.1" 200 -
-2026-07-01T12:35:53.177Z 127.0.0.1 - - [01/Jul/2026 12:35:53] "GET / HTTP/1.1" 200 -
-2026-07-01T12:36:08.239Z 127.0.0.1 - - [01/Jul/2026 12:36:08] "GET / HTTP/1.1" 200 -
-2026-07-01T12:36:23.351Z 127.0.0.1 - - [01/Jul/2026 12:36:23] "GET / HTTP/1.1" 200 -
-2026-07-01T12:36:38.427Z 127.0.0.1 - - [01/Jul/2026 12:36:38] "GET / HTTP/1.1" 200 -
-2026-07-01T12:36:53.495Z 127.0.0.1 - - [01/Jul/2026 12:36:53] "GET / HTTP/1.1" 200 -
-2026-07-01T12:37:08.556Z 127.0.0.1 - - [01/Jul/2026 12:37:08] "GET / HTTP/1.1" 200 -
-2026-07-01T12:37:23.617Z 127.0.0.1 - - [01/Jul/2026 12:37:23] "GET / HTTP/1.1" 200 -
-2026-07-01T12:37:38.690Z 127.0.0.1 - - [01/Jul/2026 12:37:38] "GET / HTTP/1.1" 200 -
-2026-07-01T12:37:53.754Z 127.0.0.1 - - [01/Jul/2026 12:37:53] "GET / HTTP/1.1" 200 -
-2026-07-01T12:38:08.815Z 127.0.0.1 - - [01/Jul/2026 12:38:08] "GET / HTTP/1.1" 200 -
-2026-07-01T12:38:23.874Z 127.0.0.1 - - [01/Jul/2026 12:38:23] "GET / HTTP/1.1" 200 -
-2026-07-01T12:38:38.939Z 127.0.0.1 - - [01/Jul/2026 12:38:38] "GET / HTTP/1.1" 200 -
-2026-07-01T12:38:54.074Z 127.0.0.1 - - [01/Jul/2026 12:38:54] "GET / HTTP/1.1" 200 -
-2026-07-01T12:39:09.135Z 127.0.0.1 - - [01/Jul/2026 12:39:09] "GET / HTTP/1.1" 200 -
-2026-07-01T12:39:24.206Z 127.0.0.1 - - [01/Jul/2026 12:39:24] "GET / HTTP/1.1" 200 -
-2026-07-01T12:39:39.279Z 127.0.0.1 - - [01/Jul/2026 12:39:39] "GET / HTTP/1.1" 200 -
-2026-07-01T12:39:41.738Z 172.19.0.11 - - [01/Jul/2026 12:39:41] "GET / HTTP/1.1" 200 -
-2026-07-01T12:39:42.137Z 172.19.0.11 - - [01/Jul/2026 12:39:42] "[33mGET /frappe-web.bundle.js HTTP/1.1[0m" 404 -
-2026-07-01T12:39:42.407Z 172.19.0.11 - - [01/Jul/2026 12:39:42] "GET /website_script.js HTTP/1.1" 200 -
-2026-07-01T12:39:54.345Z 127.0.0.1 - - [01/Jul/2026 12:39:54] "GET / HTTP/1.1" 200 -
+NGINX
+
+2026-07-01T12:06:15.881Z /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+2026-07-01T12:06:15.881Z /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+2026-07-01T12:06:15.883Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+2026-07-01T12:06:15.888Z 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+2026-07-01T12:06:15.908Z 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+2026-07-01T12:06:15.908Z /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+2026-07-01T12:06:15.908Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+2026-07-01T12:06:15.915Z 20-envsubst-on-templates.sh: Running envsubst on /etc/nginx/templates/default.conf.template to /etc/nginx/conf.d/default.conf
+2026-07-01T12:06:15.918Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+2026-07-01T12:06:15.919Z /docker-entrypoint.sh: Configuration complete; ready for start up
+2026-07-01T12:06:15.928Z 2026/07/01 12:06:15 [notice] 1#1: using the "epoll" event method
+2026-07-01T12:06:15.928Z 2026/07/01 12:06:15 [notice] 1#1: nginx/1.31.2
+2026-07-01T12:06:15.928Z 2026/07/01 12:06:15 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0)
+2026-07-01T12:06:15.928Z 2026/07/01 12:06:15 [notice] 1#1: OS: Linux 7.0.0-15-generic
+2026-07-01T12:06:15.928Z 2026/07/01 12:06:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2026-07-01T12:06:15.929Z 2026/07/01 12:06:15 [notice] 1#1: start worker processes
+2026-07-01T12:06:15.929Z 2026/07/01 12:06:15 [notice] 1#1: start worker process 36
+2026-07-01T12:06:15.930Z 2026/07/01 12:06:15 [notice] 1#1: start worker process 37
+2026-07-01T12:06:15.930Z 2026/07/01 12:06:15 [notice] 1#1: start worker process 38
+2026-07-01T12:06:15.930Z 2026/07/01 12:06:15 [notice] 1#1: start worker process 39
+2026-07-01T12:06:15.930Z 2026/07/01 12:06:15 [notice] 1#1: start worker process 40
+2026-07-01T12:06:15.930Z 2026/07/01 12:06:15 [notice] 1#1: start worker process 41
+2026-07-01T12:13:18.854Z 10.0.1.24 - - [01/Jul/2026:12:13:18 +0000] "GET / HTTP/1.1" 200 24652 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.179Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /assets/erpnext/dist/css/erpnext-web.bundle.BPRC7HUC.css HTTP/1.1" 404 5079 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.303Z 2026/07/01 12:13:19 [warn] 38#38: *6 upstream sent duplicate header line: "Date: Wed, 01 Jul 2026 12:13:19 GMT", previous value: "Date: Wed, 01 Jul 2026 12:13:19 GMT", ignored while reading response header from upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /assets/frappe/icons/timeless/icons.svg?v=1782907555.2778661 HTTP/1.1", upstream: "http://172.19.0.6:8000/assets/frappe/icons/timeless/icons.svg?v=1782907555.2778661", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T12:13:19.303Z 2026/07/01 12:13:19 [warn] 38#38: *7 upstream sent duplicate header line: "Date: Wed, 01 Jul 2026 12:13:19 GMT", previous value: "Date: Wed, 01 Jul 2026 12:13:19 GMT", ignored while reading response header from upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /assets/erpnext/icons/pos-icons.svg?v=1782907555.2778661 HTTP/1.1", upstream: "http://172.19.0.6:8000/assets/erpnext/icons/pos-icons.svg?v=1782907555.2778661", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T12:13:19.304Z 2026/07/01 12:13:19 [warn] 41#41: *8 upstream sent duplicate header line: "Date: Wed, 01 Jul 2026 12:13:19 GMT", previous value: "Date: Wed, 01 Jul 2026 12:13:19 GMT", ignored while reading response header from upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /assets/frappe/icons/espresso/icons.svg?v=1782907555.2778661 HTTP/1.1", upstream: "http://172.19.0.6:8000/assets/frappe/icons/espresso/icons.svg?v=1782907555.2778661", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T12:13:19.304Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /assets/erpnext/icons/pos-icons.svg?v=1782907555.2778661 HTTP/1.1" 200 1011 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.304Z 2026/07/01 12:13:19 [warn] 36#36: *1 upstream sent duplicate header line: "Date: Wed, 01 Jul 2026 12:13:19 GMT", previous value: "Date: Wed, 01 Jul 2026 12:13:19 GMT", ignored while reading response header from upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /assets/erpnext/images/erpnext-logo.svg HTTP/1.1", upstream: "http://172.19.0.6:8000/assets/erpnext/images/erpnext-logo.svg", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T12:13:19.304Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /assets/erpnext/images/erpnext-logo.svg HTTP/1.1" 200 501 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.304Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /assets/frappe/icons/timeless/icons.svg?v=1782907555.2778661 HTTP/1.1" 200 71921 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.304Z 2026/07/01 12:13:19 [warn] 37#37: *5 upstream sent duplicate header line: "Date: Wed, 01 Jul 2026 12:13:19 GMT", previous value: "Date: Wed, 01 Jul 2026 12:13:19 GMT", ignored while reading response header from upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /assets/frappe/icons/lucide/icons.svg?v=1782907555.2778661 HTTP/1.1", upstream: "http://172.19.0.6:8000/assets/frappe/icons/lucide/icons.svg?v=1782907555.2778661", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T12:13:19.316Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /assets/frappe/icons/espresso/icons.svg?v=1782907555.2778661 HTTP/1.1" 200 197404 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.357Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /assets/frappe/icons/lucide/icons.svg?v=1782907555.2778661 HTTP/1.1" 200 450258 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.512Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /website.bundle.css HTTP/1.1" 404 5042 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.516Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /frappe-web.bundle.js HTTP/1.1" 404 5044 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.518Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /login.bundle.css HTTP/1.1" 404 5040 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.520Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /website_script.js HTTP/1.1" 200 25 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.578Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /api/method/frappe.translate.get_boot_translations?v=undefined&lang=es HTTP/1.1" 200 597996 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:13:19.590Z 2026/07/01 12:13:19 [warn] 38#38: *6 upstream sent duplicate header line: "Date: Wed, 01 Jul 2026 12:13:19 GMT", previous value: "Date: Wed, 01 Jul 2026 12:13:19 GMT", ignored while reading response header from upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /assets/erpnext/images/erpnext-favicon.svg HTTP/1.1", upstream: "http://172.19.0.6:8000/assets/erpnext/images/erpnext-favicon.svg", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T12:13:19.591Z 10.0.1.24 - - [01/Jul/2026:12:13:19 +0000] "GET /assets/erpnext/images/erpnext-favicon.svg HTTP/1.1" 200 455 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:39:41.738Z 10.0.1.24 - - [01/Jul/2026:12:39:41 +0000] "GET / HTTP/1.1" 200 24646 "http://erp.saharapro.team/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "45.148.10.217"
+2026-07-01T12:39:42.137Z 10.0.1.24 - - [01/Jul/2026:12:39:42 +0000] "GET /frappe-web.bundle.js HTTP/1.1" 404 5028 "http://erp.saharapro.team/frappe-web.bundle.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "45.148.10.217"
+2026-07-01T12:39:42.407Z 10.0.1.24 - - [01/Jul/2026:12:39:42 +0000] "GET /website_script.js HTTP/1.1" 200 25 "http://erp.saharapro.team/website_script.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" "45.148.10.217"
+2026-07-01T12:46:38.627Z 2026/07/01 12:46:38 [error] 36#36: *25 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET / HTTP/1.1", upstream: "http://172.19.0.6:8000/", host: "erp.saharapro.team"
+2026-07-01T12:46:38.627Z 10.0.1.24 - - [01/Jul/2026:12:46:38 +0000] "GET / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+2026-07-01T12:46:38.869Z 2026/07/01 12:46:38 [error] 36#36: *25 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.24, server: erp.saharapro.team, request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.19.0.6:8000/favicon.ico", host: "erp.saharapro.team", referrer: "https://erp.saharapro.team/"
+2026-07-01T12:46:38.869Z 10.0.1.24 - - [01/Jul/2026:12:46:38 +0000] "GET /favicon.ico HTTP/1.1" 502 559 "https://erp.saharapro.team/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0" "213.194.150.77"
+
+Configurator:
+
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankClearanceSummary-AvoPwUQu.js                   7.54 kB │ gzip:   2.75 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankStatementImporter-B6a-IQkW.js                  8.20 kB │ gzip:   2.84 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankTransactionList-B4GYyJRA.js                    8.91 kB │ gzip:   2.89 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/PDFImport-Djf2VI1f.js                              9.75 kB │ gzip:   3.47 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-jotai-4TSuf7UH.js                          10.08 kB │ gzip:   4.23 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/ActionLogDialogBody-Condwi18.js                   12.39 kB │ gzip:   3.41 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/TransferModalContent-DOox9MnP.js                  12.57 kB │ gzip:   3.90 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/BankEntryModalContent-DPUMMI8r.js                 14.74 kB │ gzip:   4.65 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/StatementDetails-D6-45FgC.js                      14.89 kB │ gzip:   4.15 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-lucide-B-frwjrw.js                         15.40 kB │ gzip:   5.37 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-fuse-f1wNO_vj.js                           24.39 kB │ gzip:   8.70 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/RecordPaymentModalContent-BnSwSg3B.js             25.61 kB │ gzip:   6.92 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/typography-BuVijSvj.js                            62.32 kB │ gzip:  19.64 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-tanstack-Dqu2uiyk.js                       66.60 kB │ gzip:  17.41 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/file-dropzone-C-nmzRIl.js                         71.98 kB │ gzip:  20.60 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/SettingsPanelsContent-CJbJrj0v.js                 84.19 kB │ gzip:  24.37 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-frappe-DNkB20qR.js                        133.97 kB │ gzip:  42.88 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-radix-Vt1qfjJS.js                         146.04 kB │ gzip:  44.78 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/vendor-react-bMZmfznu.js                         178.57 kB │ gzip:  56.37 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/error-banner-Dd_SdXKr.js                         356.82 kB │ gzip: 107.28 kB
+2026-07-01T12:46:02.142Z ../erpnext/public/banking/assets/index--4-623AN.js                                361.19 kB │ gzip: 104.68 kB
+2026-07-01T12:46:02.143Z ✓ built in 896ms
+2026-07-01T12:46:02.364Z $ cp ../erpnext/public/banking/index.html ../erpnext/www/banking.html
+2026-07-01T12:46:02.547Z Done in 10.49s.
+2026-07-01T12:46:03.384Z Compiling translations for frappe
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt_BR/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fi/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nb/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/my/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/cs/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/tr/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ko/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr_CS/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hi/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/es/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fr/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh_TW/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/vi/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ar/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fa/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sl/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/it/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/de/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pl/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hu/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ta/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/mn/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/bs/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ru/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nl/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/eo/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/id/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.329Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/frappe.mo
+2026-07-01T12:46:05.338Z Compiling translations for erpnext
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/es/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fr/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh_TW/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pl/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hu/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ta/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ko/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr_CS/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hi/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ru/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nl/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/zh/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/eo/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sr/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/id/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.209Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/bs/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt_BR/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fi/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/nb/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/my/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/cs/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/tr/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/vi/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/ar/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/fa/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sl/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/it/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/de/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/sv/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/hr/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/da/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/pt/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/th/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.211Z MO file created at /home/frappe/frappe-bench/sites/assets/locale/af/LC_MESSAGES/erpnext.mo
+2026-07-01T12:46:07.603Z ==> [configurator] Setting permissions on shared site assets...
+2026-07-01T12:46:07.611Z ==> [configurator] Done. Site is ready.
+2026-07-01T12:46:07.612Z ==> [configurator] Succeeded on attempt 1.

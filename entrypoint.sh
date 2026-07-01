@@ -159,12 +159,18 @@ run_configurator() {
 		bench --site "$SITE_NAME" enable-scheduler 2>/dev/null || true
 	fi
 
-	# Build ALL apps' assets (frappe + erpnext) into the shared volume
-	# so nginx can serve them.  Building only erpnext skips Frappe's
-	# own web bundles (frappe-web.bundle.js, desk.bundle.js, etc.)
-	# which are required for login screens and the desk UI.
-	echo "==> [configurator] Building frontend assets (all apps)..."
-	bench build || { echo "==> [configurator] ERROR: Asset build failed."; return 1; }
+	# Build ERPNext assets into the shared volume so nginx can serve them.
+	# Frappe's own web bundles (frappe-web.bundle.js, desk.bundle.js, etc.)
+	# are pre-built in the base Docker image and must be preserved — bench
+	# build skips Frappe because it lacks a .git directory in the bench image.
+	# We seed them from the image if missing, then build only ERPNext.
+	if [ ! -f sites/assets/frappe/dist/js/frappe-web.bundle.*.js ]; then
+		echo "==> [configurator] Seeding Frappe assets from image..."
+		cp -r /home/frappe/frappe-bench/sites/assets/frappe sites/assets/ 2>/dev/null || true
+	fi
+
+	echo "==> [configurator] Building ERPNext frontend assets..."
+	bench build --app erpnext || { echo "==> [configurator] ERROR: Asset build failed."; return 1; }
 
 	# Fix permissions so the nginx container (UID 101) can read assets
 	# from the shared sites volume.
