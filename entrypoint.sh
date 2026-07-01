@@ -52,7 +52,7 @@ cd /home/frappe/frappe-bench
 # Ensure required directories exist
 # ------------------------------------------------------------------
 mkdir -p sites
-mkdir -p logs
+mkdir -p /home/frappe/logs
 
 # ------------------------------------------------------------------
 # Write production common_site_config.json (idempotent)
