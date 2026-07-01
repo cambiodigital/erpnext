@@ -1,0 +1,51 @@
+# ==========================================================================
+# Development-only build override.
+#
+# Usage:
+#   docker-compose -f docker-compose.yml -f docker-compose.build.yml up --build
+#
+# This file adds local build: blocks back to the app services so you
+# can iterate without pushing to a registry.  The APP_IMAGE variable
+# is still required — set it to a local-only tag, e.g.:
+#
+#   APP_IMAGE=erpnext-app:dev
+#
+# Do NOT use this override in production.  Production consumes the
+# prebuilt APP_IMAGE directly from the base docker-compose.yml.
+# ==========================================================================
+
+services:
+  configurator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  socketio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  worker-default:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  worker-short:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  worker-long:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile

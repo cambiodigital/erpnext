@@ -23,6 +23,9 @@ dist/
 .dockerignore
 docker-compose.override.yml
 
+# Deployment infrastructure — not part of the app image
+deploy/
+
 # CI/CD
 .mergify.yml
 .semgrepignore

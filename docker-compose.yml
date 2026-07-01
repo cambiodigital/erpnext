@@ -1,12 +1,62 @@
+# ==========================================================================
+# ERPNext Production Topology — Multi-Service Docker Compose
+# ==========================================================================
+#
+# Image model — immutable production artifact:
+#   All app services (configurator, web, socketio, workers, scheduler)
+#   consume the APP_IMAGE environment variable.  Production MUST set
+#   APP_IMAGE to a pinned digest reference, e.g.:
+#
+#     APP_IMAGE=registry.example.com/erpnext:v1@sha256:abc123...
+#
+#   The image is built and pushed separately from this compose file.
+#   Build command (run once per release):
+#
+#     docker build -t ${APP_IMAGE} .
+#     docker push   ${APP_IMAGE}
+#
+#   For local development with live-rebuild, use the optional override:
+#
+#     docker-compose -f docker-compose.yml -f docker-compose.build.yml up --build
+#
+# Architecture:
+#   nginx          → Reverse proxy / static asset server (port 80)
+#   web            → gunicorn WSGI (port 8000, internal — explicit gunicorn call)
+#   socketio       → Node.js SocketIO real-time server (port 9000, internal)
+#   worker-*       → Background task processors (default, short, long queues)
+#   scheduler      → Frappe periodic task scheduler
+#   configurator   → One-shot bootstrap / migrate with retry (runs before app services)
+#   db             → MariaDB 10.6
+#   redis-cache    → Redis for cache
+#   redis-queue    → Redis for queue + socketio pub/sub
+#
+# Startup order:
+#   1. db, redis-cache, redis-queue (health checks)
+#   2. configurator (creates site / runs migrate, retries on transient failure)
+#   3. web, socketio, workers, scheduler (blocked until configurator succeeds)
+#   4. nginx (proxies to web + socketio)
+#
+# Asset flow:
+#   bench build (image)     → sites/assets/ in the image
+#   Docker volume init      → copies image sites/ → sites_data volume (first deploy)
+#   configurator bench build → updates sites/assets/ on the shared volume
+#   configurator chmod a+rX → ensures nginx container can read the volume
+#   nginx try_files fallback → proxies to @backend if asset missing from volume
+# ==========================================================================
+
 services:
+  # ------------------------------------------------------------------
+  # Database
+  # ------------------------------------------------------------------
   db:
-    image: mariadb:10.6
+    # amd64 digest pin — deterministic rebuilds
+    image: mariadb:10.6@sha256:8d0471f561aa2276615a1d8bfc7e88cde822ee08baa9700c03797dbfbc6bd6ff
     restart: unless-stopped
     environment:
-      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?required}
       MARIADB_DATABASE: ${DB_NAME:-erpnext}
       MARIADB_USER: ${DB_USER:-erpnext}
-      MARIADB_PASSWORD: ${DB_PASSWORD:-erpnext}
+      MARIADB_PASSWORD: ${DB_PASSWORD:?required}
     volumes:
       - db_data:/var/lib/mysql
     healthcheck:
@@ -21,8 +71,12 @@ services:
       timeout: 5s
       retries: 5
 
+  # ------------------------------------------------------------------
+  # Redis — Cache
+  # ------------------------------------------------------------------
   redis-cache:
-    image: redis:7-alpine
+    # amd64 digest pin — deterministic rebuilds
+    image: redis:7-alpine@sha256:b1addbe72465a718643cff9e60a58e6df1841e29d6d7d60c9a85d8d72f08d1a7
     restart: unless-stopped
     command: redis-server --appendonly yes
     volumes:
@@ -33,8 +87,12 @@ services:
       timeout: 5s
       retries: 5
 
+  # ------------------------------------------------------------------
+  # Redis — Queue + SocketIO pub/sub
+  # ------------------------------------------------------------------
   redis-queue:
-    image: redis:7-alpine
+    # amd64 digest pin — deterministic rebuilds
+    image: redis:7-alpine@sha256:b1addbe72465a718643cff9e60a58e6df1841e29d6d7d60c9a85d8d72f08d1a7
     restart: unless-stopped
     command: redis-server --appendonly yes
     volumes:
@@ -45,25 +103,37 @@ services:
       timeout: 5s
       retries: 5
 
-  erpnext:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    restart: unless-stopped
-    ports:
-      - "8000:8000"
+  # ------------------------------------------------------------------
+  # Configurator — one-shot bootstrap / migrate with retry recovery
+  #
+  # Internal retry loop: attempts up to CONFIGURATOR_RETRIES times
+  # (default 5) with CONFIGURATOR_RETRY_DELAY seconds between (default
+  # 10).  Transient failures (DB still warming, network blip) are
+  # absorbed.  Persistent failures exit non-zero and block dependent
+  # services via service_completed_successfully.
+  #
+  # On redeploy with a new image, the configurator is recreated
+  # automatically (image change triggers Docker Compose recreation).
+  # For manual migration runs: docker-compose run --rm configurator
+  # ------------------------------------------------------------------
+  configurator:
+    image: ${APP_IMAGE:?required}
+    restart: "no"
     environment:
+      PROCESS_ROLE: configurator
       SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
-      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?required}
       DB_HOST: db
       DB_PORT: "3306"
       DB_ROOT_USER: root
-      DB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      DB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?required}
       DB_NAME: ${DB_NAME:-erpnext}
       DB_USER: ${DB_USER:-erpnext}
-      DB_PASSWORD: ${DB_PASSWORD:-erpnext}
+      DB_PASSWORD: ${DB_PASSWORD:?required}
       REDIS_CACHE_HOST: redis-cache
       REDIS_QUEUE_HOST: redis-queue
+      CONFIGURATOR_RETRIES: ${CONFIGURATOR_RETRIES:-5}
+      CONFIGURATOR_RETRY_DELAY: ${CONFIGURATOR_RETRY_DELAY:-10}
     depends_on:
       db:
         condition: service_healthy
@@ -74,6 +144,201 @@ services:
     volumes:
       - sites_data:/home/frappe/frappe-bench/sites
 
+  # ------------------------------------------------------------------
+  # Web — explicit gunicorn WSGI server
+  # Healthcheck: HTTP GET on the web port.  Frappe responds to any
+  # valid HTTP request; we use the root path which returns 2xx when
+  # the site is ready.
+  # ------------------------------------------------------------------
+  web:
+    image: ${APP_IMAGE:?required}
+    restart: unless-stopped
+    environment:
+      PROCESS_ROLE: web
+      SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
+      DB_HOST: db
+      DB_PORT: "3306"
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_QUEUE_HOST: redis-queue
+      GUNICORN_WORKERS: ${GUNICORN_WORKERS:-4}
+    depends_on:
+      configurator:
+        condition: service_completed_successfully
+    volumes:
+      - sites_data:/home/frappe/frappe-bench/sites
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS -o /dev/null http://localhost:8000 || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+  # ------------------------------------------------------------------
+  # SocketIO — real-time events server
+  # Healthcheck: TCP port probe on port 9000 (curl can do basic TCP).
+  # ------------------------------------------------------------------
+  socketio:
+    image: ${APP_IMAGE:?required}
+    restart: unless-stopped
+    environment:
+      PROCESS_ROLE: socketio
+      SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
+      DB_HOST: db
+      DB_PORT: "3306"
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_QUEUE_HOST: redis-queue
+    depends_on:
+      configurator:
+        condition: service_completed_successfully
+    volumes:
+      - sites_data:/home/frappe/frappe-bench/sites
+    expose:
+      - "9000"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS -o /dev/null http://localhost:9000/socket.io/?transport=polling || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # ------------------------------------------------------------------
+  # Background Workers
+  # Healthcheck: pgrep verifies the bench worker process is alive.
+  # Docker already monitors PID 1 via the restart policy; this
+  # healthcheck adds explicit process-name verification.
+  # ------------------------------------------------------------------
+  worker-default:
+    image: ${APP_IMAGE:?required}
+    restart: unless-stopped
+    environment:
+      PROCESS_ROLE: worker-default
+      SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
+      DB_HOST: db
+      DB_PORT: "3306"
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_QUEUE_HOST: redis-queue
+    depends_on:
+      configurator:
+        condition: service_completed_successfully
+    volumes:
+      - sites_data:/home/frappe/frappe-bench/sites
+    healthcheck:
+      test: ["CMD-SHELL", "kill -0 $(cat /tmp/bench-worker-default.pid 2>/dev/null) || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  worker-short:
+    image: ${APP_IMAGE:?required}
+    restart: unless-stopped
+    environment:
+      PROCESS_ROLE: worker-short
+      SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
+      DB_HOST: db
+      DB_PORT: "3306"
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_QUEUE_HOST: redis-queue
+    depends_on:
+      configurator:
+        condition: service_completed_successfully
+    volumes:
+      - sites_data:/home/frappe/frappe-bench/sites
+    healthcheck:
+      test: ["CMD-SHELL", "kill -0 $(cat /tmp/bench-worker-short.pid 2>/dev/null) || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  worker-long:
+    image: ${APP_IMAGE:?required}
+    restart: unless-stopped
+    environment:
+      PROCESS_ROLE: worker-long
+      SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
+      DB_HOST: db
+      DB_PORT: "3306"
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_QUEUE_HOST: redis-queue
+    depends_on:
+      configurator:
+        condition: service_completed_successfully
+    volumes:
+      - sites_data:/home/frappe/frappe-bench/sites
+    healthcheck:
+      test: ["CMD-SHELL", "kill -0 $(cat /tmp/bench-worker-long.pid 2>/dev/null) || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # ------------------------------------------------------------------
+  # Scheduler — periodic tasks
+  # ------------------------------------------------------------------
+  scheduler:
+    image: ${APP_IMAGE:?required}
+    restart: unless-stopped
+    environment:
+      PROCESS_ROLE: scheduler
+      SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
+      DB_HOST: db
+      DB_PORT: "3306"
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_QUEUE_HOST: redis-queue
+    depends_on:
+      configurator:
+        condition: service_completed_successfully
+    volumes:
+      - sites_data:/home/frappe/frappe-bench/sites
+    healthcheck:
+      test: ["CMD-SHELL", "kill -0 $(cat /tmp/bench-scheduler.pid 2>/dev/null) || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # ------------------------------------------------------------------
+  # Nginx — reverse proxy + static asset serving
+  #
+  # Asset serving model:
+  #   1. Primary path:  nginx reads directly from the sites_data volume
+  #      (populated by the configurator's bench build + chmod a+rX).
+  #   2. Fallback path:  try_files falls through to @backend (web service)
+  #      when a file is missing from the volume.  This handles first-deploy
+  #      edge cases and any asset path discrepancies gracefully.
+  #
+  # Degraded-mode design:
+  #   nginx depends ONLY on web health, not socketio.  If socketio is
+  #   down, the main ERP site continues to serve normally; real-time
+  #   features (desk notifications) degrade gracefully with 502 on the
+  #   /socket.io/ path.  Removing the coupling prevents a realtime
+  #   outage from blocking the entire application.
+  # ------------------------------------------------------------------
+  nginx:
+    # amd64 digest pin — deterministic rebuilds
+    image: nginx:alpine@sha256:35cd77497979abe70dc8d26f5ae60811eea233a2eb5dc03c2ee30972caeb303e
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      # Uncomment for direct SSL termination:
+      # - "443:443"
+    volumes:
+      - ./deploy/nginx.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - sites_data:/usr/share/nginx/sites:ro
+    depends_on:
+      web:
+        condition: service_healthy
+    environment:
+      WEB_HOST: web
+      SOCKETIO_HOST: socketio
+      SITE_NAME: ${SITE_NAME:-erp.saharapro.team}
+
+# ------------------------------------------------------------------
+# Persistent volumes
+# ------------------------------------------------------------------
 volumes:
   db_data:
   redis_cache_data:

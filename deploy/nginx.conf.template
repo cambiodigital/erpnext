@@ -1,0 +1,92 @@
+# ERPNext Production Nginx Configuration
+# This template is processed by envsubst at container start (nginx:alpine image).
+# Variables like ${VAR} are replaced with environment values;
+# $nginx_vars (no braces) are preserved as nginx runtime variables.
+#
+# Asset serving model (two-tier):
+#   1. Direct volume read: nginx serves /assets/ from the sites_data volume
+#      (populated by the configurator's bench build + chmod a+rX at bootstrap).
+#      Fastest path — avoids Python/WSGI overhead for static files.
+#   2. Fallback proxy:  try_files falls through to @backend when a file is
+#      missing from the volume.  This handles first-deploy edge cases, asset
+#      rebuilds in progress, and any path discrepancies gracefully.
+
+upstream frappe_web {
+    server ${WEB_HOST}:8000;
+}
+
+upstream frappe_socketio {
+    server ${SOCKETIO_HOST}:9000;
+}
+
+server {
+    listen 80;
+    server_name ${SITE_NAME};
+
+    client_max_body_size 50m;
+    client_body_timeout 120s;
+
+    # Security headers
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+
+    # ------------------------------------------------------------------
+    # SSL — uncomment and configure for direct SSL termination.
+    # When running behind Dokploy/Traefik or another reverse proxy,
+    # SSL is handled at that layer and this section stays commented.
+    # ------------------------------------------------------------------
+    # listen 443 ssl http2;
+    # ssl_certificate     /etc/nginx/certs/fullchain.pem;
+    # ssl_certificate_key /etc/nginx/certs/privkey.pem;
+    # ssl_protocols       TLSv1.2 TLSv1.3;
+    # ssl_ciphers         HIGH:!aNULL:!MD5;
+
+    # ------------------------------------------------------------------
+    # Static assets — served directly from the shared sites volume.
+    # The configurator runs bench build (→ sites/assets/) and chmod a+rX
+    # at bootstrap time so the nginx worker (UID 101) can read them.
+    # Missing files fall through to @backend (Frappe web service).
+    # ------------------------------------------------------------------
+    location /assets/ {
+        alias /usr/share/nginx/sites/assets/;
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+        try_files $uri @backend;
+    }
+
+    # ------------------------------------------------------------------
+    # Socket.IO — real-time events (desk notifications, doc updates).
+    # Proxied to the dedicated socketio service with WebSocket upgrade.
+    # ------------------------------------------------------------------
+    location /socket.io/ {
+        proxy_pass http://frappe_socketio;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 86400s;
+        proxy_buffering off;
+    }
+
+    # ------------------------------------------------------------------
+    # Main application — proxied to gunicorn via the web service.
+    # ------------------------------------------------------------------
+    location / {
+        try_files $uri @backend;
+    }
+
+    location @backend {
+        proxy_pass http://frappe_web;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_read_timeout 120s;
+        proxy_buffering off;
+    }
+}
