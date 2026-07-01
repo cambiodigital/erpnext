@@ -1,99 +1,26 @@
-2026-07-01T11:39:18.487Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:39:18.487Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:39:18.487Z RuntimeError: object is not bound
-2026-07-01T11:39:33.533Z [2026-07-01 11:39:33 +0000] [57] [ERROR] Error handling request /
-2026-07-01T11:39:33.533Z Traceback (most recent call last):
-2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:39:33.533Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:39:33.533Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:39:33.533Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:39:33.533Z frappe.request.after_response.run,
-2026-07-01T11:39:33.533Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:39:33.533Z return getattr(self._get_current_object(), name)
-2026-07-01T11:39:33.533Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:39:33.533Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:39:33.533Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:39:33.533Z RuntimeError: object is not bound
-2026-07-01T11:39:48.578Z [2026-07-01 11:39:48 +0000] [58] [ERROR] Error handling request /
-2026-07-01T11:39:48.579Z Traceback (most recent call last):
-2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:39:48.579Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:39:48.579Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:39:48.579Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:39:48.579Z frappe.request.after_response.run,
-2026-07-01T11:39:48.579Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:39:48.579Z return getattr(self._get_current_object(), name)
-2026-07-01T11:39:48.579Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:39:48.579Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:39:48.579Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:39:48.579Z RuntimeError: object is not bound
-2026-07-01T11:40:03.627Z [2026-07-01 11:40:03 +0000] [58] [ERROR] Error handling request /
-2026-07-01T11:40:03.627Z Traceback (most recent call last):
-2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:40:03.627Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:40:03.627Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:40:03.627Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:40:03.627Z frappe.request.after_response.run,
-2026-07-01T11:40:03.627Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:40:03.627Z return getattr(self._get_current_object(), name)
-2026-07-01T11:40:03.627Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:40:03.627Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:40:03.627Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:40:03.627Z RuntimeError: object is not bound
-2026-07-01T11:40:18.678Z [2026-07-01 11:40:18 +0000] [56] [ERROR] Error handling request /
-2026-07-01T11:40:18.678Z Traceback (most recent call last):
-2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:40:18.678Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:40:18.678Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:40:18.678Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:40:18.678Z frappe.request.after_response.run,
-2026-07-01T11:40:18.678Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:40:18.678Z return getattr(self._get_current_object(), name)
-2026-07-01T11:40:18.678Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:40:18.678Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:40:18.678Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:40:18.678Z RuntimeError: object is not bound
-2026-07-01T11:40:33.723Z [2026-07-01 11:40:33 +0000] [56] [ERROR] Error handling request /
-2026-07-01T11:40:33.723Z Traceback (most recent call last):
-2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:40:33.723Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:40:33.723Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:40:33.723Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:40:33.723Z frappe.request.after_response.run,
-2026-07-01T11:40:33.723Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:40:33.723Z return getattr(self._get_current_object(), name)
-2026-07-01T11:40:33.723Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:40:33.723Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:40:33.723Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:40:33.723Z RuntimeError: object is not bound
-2026-07-01T11:40:48.772Z [2026-07-01 11:40:48 +0000] [57] [ERROR] Error handling request /
-2026-07-01T11:40:48.772Z Traceback (most recent call last):
-2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 134, in handle
-2026-07-01T11:40:48.772Z self.handle_request(listener, req, client, addr)
-2026-07-01T11:40:48.772Z ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/env/lib/python3.14/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
-2026-07-01T11:40:48.772Z respiter = self.wsgi(environ, resp.start_response)
-2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 92, in application
-2026-07-01T11:40:48.772Z frappe.request.after_response.run,
-2026-07-01T11:40:48.772Z ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
-2026-07-01T11:40:48.772Z return getattr(self._get_current_object(), name)
-2026-07-01T11:40:48.772Z ~~~~~~~~~~~~~~~~~~~~~~~~^^
-2026-07-01T11:40:48.772Z File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
-2026-07-01T11:40:48.772Z raise RuntimeError("object is not bound") from None
-2026-07-01T11:40:48.772Z RuntimeError: object is not bound
+2026-07-01T11:44:50.691Z ==> [web] Configuring common_site_config.json...
+2026-07-01T11:44:58.849Z ==> [web] Starting web server on 0.0.0.0:8000...
+2026-07-01T11:44:59.342Z Usage: bench  serve [OPTIONS]
+2026-07-01T11:44:59.342Z Try 'bench  serve --help' for help.
+2026-07-01T11:44:59.342Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
+2026-07-01T11:44:59.670Z ==> [web] Configuring common_site_config.json...
+2026-07-01T11:45:05.192Z ==> [web] Starting web server on 0.0.0.0:8000...
+2026-07-01T11:45:05.657Z Usage: bench  serve [OPTIONS]
+2026-07-01T11:45:05.657Z Try 'bench  serve --help' for help.
+2026-07-01T11:45:05.657Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
+2026-07-01T11:45:06.074Z ==> [web] Configuring common_site_config.json...
+2026-07-01T11:45:11.526Z ==> [web] Starting web server on 0.0.0.0:8000...
+2026-07-01T11:45:11.935Z Usage: bench  serve [OPTIONS]
+2026-07-01T11:45:11.935Z Try 'bench  serve --help' for help.
+2026-07-01T11:45:11.935Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
+2026-07-01T11:45:12.553Z ==> [web] Configuring common_site_config.json...
+2026-07-01T11:45:17.913Z ==> [web] Starting web server on 0.0.0.0:8000...
+2026-07-01T11:45:18.332Z Usage: bench  serve [OPTIONS]
+2026-07-01T11:45:18.332Z Try 'bench  serve --help' for help.
+2026-07-01T11:45:18.332Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
+2026-07-01T11:45:19.342Z ==> [web] Configuring common_site_config.json...
+2026-07-01T11:45:24.526Z ==> [web] Starting web server on 0.0.0.0:8000...
+2026-07-01T11:45:24.946Z Usage: bench  serve [OPTIONS]
+2026-07-01T11:45:24.946Z Try 'bench  serve --help' for help.
+2026-07-01T11:45:24.946Z Error: No such option '--no-reload'. (Did you mean one of: '--noreload', '--nothreading'?)
+2026-07-01T11:45:26.743Z ==> [web] Configuring common_site_config.json...

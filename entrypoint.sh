@@ -287,7 +287,7 @@ case "$PROCESS_ROLE" in
 		# --port binds to the standard web port.
 		exec bench serve \
 			--port 8000 \
-			--no-reload
+			--noreload
 		;;
 
 	socketio)
