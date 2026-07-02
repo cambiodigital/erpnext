@@ -147,6 +147,12 @@ run_configurator() {
 		bench --site "$SITE_NAME" enable-scheduler
 		bench use "$SITE_NAME"
 
+		# Force HTTPS host_name — Google OAuth requires https:// in production.
+		# Traefik/Dokploy terminates SSL; the site must advertise its external
+		# URL with https:// so OAuth callbacks are accepted by Google.
+		echo "==> [configurator] Setting host_name to https://${SITE_NAME}..."
+		bench set-config -s "$SITE_NAME" host_name "https://${SITE_NAME}"
+
 		touch "$BOOTSTRAP_SENTINEL"
 		echo "==> [configurator] Site '${SITE_NAME}' created and bootstrapped successfully."
 	else
@@ -157,6 +163,9 @@ run_configurator() {
 		# Idempotent safety nets — no-op on an already-installed site.
 		bench --site "$SITE_NAME" install-app erpnext 2>/dev/null || true
 		bench --site "$SITE_NAME" enable-scheduler 2>/dev/null || true
+
+		# Ensure host_name stays https:// across redeploys and fork merges.
+		bench set-config -s "$SITE_NAME" host_name "https://${SITE_NAME}" 2>/dev/null || true
 	fi
 
 	# Build ERPNext assets into the shared volume so nginx can serve them.
