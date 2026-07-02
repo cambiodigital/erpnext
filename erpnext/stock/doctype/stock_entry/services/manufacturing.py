@@ -124,7 +124,8 @@ class BaseManufactureStockEntry(BaseStockEntry):
 					self.doc.process_loss_qty = flt(process_loss_qty, precision)
 
 					frappe.msgprint(
-						_("The Process Loss Qty has reset as per job cards Process Loss Qty"), alert=True
+						_("The Process Loss Qty has been reset as per the Job Card's Process Loss Qty"),
+						alert=True,
 					)
 
 		if not self.doc.process_loss_percentage and not self.doc.process_loss_qty:
@@ -1040,8 +1041,7 @@ def ceil_qty_if_uom_has_whole_number(qty, stock_uom):
 
 @frappe.whitelist()
 def move_sample_to_retention_warehouse(company: str, items: str | list):
-	if isinstance(items, str):
-		items = json.loads(items)
+	items = frappe.parse_json(items)
 
 	retention_warehouse = frappe.get_single_value("Stock Settings", "sample_retention_warehouse")
 	stock_entry = frappe.new_doc("Stock Entry")

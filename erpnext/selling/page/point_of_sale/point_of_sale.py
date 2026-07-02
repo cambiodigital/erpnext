@@ -231,6 +231,7 @@ def get_items(
 			.where(ItemPrice.selling == 1)
 			.where((ItemPrice.valid_from <= current_date) | (ItemPrice.valid_from.isnull()))
 			.where((ItemPrice.valid_upto >= current_date) | (ItemPrice.valid_upto.isnull()))
+			.orderby(ItemPrice.valid_from.isnull(), order=Order.asc)
 			.orderby(ItemPrice.valid_from, order=Order.desc)
 		).run(as_dict=True)
 
@@ -347,8 +348,8 @@ def check_opening_entry(user: str):
 
 
 @frappe.whitelist()
-def create_opening_voucher(pos_profile: str, company: str, balance_details: str):
-	balance_details = json.loads(balance_details)
+def create_opening_voucher(pos_profile: str, company: str, balance_details: str | list):
+	balance_details = frappe.parse_json(balance_details)
 
 	new_pos_opening = frappe.get_doc(
 		{
@@ -463,6 +464,9 @@ def set_customer_info(fieldname: str, customer: str, value: str = ""):
 					& (DynamicLink.link_doctype == "Customer")
 				)
 				.orderby(Contact.is_primary_contact, order=Order.desc)
+				# tiebreaker: contacts tie on is_primary_contact (the common no-primary case) ->
+				# pick the same one on MariaDB and Postgres
+				.orderby(DynamicLink.parent, order=Order.asc)
 			)
 
 			contacts = query.run(pluck=DynamicLink.parent)
