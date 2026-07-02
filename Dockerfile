@@ -22,7 +22,7 @@ WORKDIR /home/frappe/frappe-bench
 # losing ~40 Frappe entries (website, login, desk, etc).  Save them first.
 RUN python3 <<'PYEOF'
 import json
-with open('/home/frappe/frappe-bench/sites/assets/assets.json') as f:
+with open('/home/frappe/frappe-bench/assets/assets.json') as f:
     data = json.load(f)
 frappe_entries = {k: v for k, v in data.items() if '/frappe/' in v}
 with open('/tmp/frappe_assets.json', 'w') as f:
@@ -43,7 +43,7 @@ RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-
     bench build --app erpnext && \
     python3 <<'PYEOF'
 import json
-with open('/home/frappe/frappe-bench/sites/assets/assets.json') as f:
+with open('/home/frappe/frappe-bench/assets/assets.json') as f:
     data = json.load(f)
 with open('/tmp/frappe_assets.json') as f:
     frappe_entries = json.load(f)
