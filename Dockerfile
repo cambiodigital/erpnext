@@ -43,8 +43,10 @@ RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-
     bench build --app erpnext && \
     python3 <<'PYEOF'
 import json
-with open('/home/frappe/frappe-bench/assets/assets.json') as f:
+# Read bench build output (new erpnext hashes)
+with open('/home/frappe/frappe-bench/sites/assets/assets.json') as f:
     data = json.load(f)
+# Add saved Frappe entries from base image
 with open('/tmp/frappe_assets.json') as f:
     frappe_entries = json.load(f)
 data.update(frappe_entries)
