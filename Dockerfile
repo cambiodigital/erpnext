@@ -29,6 +29,9 @@ RUN cd apps/erpnext && yarn install --frozen-lockfile && cd /home/frappe/frappe-
     /home/frappe/frappe-bench/env/bin/pip install gunicorn && \
     bench build --app erpnext
 
+# Backup pre-built assets to a non-volume path so configurator can sync them
+RUN cp -r /home/frappe/frappe-bench/sites/assets /home/frappe/assets-backup
+
 COPY --chown=frappe:frappe --chmod=755 entrypoint.sh /home/frappe/frappe-bench/entrypoint.sh
 
 EXPOSE 8000 9000

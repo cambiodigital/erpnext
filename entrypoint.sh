@@ -164,8 +164,8 @@ run_configurator() {
 	# build in the Dockerfile. Running bench build at runtime writes
 	# compiled files to the container layer (not the volume), which breaks
 	# the hash sync between assets.json and actual files after recreate.
-	echo "==> [configurator] Syncing frontend assets from image..."
-	cp -r /home/frappe/frappe-bench/sites/assets/. sites/assets/ 2>/dev/null || true
+	echo "==> [configurator] Syncing frontend assets from image backup..."
+	cp -r /home/frappe/assets-backup/. sites/assets/ 2>/dev/null || true
 
 	# Fix permissions so the nginx container (UID 101) can read assets
 	# from the shared sites volume.
