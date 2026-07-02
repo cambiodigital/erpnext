@@ -165,6 +165,7 @@ run_configurator() {
 	# compiled files to the container layer (not the volume), which breaks
 	# the hash sync between assets.json and actual files after recreate.
 	echo "==> [configurator] Syncing frontend assets from image backup..."
+	mkdir -p sites/assets
 	cp -r /home/frappe/assets-backup/. sites/assets/ 2>/dev/null || true
 
 	# Fix permissions so the nginx container (UID 101) can read assets
