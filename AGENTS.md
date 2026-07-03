@@ -111,7 +111,7 @@ git merge upstream/develop
 #    - Dockerfile: mantené NUESTRAS secciones (backup, merge)
 #    - docker-compose.yml: mantené NUESTROS healthchecks y labels
 #    - entrypoint.sh: mantené NUESTRO sync desde backup
-#    - deploy/nginx.conf.template: mantené NUESTRO resolver dinámico
+#    - deploy/nginx.conf.template: mantené NUESTRO resolver dinámico Y X-Frappe-Site-Name en socketio
 
 # 6. Commit del merge
 git add .
@@ -138,6 +138,11 @@ git push origin develop
 ### SocketIO unhealthy
 - Causa: healthcheck sin `EIO=4`. Verificar docker-compose.yml.
 - Fix: ya está corregido en el código.
+
+### Socket.io "Invalid origin" en consola del navegador
+- Causa: el middleware `authenticate.js` de Frappe compara `Host` vs `Origin`, y detrás de Traefik los headers pueden desincronizarse en el upgrade a WebSocket.
+- Fix: el template `deploy/nginx.conf.template` DEBE incluir `proxy_set_header X-Frappe-Site-Name $host;` en el bloque `location /socket.io/`. Esto le dice explícitamente al servidor socketio qué sitio usar, saltando la validación frágil de origin.
+- Al mergear upstream: verificar que esta línea esté presente en el template, reponerla si el merge la borra.
 
 ### Error "Permission denied" en sites/assets/
 - Causa: directorio creado como root en vez de frappe (UID 1000)
