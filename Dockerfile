@@ -1,7 +1,7 @@
 # Pinned to deterministic digest for reproducible builds and safe rollbacks.
 # The :develop tag is kept as a human-readable label; the @sha256 digest
 # is the actual immutable reference (linux/amd64).
-FROM frappe/erpnext:develop@sha256:8953f05ebe8f77bbc8e8d26b3302d78d4755e510113990f3a94deaedf650e2a1
+FROM frappe/erpnext:develop@sha256:14cc8841beadf372b3b618eae1b062ce6263fead1124a63518056e64a280378e
 
 USER root
 
